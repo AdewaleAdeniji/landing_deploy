@@ -100,7 +100,7 @@ export const LandingPage = () => {
                             <li>$ and ₦ instant accounts</li>
                             <li>Transfers from $ to ₦ and back</li>
                             <li>Naira debit cards</li>
-                            <li>savings and more...</li>
+                            <li>Savings and more...</li>
                         </ul>
                     </div>
 
