@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './LandingPage.css';
 import Logo from '../assets/images/logo.png';
-import MobileApp from '../assets/images/mobile-app.jpg';
+import MobileApp from '../assets/images/mobile-app.png';
 import Instagram from '../assets/images/instagram.png';
 import Twitter from '../assets/images/twitter.png';
 import TextField from '@material-ui/core/TextField';
