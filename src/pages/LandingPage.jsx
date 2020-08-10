@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import './LandingPage.css';
-import Logo from '../assets/images/logo.png';
+import Logo from '../assets/images/logo.svg';
 import MobileApp from '../assets/images/mobile-app.png';
 import Instagram from '../assets/images/instagram.png';
-import Twitter from '../assets/images/twitter.png';
+import Telegram from '../assets/images/telegram.png';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
@@ -32,7 +32,6 @@ export const LandingPage = () => {
     };
 
     const submitForm = (event) => {
-        console.log(email.length);
         event.persist();
         setError({...error, isError: false});
 
@@ -42,7 +41,7 @@ export const LandingPage = () => {
         }
 
         if(isNaN(email)){
-            if(!validateEmail(email) === false) {
+            if(!validateEmail(email)) {
                 setError({isError: true, message: 'Please enter a valid email address.'});
                 return;
             }
@@ -50,12 +49,12 @@ export const LandingPage = () => {
             if(email.length >= 10 && email.length <= 11){
 
             }else{
-                setError({isError: true, message: 'Please enter a valid phone number.'});
+                setError({isError: true, message: 'Please enter a valid phone number (1234567890, no +)'});
                 return;
             }
 
             if(validatePhoneNumber(email)){
-                setError({isError: true, message: 'Please enter a valid phone number.'});
+                setError({isError: true, message: 'Please enter a valid phone number (1234567890, no +)'});
                 return;
             }
         }
@@ -81,9 +80,8 @@ export const LandingPage = () => {
     };
 
     function validateEmail(emailField){
-        let reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,20})$/;
-
-        return reg.test(emailField.email) != false;
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,20})$/;
+        return reg.test(emailField) != false;
     }
 
     return (
@@ -98,7 +96,12 @@ export const LandingPage = () => {
                     </div>
 
                     <div className='description'>
-                        $ and ₦ wallets, transfers from $ to ₦ and back, Naira debit cards, savings and more...
+                        <ul>
+                            <li>$ and ₦ instant accounts</li>
+                            <li>Transfers from $ to ₦ and back</li>
+                            <li>Naira debit cards</li>
+                            <li>savings and more...</li>
+                        </ul>
                     </div>
 
                     <div className='launching'>
@@ -149,7 +152,7 @@ export const LandingPage = () => {
                             <a href='http://instagram.com/moneymieapp' target='_blank'><img src={Instagram} alt='Instagram'/></a>
                         </div>
                         <div>
-                            <a href='https://twitter.com/moneymieadvisor' target='_blank'><img src={Twitter} alt='Twitter'/></a>
+                            <a href='https://t.me/joinchat/Pdq1J1gKmmqOjCKqRIfiJQ' target='_blank'><img src={Telegram} alt='Telegram'/></a>
                         </div>
 
                     </div>

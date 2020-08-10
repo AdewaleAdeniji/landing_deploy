@@ -19,10 +19,10 @@
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 40px;
     color: #3A3391;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .description{
@@ -30,8 +30,8 @@
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 23px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 29px;
     color: #22B94C;
 }
 .launching{
@@ -41,7 +41,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #3A3391;
-    padding-top: 20px;
+    padding-top: 15px;
     margin-bottom: 20px;
 }
 
@@ -110,7 +110,7 @@
     font-size: 13px;
     line-height: 19px;
     color: #182CD1;
-    margin-top: 60px;
+    margin-top: 40px;
     display: flex;
 }
 
@@ -123,9 +123,9 @@
     grid-template-columns: auto auto auto;
     background-color: #F8F8F9;
     width: 100%;
-    height: 350px;
+    height: 300px;
     position: absolute;
-    top: 550px
+    top: 600px
 }
 
 .mobile-app{
@@ -170,7 +170,7 @@
     }
 
     .footer{
-        height: 350px;
+        height: 390px;
         position: absolute;
         top: 650px
     }
