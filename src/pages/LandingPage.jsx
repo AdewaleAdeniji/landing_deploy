@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './LandingPage.css';
-import Logo from '../assets/images/logo.svg';
+import Logo from '../assets/images/moneymie-logo.png';
 import MobileApp from '../assets/images/mobile-app.png';
 import Instagram from '../assets/images/instagram.png';
 import Telegram from '../assets/images/telegram.png';
@@ -147,7 +147,7 @@ export const LandingPage = () => {
                     }
 
                     <div className='social-media'>
-                        Follow us on instagram / twitter
+                        Follow us on instagram / telegram
                         <div>
                             <a href='http://instagram.com/moneymieapp' target='_blank'><img src={Instagram} alt='Instagram'/></a>
                         </div>
