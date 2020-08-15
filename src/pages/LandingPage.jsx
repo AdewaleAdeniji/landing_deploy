@@ -34,6 +34,7 @@ export const LandingPage = () => {
     const submitForm = (event) => {
         event.persist();
         setError({...error, isError: false});
+        setIsSuccess(false);
 
         if(email === '') {
             setError({isError: true, message: 'Email or phone number is required.'});
@@ -62,14 +63,23 @@ export const LandingPage = () => {
        setError({isError: false, message: ''});
         setIsLoading(true);
 
-        fetch(`https://beta.elta.com.ng/mailerlite/?email=${email}`)
-            .then(response => {
-                setIsLoading(false);
-                setIsSuccess(true);
+        fetch(`https://staging.moneymie.com/api/v1/wait/add/${email}`, {
+            method: 'post'
+        })
+            .then(response => response.json())
+            .then(res => {
+                if(res.code === 100){
+                    setIsLoading(false);
+                    setIsSuccess(true);
+                }else{
+                    setIsLoading(false);
+                    setError({isError: true, message: res.message});
+                }
+
             })
             .catch(error => {
                 setIsLoading(false);
-                setError({isError: false, message: 'Failed. Try again.'});
+                setError({isError: true, message: 'Failed. Try again.'});
             })
     };
 
