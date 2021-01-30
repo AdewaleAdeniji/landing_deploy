@@ -3,6 +3,8 @@ import './LandingPage.css';
 import Logo from '../assets/images/moneymie-logo.png';
 import MobileApp from '../assets/images/mobile-app.png';
 import Instagram from '../assets/images/instagram.png';
+import AppStore from '../assets/images/appstore.png';
+import PlayStore from '../assets/images/playstore.png';
 import Telegram from '../assets/images/telegram.png';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
@@ -102,68 +104,29 @@ export const LandingPage = () => {
             <div className='content'>
                 <div>
                     <div className='title'>
-                        The digital bank for <br/>Nigerians in Diaspora
+                        Borderless banking
                     </div>
 
                     <div className='description'>
-                        <ul>
-                            <li>$ and ₦ instant accounts</li>
-                            <li>Transfers from $ to ₦ and back</li>
-                            <li>Naira debit cards</li>
-                            <li>Savings and more...</li>
-                        </ul>
+                        Moneymie offers a multi-currency account with USD$ and ₦. Now you can exchange between both, send and recieve money easily.
+                        And no fees.
                     </div>
 
                     <div className='launching'>
-                        Launching in the US this fall.
+                        Available to US persons only.
                     </div>
 
                     <div className='waitlist'>
-                        <div className='textfield'>
-                            <TextField
-                                id="outlined-helperText"
-                                placeholder='Enter email address or US phone no.'
-                                type='text'
-                                variant="outlined"
-                                fullWidth={true}
-                                defaultValue={email}
-                                error={error.isError}
-                                onChange={handleChange}
-                                InputProps={
-                                    { classes: {input: classes['input']} }
-                                }
-                            />
-                        </div>
-                        <div className='join-waitlist' style={{backgroundColor: isLoading ? '#423AB9' : '#3A3391'}} onClick={submitForm}>
-                            {
-                                isLoading ? <CircularProgress size={30} color='white' /> : 'Join Waitlist'
-                            }
-                        </div>
+
+                        <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'><img src={AppStore} alt={'App Store image'} style={{marginRight: '10px'}} /></a>
+                        <a href='https://apps.apple.com/us/app/moneymie/id1538278032'><img src={PlayStore} alt={'Play Store image'} /></a>
 
                     </div>
 
-                    {
-                        error.isError &&
-                        <div className='error'>
-                            {error.message}
-                        </div>
-                    }
 
-                    {
-                        isSuccess &&
-                        <div className='success'>
-                            You’re in! We will inform you once we launch.
-                        </div>
-                    }
 
                     <div className='social-media'>
-                        Follow us on instagram / telegram
-                        <div>
-                            <a href='http://instagram.com/moneymieapp' target='_blank'><img src={Instagram} alt='Instagram'/></a>
-                        </div>
-                        <div>
-                            <a href='https://t.me/joinchat/Pdq1J1gKmmqOjCKqRIfiJQ' target='_blank'><img src={Telegram} alt='Telegram'/></a>
-                        </div>
+                        Moneymie is a financial technology company. Banking Services provided by Sila Inc, Evolve Bank (Member FDIC) or Circle Internet Financial Limited. MSB services provided by Circle Internet Financial Limited.
 
                     </div>
                 </div>

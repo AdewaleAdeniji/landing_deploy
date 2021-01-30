@@ -21,7 +21,7 @@
     font-family: DM Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 40px;
     line-height: 40px;
     color: #3A3391;
     margin-top: 30px;
@@ -32,7 +32,7 @@
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 23px;
     line-height: 29px;
     color: #22B94C;
 }
@@ -109,9 +109,9 @@
     font-family: DM Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 19px;
-    color: #182CD1;
+    color: #666666;
     margin-top: 40px;
     display: flex;
 }
