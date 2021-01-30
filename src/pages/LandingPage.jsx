@@ -118,8 +118,8 @@ export const LandingPage = () => {
 
                     <div className='waitlist'>
 
-                        <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'><img src={AppStore} alt={'App Store image'} style={{marginRight: '10px'}} /></a>
-                        <a href='https://apps.apple.com/us/app/moneymie/id1538278032'><img src={PlayStore} alt={'Play Store image'} /></a>
+                        <a href='https://apps.apple.com/us/app/moneymie/id1538278032'><img src={AppStore} alt={'App Store image'} style={{marginRight: '10px'}} /></a>
+                        <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'><img src={PlayStore} alt={'Play Store image'} /></a>
 
                     </div>
 
