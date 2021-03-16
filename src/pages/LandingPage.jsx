@@ -126,7 +126,7 @@ export const LandingPage = () => {
 
 
                     <div className='social-media'>
-                        Moneymie is a financial technology company. Banking Services provided by Sila Inc, Evolve Bank (Member FDIC) or Circle Internet Financial Limited. MSB services provided by Circle Internet Financial Limited.
+                    Moneymie is a financial technology company. Moneymie offers its products and services in partnership with banking software provider Sila and Evolve Bank & Trust (Member FDIC).
 
                     </div>
                 </div>
