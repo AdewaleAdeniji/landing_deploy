@@ -169,6 +169,7 @@
 
     .mobile-app img{
         width: 370px;
+        /* height: 50vh; */
     }
 
     .footer{
@@ -222,5 +223,14 @@
 .logo h2 {
   float:none !important;
 }
+.imgapp {
+    
+        width: 65vw !important;
+        height: 60vh;
+    
+}
 
+}
+.mobile-app {
+    margin:0 auto;
 }
