@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './LandingPage.css';
 import Logo from '../assets/images/moneymie-logo.png';
 import MobileApp from '../assets/images/mobile-app.png';
+import Arrow from '../assets/images/arrow.png';
 import Instagram from '../assets/images/instagram.png';
 import AppStore from '../assets/images/appstore.png';
 import PlayStore from '../assets/images/playstore.png';
@@ -102,7 +103,7 @@ export const LandingPage = () => {
         <div className='container'>
             <div className='logo'><img src={Logo} alt='Moneymie logo'/>
             <h2>
-                <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">Get Moneymie for Business <FontAwesomeIcon icon="check-square" /> </a>
+                <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">Get Moneymie for Business  <i class="fa fa-angle-double-right"></i> </a>
             </h2>
             </div>
 
