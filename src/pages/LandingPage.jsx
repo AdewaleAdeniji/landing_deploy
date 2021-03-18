@@ -102,7 +102,7 @@ export const LandingPage = () => {
         <div className='container'>
             <div className='logo'><img src={Logo} alt='Moneymie logo'/>
             <h2>
-                <a href="https://moneymie.link/usdcpay" target="_blank">Get Moneymie for Business <FontAwesomeIcon icon="check-square" /> </a>
+                <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">Get Moneymie for Business <FontAwesomeIcon icon="check-square" /> </a>
             </h2>
             </div>
 
