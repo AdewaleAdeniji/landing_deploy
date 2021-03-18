@@ -8,6 +8,7 @@ import PlayStore from '../assets/images/playstore.png';
 import Telegram from '../assets/images/telegram.png';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 const useStyles = makeStyles(theme => ({
@@ -99,12 +100,16 @@ export const LandingPage = () => {
     return (
         <div>
         <div className='container'>
-            <div className='logo'><img src={Logo} alt='Moneymie logo'/></div>
+            <div className='logo'><img src={Logo} alt='Moneymie logo'/>
+            <h2>
+                <a href="https://moneymie.link/usdcpay" target="_blank">Get Moneymie for Business <FontAwesomeIcon icon="check-square" /> </a>
+            </h2>
+            </div>
 
             <div className='content'>
                 <div>
                     <div className='title'>
-                        Borderless banking
+                    Digital Bank for migrants and global citizens
                     </div>
 
                     <div className='description'>
@@ -131,7 +136,7 @@ export const LandingPage = () => {
                     </div>
                 </div>
                 <div className='mobile-app'>
-                    <img src={MobileApp} alt='Moneymie Mobile App'/>
+                    <img src={MobileApp} alt='Moneymie Mobile App' className="imgapp"/>
                 </div>
             </div>
         </div>
