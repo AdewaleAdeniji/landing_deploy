@@ -12,9 +12,29 @@ export default class FxRate extends Component {
         this.state = {
             buy:0,
             sell:0,
+            datetoday:''
         }
     }
     componentDidMount(){
+        var d = new Date();
+        var month = new Array();
+        month[0] = "January";
+        month[1] = "February";
+        month[2] = "March";
+        month[3] = "April";
+        month[4] = "May";
+        month[5] = "June";
+        month[6] = "July";
+        month[7] = "August";
+        month[8] = "September";
+        month[9] = "October";
+        month[10] = "November";
+        month[11] = "December";
+        let monthname = month[d.getMonth()];
+        let day = d.getDay();
+        let year = d.getFullYear;
+        let datestring = `${monthname} ${day}, ${year}`;
+        this.setState({datetoday:datestring});
         httpGet(`https://staging.moneymie.com/api/v1/wallet/forex`)
         .then(response=> response.json())
         .then((data)=>{
@@ -33,63 +53,53 @@ export default class FxRate extends Component {
     render(){
         return (
         <div className="fullpage">
-           <div className="container">
-            <div className="bglogo">
-                <div className="bg-logo">
-                    <img src={Logo}/>
-                </div>
-            </div>
-               
-               <div className="col-md-10 cardsection">
-                    <div className="datesection">
-                        March 20,2021
-                    </div>
-                    <div className="ratescard">
-                        <div className="col-md-12">
-                            <div className="col-md-10">
-                                <div className="cardrate">
-                                    <img src={USA} width="40px" height="40px"/>
-                                    <div className="cardbody">
-                                        <div className="amount">1.00</div>
-                                        <div className="country">USD</div>
-                                    </div>
-                                </div>
-                                <div className="cardratearrow">
-                                    <i className="fa fa-arrow-right"></i>
-                                </div>
-                                <div className="cardrate">
-                                    <img src={Nigeria} width="40px" height="40px"/>
-                                    <div className="cardbody">
-                                        <div className="amount">{this.state.sell}</div>
-                                        <div className="country">NGN</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-10">
+            <img src={Logo} className="logo"/>
+            <br/>
+            <div className="dates">March 24,2021</div>
+                <div className="col-md-12 cards">
+                    <div className="col-md-6">
                             <div className="cardrate">
-                                    <img src={Nigeria} width="40px" height="40px"/>
-                                    <div className="cardbody">
-                                        <div className="amount">{this.state.buy}</div>
-                                        <div className="country">NGN</div>
-                                    </div>
+                                <img src={USA} width="40px" height="40px"/>
+                                <div className="cardbody">
+                                    <div className="amount">1.00</div>
+                                    <div className="country">USD</div>
                                 </div>
-                                <div className="cardratearrow">
-                                    <i className="fa fa-arrow-right"></i>
-                                </div>
-                                <div className="cardrate">
-                                    <img src={USA} width="40px" height="40px"/>
-                                    <div className="cardbody">
-                                        <div className="amount">1.00</div>
-                                        <div className="country">USD</div>
-                                    </div>
-                                </div>
-                                
-                               
                             </div>
-                        </div>
+                            <div className="cardratearrow">
+                                <i className="fa fa-arrow-right"></i>
+                            </div>
+                            <div className="cardrate">
+                                <img src={Nigeria} width="40px" height="40px"/>
+                                <div className="cardbody">
+                                    <div className="amount">{this.state.sell}</div>
+                                    <div className="country">NGN</div>
+                                </div>
+                            </div>
                     </div>
-               </div>   
-           </div>
+                    <div className="col-md-6">
+                            <div className="cardrate">
+                                <img src={Nigeria} width="40px" height="40px"/>
+                                <div className="cardbody">
+                                    <div className="amount">{this.state.buy}</div>
+                                    <div className="country">NGN</div>
+                                </div>
+                            </div>
+                            <div className="cardratearrow">
+                                <i className="fa fa-arrow-right"></i>
+                            </div>
+                            <div className="cardrate">
+                                <img src={USA} width="40px" height="40px"/>
+                                <div className="cardbody">
+                                    <div className="amount">1.00</div>
+                                    <div className="country">USD</div>
+                                </div>
+                            </div>
+                            
+                            
+                    </div>
+
+                </div>
+            
         </div>
         )
     }
