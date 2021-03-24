@@ -4,7 +4,7 @@ import FxRate from './pages/fx-rate';
 import { BrowserRouter,Route} from 'react-router-dom';
 function App() {
   return (
-     // rendering the router with layout
+     
      <BrowserRouter>
       
         <Route exact path="/" component={LandingPage}/>
