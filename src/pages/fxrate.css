@@ -1,0 +1,135 @@
+.fullpage {
+    background: #2a2569;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    margin: 0 auto; 
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+#root{
+    margin: 0;
+    padding: 0;
+}
+.bg-logo {
+    /* margin: 0 auto; */
+    width: 280px;
+    /* overflow: hidden; */
+    background: #fff;
+    padding: 2vh;
+    text-align: center;
+    /* margin-left: 25%; */
+    border-bottom-right-radius: 2vh;
+    border-bottom-left-radius: 2vh;
+}
+.bglogo {
+    position: fixed;
+    top: 0;
+    padding-left: 27vw;
+}
+.bg-logo img {
+    width: 250px;
+    height: 50px;
+}
+.datesection {
+    font-family: 'DM Sans';
+    font-size: 2em;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+}
+.cardsection {
+    position: fixed;
+    top: 15vh;
+}
+.ratescard {
+    margin-top: 10vh;
+    /* margin: 0 auto; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 15%;
+    width: 100%;
+}
+
+.ratescard .col-md-10 .cardrate {
+    background: #3a3891;
+    width: 150px;
+    padding: 10px;
+    border-radius: 2vh;
+    margin-left: 5vh;
+}
+.ratescard .col-md-10 {
+    display: flex;
+    margin: 5vh;
+}
+.cardrate .amount {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fff;
+    font-family:  'DM SANS';
+}
+
+.cardrate .country {
+    color: #fff;
+    font-size: .8em;
+    font-weight: lighter;
+    FONT-FAMILY: 'DM Sans';
+}
+.ratescard .col-md-12 {
+    display: block;
+}
+
+.ratescard .cardratearrow {
+        /* width: 50px; */
+        /* height: 50px; */
+        font-size: 2em;
+        padding: 5vh;
+        color: #fff;
+}
+
+@media (min-width: 1200px){
+    .bglogo {
+        padding-left:  24vw;
+    }
+}
+
+@media(max-width:1000px){
+    .bglogo {
+        padding-left: 25vw;
+    }
+}
+@media(max-width:500px){
+
+    .bg-logo {
+        width:220px; 
+        height:50px;
+        padding:5px;
+    }
+    .bg-logo img {
+        width:200px;
+        height:40px;   
+    }
+    .bglogo {
+        padding-left:15%;
+    }
+    .ratescard .col-md-10 .cardrate {
+    
+        margin:1vh;
+        height:100px;
+        width:100px;
+    
+    }
+    .cardrate .amount {
+        font-size:1em;
+    }
+    .ratescard {
+      left:-10%;
+    }
+    }
+    

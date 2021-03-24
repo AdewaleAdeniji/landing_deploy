@@ -1,11 +1,16 @@
 import React from 'react';
 import {LandingPage} from './pages/LandingPage';
-
+import FxRate from './pages/fx-rate';
+import { BrowserRouter,Route} from 'react-router-dom';
 function App() {
   return (
-    <div>
-      <LandingPage/>
-    </div>
+     // rendering the router with layout
+     <BrowserRouter>
+      
+        <Route exact path="/" component={LandingPage}/>
+        <Route path="/fx-rate" component={FxRate}/>
+      
+    </BrowserRouter>
   );
 }
 
