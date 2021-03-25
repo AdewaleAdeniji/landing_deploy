@@ -31,8 +31,8 @@ export default class FxRate extends Component {
         month[10] = "November";
         month[11] = "December";
         let monthname = month[d.getMonth()];
-        let day = d.getDay();
-        let year = d.getFullYear;
+        let day = d.getDate();
+        let year = d.getFullYear();
         let datestring = `${monthname} ${day}, ${year}`;
         this.setState({datetoday:datestring});
         httpGet(`https://staging.moneymie.com/api/v1/wallet/forex`)
@@ -55,7 +55,7 @@ export default class FxRate extends Component {
         <div className="fullpage">
             <img src={Logo} className="logo"/>
             <br/>
-            <div className="dates">March 24,2021</div>
+            <div className="dates">{this.state.datetoday}</div>
                 <div className="col-md-12 cards">
                     <div className="col-md-6">
                             <div className="cardrate">
