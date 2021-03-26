@@ -63,7 +63,8 @@ export default class FxRate extends Component {
             showConfirmButton:false,
             allowEscapeKey:false
         })
-       // this.generate();
+        this.sleep(5000);
+        this.generate();
     }
     loadImage(url) {
         return new Promise((resolve, revoke) => {
@@ -77,6 +78,13 @@ export default class FxRate extends Component {
           img.src = url
         })
     }
+    sleep(milliseconds) {
+        const date = Date.now();
+        let currentDate = null;
+        do {
+          currentDate = Date.now();
+        } while (currentDate - date < milliseconds);
+      }
     async generate() {
         let canvas = this.refs.canvas;
         
@@ -84,7 +92,7 @@ export default class FxRate extends Component {
         canvas.width  = 888
         
         let context = canvas.getContext('2d')
-        //var poster = await this.loadImage('money.png');
+        //var poster = await this.loadImage('https://www.moneymie.com/static/media/money.72abcedc.png');
         
         //context.drawImage(poster, 0, 0);
         var img = this.refs.imge;
