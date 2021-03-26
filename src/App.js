@@ -8,7 +8,7 @@ function App() {
      <BrowserRouter>
       
         <Route exact path="/" component={LandingPage}/>
-        <Route path="/fx-rate" component={FxRate}/>
+        <Route path="/fx-rates-pic" component={FxRate}/>
       
     </BrowserRouter>
   );

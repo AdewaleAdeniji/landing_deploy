@@ -1,10 +1,9 @@
 import React, {useState,Component} from 'react';
 import './LandingPage.css';
 import './fxrate.css';
-import Logo from '../assets/images/moneymie-logo.png';
-import USA from '../assets/images/usa.svg';
-import Nigeria from '../assets/images/nigeria.svg';
+import Logo from '../assets/images/money.png';
 import {httpGet} from './httpRequest';
+import Swal from 'sweetalert2';
 
 export default class FxRate extends Component {
     constructor(props){
@@ -14,8 +13,16 @@ export default class FxRate extends Component {
             sell:0,
             datetoday:''
         }
+        this.generate = this.generate.bind(this);
     }
-    componentDidMount(){
+    async componentDidMount(){
+        Swal.fire({
+            text:'Fetching rates',
+            footer:'<i class="fa fa-spinner fa-spin"></i>',
+            allowOutsideClick:false,
+            showConfirmButton:false,
+            allowEscapeKey:false
+        })
         var d = new Date();
         var month = new Array();
         month[0] = "January";
@@ -35,7 +42,7 @@ export default class FxRate extends Component {
         let year = d.getFullYear();
         let datestring = `${monthname} ${day}, ${year}`;
         this.setState({datetoday:datestring});
-        httpGet(`https://staging.moneymie.com/api/v1/wallet/forex`)
+        await httpGet(`https://apis.moneymie.com/api/v1/wallet/forex`)
         .then(response=> response.json())
         .then((data)=>{
             if(data.status){
@@ -49,57 +56,66 @@ export default class FxRate extends Component {
         .catch((err)=>{
             window.location.reload();
         })
+        Swal.fire({
+            text:'Constructing Image',
+            footer:'<i class="fa fa-spinner fa-spin"></i>',
+            allowOutsideClick:false,
+            showConfirmButton:false,
+            allowEscapeKey:false
+        })
+        this.generate();
     }
+    loadImage(url) {
+        return new Promise((resolve, revoke) => {
+          let img = new Image()
+          
+          img.onload = () => {
+            resolve(img)
+          }
+          
+          img.crossOrigin = 'Anonymous'
+          img.src = url
+        })
+    }
+    async generate() {
+        let canvas = document.createElement('canvas')
+        
+        canvas.height = 1000
+        canvas.width  = 888
+        
+        let context = canvas.getContext('2d')
+        //var poster = await this.loadImage('money.png');
+        
+        //context.drawImage(poster, 0, 0);
+        var img = document.getElementById('imge')
+        console.log(img);
+        context.drawImage(img, 0, 0, img.width,    img.height,     // source rectangle
+                     0, 0, canvas.width, canvas.height);
+        context.font = "bold 50px DM Sans"
+        context.textAlign = 'center'
+        context.textBaseline = 'top'
+        context.fillStyle = "#fff";
+        context.fillText('1.0', 245, 450);
+        context.fillText(this.state.buy, 650, 450);
+        context.fillText(this.state.sell, 245, 700);
+        context.fillText('1.0', 650, 700);
+        context.fillText(this.state.datetoday, 444, 200);
+        document.getElementById('img').src = canvas.toDataURL('image/jpeg');
+        canvas.toBlob(blob => {
+          let data = window.URL.createObjectURL(blob)
+          let link = document.createElement('a')
+          link.href = data
+          link.download ='rates-'+this.state.datetoday+'.jpg'
+          link.click()
+          }, 'image/jpeg')
+          Swal.close();
+      }
+      
     render(){
         return (
         <div className="fullpage">
-            <img src={Logo} className="logo"/>
-            <br/>
-            <div className="dates">{this.state.datetoday}</div>
-                <div className="col-md-12 cards">
-                    <div className="col-md-6">
-                            <div className="cardrate">
-                                <img src={USA} width="40px" height="40px"/>
-                                <div className="cardbody">
-                                    <div className="amount">1.00</div>
-                                    <div className="country">USD</div>
-                                </div>
-                            </div>
-                            <div className="cardratearrow">
-                                <i className="fa fa-arrow-right"></i>
-                            </div>
-                            <div className="cardrate">
-                                <img src={Nigeria} width="40px" height="40px"/>
-                                <div className="cardbody">
-                                    <div className="amount">{this.state.sell}</div>
-                                    <div className="country">NGN</div>
-                                </div>
-                            </div>
-                    </div>
-                    <div className="col-md-6">
-                            <div className="cardrate">
-                                <img src={Nigeria} width="40px" height="40px"/>
-                                <div className="cardbody">
-                                    <div className="amount">{this.state.buy}</div>
-                                    <div className="country">NGN</div>
-                                </div>
-                            </div>
-                            <div className="cardratearrow">
-                                <i className="fa fa-arrow-right"></i>
-                            </div>
-                            <div className="cardrate">
-                                <img src={USA} width="40px" height="40px"/>
-                                <div className="cardbody">
-                                    <div className="amount">1.00</div>
-                                    <div className="country">USD</div>
-                                </div>
-                            </div>
-                            
-                            
-                    </div>
-
-                </div>
-            
+            <img src={Logo} className="img" id="img"/>
+            <img src={Logo} className="d-none" id="imge"/>
         </div>
         )
     }

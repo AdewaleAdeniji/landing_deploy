@@ -144,6 +144,9 @@ body {
     }
 }
 @media(max-width:500px){
+    img#img {
+        height: 75vh;
+    }
     .col-md-12.cards {
         display: block !important;
     }
