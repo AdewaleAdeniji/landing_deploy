@@ -63,7 +63,7 @@ export default class FxRate extends Component {
             showConfirmButton:false,
             allowEscapeKey:false
         })
-        this.generate();
+       // this.generate();
     }
     loadImage(url) {
         return new Promise((resolve, revoke) => {
