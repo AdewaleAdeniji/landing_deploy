@@ -70,7 +70,7 @@ export default class FxRate extends Component {
     }
     componentDidUpdate(){
         if(this.state.loaded){
-            console.log('called');
+            
             Swal.close();
             this.generate();
         }
@@ -95,10 +95,10 @@ export default class FxRate extends Component {
         } while (currentDate - date < milliseconds);
       }
     async generate() {
-        console.log('c1');
+        
         //this.sleep(10000);
         if(this.state.loaded&&!this.state.generated){
-            console.log(this.state.loaded,this.state.generated);
+            
             this.setState({generated:true});
             let canvas = document.createElement('canvas')
         
@@ -110,7 +110,7 @@ export default class FxRate extends Component {
         
         //context.drawImage(poster, 0, 0);
         var img = this.refs.imge;
-        console.log(img);
+        
         context.drawImage(img, 0, 0, img.width,    img.height,     // source rectangle
                      0, 0, canvas.width, canvas.height);
         context.font = "bold 50px DM Sans"
@@ -132,9 +132,7 @@ export default class FxRate extends Component {
           }, 'image/jpeg')
           
         }
-        else {
-            console.log('waiting');
-        }
+        
       }
       
     render(){
