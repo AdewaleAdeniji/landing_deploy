@@ -78,7 +78,7 @@ export default class FxRate extends Component {
         })
     }
     async generate() {
-        let canvas = document.createElement('canvas')
+        let canvas = this.refs.canvas;
         
         canvas.height = 1000
         canvas.width  = 888
@@ -87,7 +87,7 @@ export default class FxRate extends Component {
         //var poster = await this.loadImage('money.png');
         
         //context.drawImage(poster, 0, 0);
-        var img = document.getElementById('imge')
+        var img = this.refs.imge;
         console.log(img);
         context.drawImage(img, 0, 0, img.width,    img.height,     // source rectangle
                      0, 0, canvas.width, canvas.height);
@@ -100,7 +100,7 @@ export default class FxRate extends Component {
         context.fillText(this.state.sell, 245, 700);
         context.fillText('1.0', 650, 700);
         context.fillText(this.state.datetoday, 444, 200);
-        document.getElementById('img').src = canvas.toDataURL('image/jpeg');
+        this.refs.img.src = canvas.toDataURL('image/jpeg');
         canvas.toBlob(blob => {
           let data = window.URL.createObjectURL(blob)
           let link = document.createElement('a')
@@ -113,9 +113,12 @@ export default class FxRate extends Component {
       
     render(){
         return (
+        <div>
         <div className="fullpage">
-            <img src={Logo} className="img" id="img"/>
-            <img src={Logo} className="d-none" id="imge"/>
+            <img src={Logo} className="img" id="img" ref="img"/>
+            <img src={Logo} className="d-none" id="imge" ref="imge"/>
+        </div>
+        <canvas ref="canvas" className="d-none"></canvas>
         </div>
         )
     }
