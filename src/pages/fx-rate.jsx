@@ -13,7 +13,8 @@ export default class FxRate extends Component {
             sell:0,
             datetoday:'',
             loaded:false,
-            generated:false
+            generated:false,
+            rates:false
         }
         this.generate = this.generate.bind(this);
     }
@@ -48,8 +49,8 @@ export default class FxRate extends Component {
         .then(response=> response.json())
         .then((data)=>{
             if(data.status){
-                this.setState({buy:data.data.buy});
-                this.setState({sell:data.data.sell});
+                
+                this.setState({buy:data.data.buy,sell:data.data.sell,rates:true});
             }
             else {
                 throw "error";
@@ -69,7 +70,7 @@ export default class FxRate extends Component {
         //this.generate();
     }
     componentDidUpdate(){
-        if(this.state.loaded){
+        if(this.state.loaded&&this.state.rates){
             
             Swal.close();
             this.generate();
@@ -97,7 +98,7 @@ export default class FxRate extends Component {
     async generate() {
         
         //this.sleep(10000);
-        if(this.state.loaded&&!this.state.generated){
+        if(this.state.loaded&&!this.state.generated&&this.state.rates){
             
             this.setState({generated:true});
             let canvas = document.createElement('canvas')
@@ -118,6 +119,7 @@ export default class FxRate extends Component {
         context.textBaseline = 'top'
         context.fillStyle = "#fff";
         context.fillText('1.0', 245, 450);
+        console.log(this.state.buy);
         context.fillText(this.state.buy, 650, 450);
         context.fillText(this.state.sell, 245, 700);
         context.fillText('1.0', 650, 700);
