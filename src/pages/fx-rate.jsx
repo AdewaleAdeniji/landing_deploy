@@ -11,7 +11,9 @@ export default class FxRate extends Component {
         this.state = {
             buy:0,
             sell:0,
-            datetoday:''
+            datetoday:'',
+            loaded:false,
+            generated:false
         }
         this.generate = this.generate.bind(this);
     }
@@ -56,15 +58,22 @@ export default class FxRate extends Component {
         .catch((err)=>{
             window.location.reload();
         })
-        Swal.fire({
-            text:'Constructing Image',
-            footer:'<i class="fa fa-spinner fa-spin"></i>',
-            allowOutsideClick:false,
-            showConfirmButton:false,
-            allowEscapeKey:false
-        })
-        this.sleep(5000);
-        this.generate();
+        // Swal.fire({
+        //     text:'Constructing Image',
+        //     footer:'<i class="fa fa-spinner fa-spin"></i>',
+        //     allowOutsideClick:false,
+        //     showConfirmButton:false,
+        //     allowEscapeKey:false
+        // })
+        
+        //this.generate();
+    }
+    componentDidUpdate(){
+        if(this.state.loaded){
+            console.log('called');
+            Swal.close();
+            this.generate();
+        }
     }
     loadImage(url) {
         return new Promise((resolve, revoke) => {
@@ -86,7 +95,12 @@ export default class FxRate extends Component {
         } while (currentDate - date < milliseconds);
       }
     async generate() {
-        let canvas = this.refs.canvas;
+        console.log('c1');
+        //this.sleep(10000);
+        if(this.state.loaded&&!this.state.generated){
+            console.log(this.state.loaded,this.state.generated);
+            this.setState({generated:true});
+            let canvas = document.createElement('canvas')
         
         canvas.height = 1000
         canvas.width  = 888
@@ -116,7 +130,11 @@ export default class FxRate extends Component {
           link.download ='rates-'+this.state.datetoday+'.jpg'
           link.click()
           }, 'image/jpeg')
-          Swal.close();
+          
+        }
+        else {
+            console.log('waiting');
+        }
       }
       
     render(){
@@ -124,7 +142,7 @@ export default class FxRate extends Component {
         <div>
         <div className="fullpage">
             <img src={Logo} className="img" id="img" ref="img"/>
-            <img src={Logo} className="d-none" id="imge" ref="imge"/>
+            <img src={Logo} className="d-none" id="imge" ref="imge" onLoad={() => this.setState({loaded: true})}/>
         </div>
         <canvas ref="canvas" className="d-none"></canvas>
         </div>
