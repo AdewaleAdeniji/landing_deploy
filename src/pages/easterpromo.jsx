@@ -115,7 +115,7 @@ export default class EasterPromo extends Component {
                                 2 
                             </div>
                             <div className="cardstext">
-                            Exchange any amount above $10 to Naira 
+                            Exchange any amount above $12 to Naira 
                             </div>
                         </div>
                         <div className="how-cards">
@@ -132,7 +132,7 @@ export default class EasterPromo extends Component {
                                 4
                             </div>
                             <div className="cardstext">
-                            We’ll top up your first transfer with N2,000
+                                We’ll top up your first transfer with N2,000
                             </div>
                         </div>
                     </div>
@@ -163,7 +163,7 @@ export default class EasterPromo extends Component {
                                 3 
                             </div>
                             <div className="cardstext">
-                            They send money to your bank account
+                            They send at least NGN5,000 to your bank account
 
                             </div>
                         </div>
@@ -172,7 +172,7 @@ export default class EasterPromo extends Component {
                                 4
                             </div>
                             <div className="cardstext">
-                            The first person you send money to gets extra N2,000
+                            You get extra NGN2000 if they send money to you first
                             </div>
                         </div>
                     </div>
@@ -227,7 +227,7 @@ export default class EasterPromo extends Component {
                                     }</i>
                             </div>
                             <div className={this.state.faqthree  ? 'faqtext' : 'hidden'}>
-                            To unlock this offer, exchange any amount from $10 and send a minimum of N5000 to your preferred beneficiary
+                            To unlock this offer, exchange any amount from $12 and send a minimum of N5000 to your preferred beneficiary
                             </div>
                         </div>
                         
