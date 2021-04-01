@@ -242,7 +242,7 @@ export default class EasterPromo extends Component {
                             <a href="https://wa.me/?text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here: https://bit.ly/easter2k-03" target="_blank" rel="noopener noreferrer">
                                <img src={Whatsapp} width="50" height="50"/>
                             </a>
-                            <a href="https://twitter.com/intent/tweet?text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here: https://bit.ly/easter2k-02&url=https://bit.ly/easter2k-02" target="_blank" rel="noopener noreferrer">
+                            <a href="https://twitter.com/intent/tweet?text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here:&url=https://bit.ly/easter2k-02" target="_blank" rel="noopener noreferrer">
                                 
                                 <img src={Twitter} width="50" height="50"/>
                             </a>
