@@ -243,11 +243,17 @@ export default class EasterPromo extends Component {
                                <img src={Whatsapp} width="50" height="50"/>
                             </a>
                             <a href="https://twitter.com/intent/tweet?text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here:https://moneymie.com/easter2k&url=https://moneymie.com/easter2k">
+                                
+                                <img src={Twitter} width="50" height="50"/>
+                            </a>
+                            <a href='https://www.facebook.com/sharer/sharer.php?u=https://moneymie.com/easter2k'>
                                 <img src={Facebook} width="50" height="50"/>
                             </a>
-                            <img src={Twitter} width="50" height="50"/>
-                            <img src={Instagram} width="50" height="50"/>
-                            <img src={Telegram} width="50" height="50"/>
+                            
+                            {/* <img src={Instagram} width="50" height="50"/> */}
+                            <a href="https://t.me/share/url?url=https://moneymie.com/easter2k&text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here:https://moneymie.com/easter2k">
+                                <img src={Telegram} width="50" height="50"/>
+                            </a>
                         </div>
                     </div>
                 </div>
