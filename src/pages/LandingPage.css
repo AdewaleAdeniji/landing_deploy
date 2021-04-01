@@ -195,6 +195,7 @@
 
 .logo h2 {
     float: right;
+    margin-right: 1vw;
 }
 .logo h2 a {
     text-decoration: underline;
@@ -222,6 +223,7 @@
 {
 .logo h2 {
   float:none !important;
+  margin: 0;
 }
 .imgapp {
     

@@ -73,13 +73,13 @@ export default class EasterPromo extends Component {
                     </div>
                 </div>
                 <div  className={this.state.location  ? 'introtext' : 'hidden'}>
-                    Send money to a special person, we’ll topup them with N2,000 extra. 
+                    Send money to a special person, we’ll topup their account with N2,000 extra. 
                     <div className="introdesc">
                         <div className="col-md-10 flex">
-                        <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'>
+                        <a href='https://bit.ly/3maO51V'>
                             <img src={Android}/>
                         </a>
-                            <a href='https://apps.apple.com/us/app/moneymie/id1538278032'>
+                            <a href='https://apple.co/2PgwkCD'>
                                 <img src={Ios}/>
                             </a>
                            
@@ -239,19 +239,19 @@ export default class EasterPromo extends Component {
                             Share link to <i className="closebtn fa fa-close" onClick={this.toggleModal}></i>
                         </div>
                         <div className="icons">
-                            <a href="https://wa.me/?text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here:https://moneymie.com/easter2k" target="_blank">
+                            <a href="https://wa.me/?text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here: https://bit.ly/easter2k-03" target="_blank" rel="noopener noreferrer">
                                <img src={Whatsapp} width="50" height="50"/>
                             </a>
-                            <a href="https://twitter.com/intent/tweet?text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here:https://moneymie.com/easter2k&url=https://moneymie.com/easter2k" target="_blank">
+                            <a href="https://twitter.com/intent/tweet?text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here: https://bit.ly/easter2k-02&url=https://bit.ly/easter2k-02" target="_blank" rel="noopener noreferrer">
                                 
                                 <img src={Twitter} width="50" height="50"/>
                             </a>
-                            <a href='https://www.facebook.com/sharer/sharer.php?u=https://moneymie.com/easter2k' target="_blank">
+                            <a href='https://www.facebook.com/sharer/sharer.php?u=http://bit.ly/easter2k-01' target="_blank" rel="noopener noreferrer">
                                 <img src={Facebook} width="50" height="50"/>
                             </a>
                             
                             {/* <img src={Instagram} width="50" height="50"/> */}
-                            <a href="https://t.me/share/url?url=https://moneymie.com/easter2k&text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here:https://moneymie.com/easter2k" target="_blank">
+                            <a href="https://t.me/share/url?url=http://bit.ly/easter2k-04&text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here: http://bit.ly/easter2k-04" target="_blank" rel="noopener noreferrer">
                                 <img src={Telegram} width="50" height="50"/>
                             </a>
                         </div>

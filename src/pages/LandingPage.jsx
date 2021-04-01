@@ -11,6 +11,7 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
     'input': {
@@ -105,6 +106,9 @@ export const LandingPage = () => {
             <h2>
                 <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">Get Moneymie for Business  <i class="fa fa-angle-double-right"></i> </a>
             </h2>
+            <h2>
+                <Link to="/easter2k">#Easter2k Promo </Link>
+            </h2>
             </div>
 
             <div className='content'>
@@ -138,9 +142,11 @@ export const LandingPage = () => {
                 </div>
                 <div className='mobile-app'>
                     <img src={MobileApp} alt='Moneymie Mobile App' className="imgapp"/>
+                    
                 </div>
             </div>
         </div>
+        
         <div className='footer'>
             <div></div>
             <div className='bg1'></div>
