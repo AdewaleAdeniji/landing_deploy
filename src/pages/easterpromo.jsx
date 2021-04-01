@@ -115,7 +115,7 @@ export default class EasterPromo extends Component {
                                 2 
                             </div>
                             <div className="cardstext">
-                            Exchange any amount above $12 to Naira 
+                            Exchange any amount to naira
                             </div>
                         </div>
                         <div className="how-cards">
@@ -123,7 +123,7 @@ export default class EasterPromo extends Component {
                                 3 
                             </div>
                             <div className="cardstext">
-                            Transfer to a Naira account- Your remark must include the word "Easter"
+                            Transfer to naira account
 
                             </div>
                         </div>
@@ -132,7 +132,7 @@ export default class EasterPromo extends Component {
                                 4
                             </div>
                             <div className="cardstext">
-                                We’ll top up your first transfer with N2,000
+                            We'll top up the recipient of your first transfer with NGN2,000
                             </div>
                         </div>
                     </div>
@@ -163,7 +163,7 @@ export default class EasterPromo extends Component {
                                 3 
                             </div>
                             <div className="cardstext">
-                            They send at least NGN5,000 to your bank account
+                             They will send money to your bank account
 
                             </div>
                         </div>
@@ -215,22 +215,10 @@ export default class EasterPromo extends Component {
                                     }</i>
                             </div>
                             <div className={this.state.faqfour  ? 'faqtext' : 'hidden'}>
-                            Moneymie is a digital bank for African migrants. We make it easy for you to spend money in Nigeria from the US. At ZERO fees, you can:
-                            Get instant USD and NGN wallets, Exchange USD to NGN, Exchange NGN to USD, Send money to Nigeria, Receive money from Nigeria.
+                            Submit your ID and selfie. To send more you'll need to submit SSN.
                             </div>
                         </div>
-                        <div className="faq">
-                            <div className="faqtitle" onClick={() => this.handleToggle(3)}>
-                            What are the terms and conditions?
-                                <i>{
-                                        this.state.faqthree  ? '-' : '+'
-                                    }</i>
-                            </div>
-                            <div className={this.state.faqthree  ? 'faqtext' : 'hidden'}>
-                            To unlock this offer, exchange any amount from $12 and send a minimum of N5000 to your preferred beneficiary
-                            </div>
-                        </div>
-                        
+                         
                     </div>
                 </div>
                 <div className={this.state.showmodal  ? 'sharemodal showmodal' : 'sharemodal hidemodal'}>
