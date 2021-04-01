@@ -1,0 +1,518 @@
+.navbar {
+    background: #31246B;
+}
+.navbar .navbar-brand {
+    margin-left: 8vw;
+}
+.moneymieintro {
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/images/bg.png');
+    background-size: contain;
+    justify-content: center;
+    display: grid;
+}
+.col-md-10.flex {
+    display: flex;
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+}
+.col-md-10.flex img {
+    margin-left:2vw;
+    height:70px;
+}
+.moneymieintro .introtext {
+    color: #41DC6D;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    width: 70vw;
+    line-height: 72px;
+    /* or 120% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+    margin-top: -20vh;
+    
+}
+.navbar .alinks a {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+
+    text-align: center;
+
+    /* Money White */
+
+    color: #FFFFFF;
+
+    
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 40px;
+    transition: .6s;
+}
+.navbar .alinks a:hover {
+    color: #41DC6D;
+    font-style: none;
+    text-decoration: none;
+}
+.how-it-works {
+    background: #FFFFFF;
+    border-radius: 50px;
+    width: 90%;
+    height: fit-content;
+    margin-bottom: 2vh;
+    
+    /* border: 1px solid #000; */
+    /* display: flex; */
+    /* position: absolute; */
+    left: 5%;
+    /* top: -20%; */
+    margin-top: -20vh;
+    text-align: center;
+    margin-left: 5%;
+    padding: 2vh;
+}
+.allbody {
+    background: #F8F9FE !important;
+    padding-bottom: 10vh;
+}
+.hheader {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height, or 122% */
+    padding-top: 3vh;
+    text-align: center;
+    letter-spacing: -0.02em;
+    
+    /* Money Purple/Purple 600 */
+
+    color: #3A3391;
+}
+
+.card-center {
+    display: flex;
+    padding: 2vh;
+}
+.how-cards {
+    margin:1vh;
+    justify-content: center;
+    text-align: center ;
+    
+}
+.how-cards .num {
+    width: 52px;
+    height: 52px;
+    left: 76.5px;
+    top: 0px;
+    display: flex;
+    /* Money Green/Green 100 */
+    
+    background: #EEFCF2;
+    border-radius: 32px;
+    text-align: center;
+    /* Inside Auto Layout */
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+    margin-left: 40%;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+
+    /* Money Green/Green 500 */
+
+    color: #22B94C;
+}
+.how-cards .cardstext {
+    
+    /* Title 1 */
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 137% */
+
+    text-align: center;
+
+    /* Money Grey/Grey 600 */
+
+    color: #6B6F7D;
+
+    /* width: 100%; */
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+.hidden {
+    display: none;
+}
+.faqs {
+    /* position: absolute; */
+    background: #f8f9fe;
+    border: none;
+    width: 50vw;
+    justify-content: center;
+    text-align: center;
+    margin-left: 25vw;
+    margin-top: 10vh;
+}
+.faqs .headertext {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height, or 122% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    /* Money Purple/Purple 600 */
+
+    color: #3A3391;
+}
+
+.faq {
+    width: 100%;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+.faq .faqtitle {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    text-align: left;
+
+    /* Money Purple/Purple 600 */
+    cursor: pointer;
+    color: #3A3391;
+    transition: .5s;
+}
+.faqtitle:hover {
+    color: #2318c7;
+}
+.faq .faqtitle i {
+    float: right;   
+    font-weight: lighter;
+    font-size: 30px;
+    color: #9B9EA9;
+    font-style: normal;
+    cursor: pointer;
+}
+.faq .faqtitle i:hover {
+    color: #3A3391;
+}
+.faq .faqtext {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 137% */
+    margin-top: 2vh;
+    animation-name: faqtext;
+    animation-duration: .6s;
+    animation-iteration-count: 1;
+    /* Money Grey/Grey 600 */
+    text-align: left;
+    color: #6B6F7D;
+}
+.faq .hidden {
+    display: none;
+}
+.btn-share {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+
+    text-align: center;
+
+    /* Money Green/Green 700 */
+    background: #FFFFFF;
+    border-radius: 8px;
+    color: #167932;
+    height: 60px;
+    padding: 2vh;
+    transition: .6s;
+    border: none;
+}
+.btn-share:hover {
+    color: #FFFFFF;
+    background:#167932;
+}
+.sharemodal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: faqtext;
+    animation-duration: .6s;
+    animation-iteration-count: 1;
+}
+
+.sharecontent {
+    background: #ffffff;
+    width: 40%;
+    text-align: center;
+    padding: 5vh;
+    border-radius: 3vh;
+    box-shadow: 0px 0px 5px 0px #31246b !important;
+    
+}
+
+.sharetext {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+/* identical to box height, or 125% */
+    text-align: center;
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+    margin: 5vh;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons img {
+    cursor: pointer;
+    margin: 1vw;
+}
+
+i.closebtn.fa.fa-close {
+    float: right;
+    /* position: relative; */
+    margin-top: -9vh;
+    margin-right: -4vw;
+    font-size: 30px;
+    font-weight: lighter;
+    color: grey;
+    cursor: pointer;
+}
+.taboptions {
+    border-radius: 8px;
+    display: flex;
+    /* width: 200px; */
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.showmodal {
+    display: flex;
+}
+.hidemodal {
+    display: none;
+}
+.tabs {
+    display: flex;
+    border: 0.5px solid #FFFFFF;
+    border-radius: 8px;
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+}
+.tabs .options {
+    font-family: DM Sans;
+    padding: 1.5vh;
+    width: 100%;
+    font-style: normal;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    text-align: center;
+
+    /* Money White */
+
+    color: #FFFFFF;
+    
+    /* border-radius: 8px 0px 0px 8px; */
+    transition: .6s;
+}
+.tabs .options:hover {
+    background: #974BFD;
+}
+.tabright {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.tableft {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.tabs  .chosen {
+    background: #974BFD;
+    /* Money White */
+
+    border-right: 0.5px solid #FFFFFF;
+
+
+}
+@keyframes faqtext {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media(min-width:1200px){
+    .moneymieintro .introtext {
+        width: 65vw;
+    }
+    .how-it-works {
+        margin-left: 10%;
+        width: 80%;
+    }
+    
+}
+@media(min-width:500px){
+    .how-it-works {
+        height: 270px;
+    }
+}
+/* Mobile View */
+@media(max-width:500px){
+    .moneymieintro { 
+        height: 60vh;
+    }
+    .navbar .navbar-brand {
+        margin-left: 0;
+    }
+    .navbar .alinks {
+        display: none;
+    }
+    .faqs {
+        width: 90vw  !important;
+        margin-left:5vw  !important;
+    }
+    .faqs .headertext {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+        color: #3A3391;
+        
+    }
+    
+    .moneymieintro .introtext{
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #41DC6D;
+        width:90vw;
+        margin-top: -10vh;
+    }
+    .col-md-10.flex img {
+        margin-left:2vw;
+        height:50px;
+    }
+    .col-md-10.flex {
+        margin-left: 0;
+        margin-top: 5vh;
+    }
+    .how-it-works {
+        display: block;
+        margin-top: -10vh;
+    }
+    .how-it-works .how-cards {
+        margin-bottom: 5vh;
+    }
+    .hheader {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        /* identical to box height, or 125% */
+
+        text-align: center;
+
+        /* Money Purple/Purple 600 */
+
+        color: #3A3391;
+    }
+    .card-center {
+        display: block;
+    }
+    .faq .faqtext {
+        text-align: left;
+    }
+    .sharecontent {
+        width: 90%;
+    }
+    .sharetext {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height, or 137% */
+
+        text-align: center;
+
+        /* Money Purple/Purple 600 */
+
+        color: #3A3391;
+    }
+    i.closebtn.fa.fa-close {
+        margin-right: -15vw;
+    }
+    .tabs  { 
+        width: 90%;
+    }
+}
