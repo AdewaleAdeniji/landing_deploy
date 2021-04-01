@@ -239,19 +239,19 @@ export default class EasterPromo extends Component {
                             Share link to <i className="closebtn fa fa-close" onClick={this.toggleModal}></i>
                         </div>
                         <div className="icons">
-                            <a href="https://wa.me/?text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here:https://moneymie.com/easter2k">
+                            <a href="https://wa.me/?text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here:https://moneymie.com/easter2k" target="_blank">
                                <img src={Whatsapp} width="50" height="50"/>
                             </a>
-                            <a href="https://twitter.com/intent/tweet?text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here:https://moneymie.com/easter2k&url=https://moneymie.com/easter2k">
+                            <a href="https://twitter.com/intent/tweet?text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here:https://moneymie.com/easter2k&url=https://moneymie.com/easter2k" target="_blank">
                                 
                                 <img src={Twitter} width="50" height="50"/>
                             </a>
-                            <a href='https://www.facebook.com/sharer/sharer.php?u=https://moneymie.com/easter2k'>
+                            <a href='https://www.facebook.com/sharer/sharer.php?u=https://moneymie.com/easter2k' target="_blank">
                                 <img src={Facebook} width="50" height="50"/>
                             </a>
                             
                             {/* <img src={Instagram} width="50" height="50"/> */}
-                            <a href="https://t.me/share/url?url=https://moneymie.com/easter2k&text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here:https://moneymie.com/easter2k">
+                            <a href="https://t.me/share/url?url=https://moneymie.com/easter2k&text=Please send me money this Easter through Moneymie so I can get N2,000 extra. See details here:https://moneymie.com/easter2k" target="_blank">
                                 <img src={Telegram} width="50" height="50"/>
                             </a>
                         </div>
