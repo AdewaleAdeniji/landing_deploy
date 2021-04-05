@@ -12,7 +12,7 @@ function App() {
         <Route exact path="/" component={LandingPage}/>
         <Route path="/fx-rates-pic" component={FxRate}/>
         <Route path="/easter2k" component={EasterPromo} />
-        <Route component={LandingPage} />
+        <Route component={EasterPromo} />
         </Switch>
     </BrowserRouter>
   );
