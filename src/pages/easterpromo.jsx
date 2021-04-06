@@ -55,9 +55,9 @@ export default class EasterPromo extends Component {
         return (
             <div className="allbody">
                 
-                <nav class="navbar">
+                <nav class="navbar sticky-top">
                     <Link class="navbar-brand" to="/">
-                        <img src={Logo} alt="MoneyMie Logo"/>
+                        <img src={Logo} alt="Moneymie Logo"/>
                     </Link>
                     <div className="alinks">
                     <a href="#how-it-works">How it works</a>
@@ -185,7 +185,7 @@ export default class EasterPromo extends Component {
                     <div className="faqcontent">
                         <div className="faq">
                             <div className="faqtitle" onClick={() => this.handleToggle(1)}>
-                                What is MoneyMie?
+                                What is Moneymie?
                                 <i>{
                                         this.state.faqone  ? '-' : '+'
                                     }</i>

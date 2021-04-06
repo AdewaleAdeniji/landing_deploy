@@ -1,5 +1,6 @@
 .navbar {
     background: #31246B;
+    height: 60px;
 }
 .navbar .navbar-brand {
     margin-left: 8vw;
