@@ -118,7 +118,7 @@ export const LandingPage = () => {
                     </div>
 
                     <div className='description'>
-                        Moneymie offers a multi-currency account with USD$ and ₦. Now you can exchange between both, send and recieve money easily.
+                        Moneymie offers a multi-currency account with USD and NGN. Now you can exchange between both, send and recieve money easily.
                         And no fees.
                     </div>
 
