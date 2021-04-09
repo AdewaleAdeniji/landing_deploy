@@ -10,7 +10,7 @@ function App() {
      <BrowserRouter>
       <Switch>
         <Route exact path="/" component={LandingPage}/>
-        <Route path="/fx-rates-pic" component={FxRate}/>
+        <Route path="/fxrates" component={FxRate}/>
         <Route path="/easter2k" component={EasterPromo} />
         <Route component={EasterPromo} />
         </Switch>
