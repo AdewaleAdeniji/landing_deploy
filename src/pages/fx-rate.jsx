@@ -58,7 +58,7 @@ export default class FxRate extends Component {
         })
         .catch((err)=>{
             window.location.reload();
-        })
+        })  
         // Swal.fire({
         //     text:'Constructing Image',
         //     footer:'<i class="fa fa-spinner fa-spin"></i>',

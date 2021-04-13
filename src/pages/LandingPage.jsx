@@ -114,12 +114,12 @@ export const LandingPage = () => {
             <div className='content'>
                 <div>
                     <div className='title'>
-                    Digital Bank for migrants and global citizens
+                    Digital Bank for African Migrants 
                     </div>
 
                     <div className='description'>
-                        Moneymie offers a multi-currency account with USD and NGN. Now you can exchange between both, send and recieve money easily.
-                        And no fees.
+                    Seamless banking across borders.
+                    Instant NGN and USD wallets so you can bank in both worlds for FREE.
                     </div>
 
                     <div className='launching'>
