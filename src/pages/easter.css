@@ -16,6 +16,207 @@
     display: grid;
     background-color: rgba(0,0,0,0.25);
 }
+.moneymieintro.store {
+    background: #31246B;
+    height: 50vh;
+}
+.store .navbar-brand {
+    margin-left: 0;
+}
+.moneymieintro.store .introtext {
+    margin-top: 5vh;
+    /* H1 */
+
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 72px;
+    /* identical to box height, or 120% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #41DC6D;
+}
+.store .hheader {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height, or 122% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    /* Money Purple/Purple 600 */
+
+    color: #3A3391;
+}
+.store .card-center {
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+.store input[type='text'] {
+    width: 30vw;
+    height: 40px;
+    background: #FFFFFF;
+    /* Money Grey/Grey 500 */
+    border: 0.5px solid #9B9EA9;
+    border-radius: 8px;
+     /* Inside Auto Layout */
+    
+    margin: 0px 16px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 10px;
+    /* identical to box height, or 137% */
+
+
+    /* Money Grey/Grey 900 */
+
+    color: #0D152E;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.store .checkbtn:disabled {
+    background: #BAF2CA;
+    border-radius: 8px;
+
+}
+.store .checkbtn{
+    background: #22B94C;
+    border-radius: 8px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+    /* Inside Auto Layout */
+    width: 200px;
+    flex: none;
+    height: 40px;
+    order: 2;
+    flex-grow: 0;
+    border: none;
+    transition: .5s;
+    margin: 0px 10px;
+}
+form {
+    display: flex;
+    align-items: center;
+}
+.how-it-works label {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+
+    /* Money Grey/Grey 900 */
+
+    color: #0D152E;
+
+
+    /* Inside Auto Layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 16px;
+}
+nav.navbar.sticky-top.store {
+    justify-content: center;
+    
+}
+.responses {
+   display: block;
+}
+.responses .namelabel {
+    width: 230px;
+    height: 40px;
+    left: 32px;
+    top: 11px;
+
+    /* P2 */
+    background: #EEFCF2;
+/* Money Green/Green 500 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 11px 32px;
+    border: 0.5px solid #22B94C;
+    border-radius: 8px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+    margin: 20px;
+
+    /* Money Green/Green 700 */
+
+    color: #167932;
+}
+.confirmlabel {
+    height: 40px;
+}
+ .rewardbtn {
+    width: 220px;
+    height: 40px;
+    /* Money Green/Green 500 */
+    background: #22B94C;
+    border-radius: 8px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    
+    line-height: 22px;
+    /* identical to box height, or 137% */
+
+    text-align: center;
+    transition: .5s;
+    margin: 10px;
+    color: #FFFFFF;
+    /* box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5) !important; */
+}
+ .rewardbtn:hover, .checkbtn:hover {
+    background: #31246B;
+}
+.errorlabel {
+    background: #FFFAFA;
+    /* Money Red/Red 500 */
+
+    border: 0.5px solid #F12A2C;
+    border-radius: 8px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #B33639;
+    height: 40px;
+    margin: 10px;
+    padding: 11px 32px;
+}
 .col-md-10.flex {
     display: flex;
     margin-top: 10vh;

@@ -106,9 +106,7 @@ export const LandingPage = () => {
             <h2>
                 <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">Get Moneymie for Business  <i class="fa fa-angle-double-right"></i> </a>
             </h2>
-            <h2>
-                <Link to="/easter2k">#Easter2k Promo </Link>
-            </h2>
+            
             </div>
 
             <div className='content'>
