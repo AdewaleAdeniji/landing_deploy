@@ -12,6 +12,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import {Link} from 'react-router-dom';
+import Email from '../assets/images/footer_email.png';
+import FInstagram from '../assets/images/footer_instagram.png';
+import Twitter from '../assets/images/footer_twitter.png';
+import Facebook from '../assets/images/footer_facebook.png';
 
 const useStyles = makeStyles(theme => ({
     'input': {
@@ -134,6 +138,21 @@ export const LandingPage = () => {
 
 
                     <div className='social-media'>
+                    <div className="row">
+                        <h2>CONTACT US ON</h2>
+                        <a href="mailto:hello@moneymie.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Email}/>
+                        </a>
+                        <a href="https://facebook.com/moneymie/" target="_blank" rel="noopener noreferrer">
+                        `<img src={Facebook}/>
+                        </a>
+                        <a href="https://twitter.com/getMoneymie" target="_blank" rel="noopener noreferrer">
+                            <img src={Twitter}/>
+                        </a>
+                        <a href="https://www.instagram.com/moneymieapp" target="_blank" rel="noopener noreferrer">
+                            <img src={FInstagram}/>
+                        </a>
+                    </div>
                     Moneymie is a financial technology company. Moneymie offers its products and services in partnership with banking software provider Sila and Evolve Bank & Trust (Member FDIC).
 
                     </div>
