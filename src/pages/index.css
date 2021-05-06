@@ -347,4 +347,18 @@ img.bgimg {
         display: block !important;
         height: auto !important;
     }
+    .col-md-12 {
+        display: block !important;
+    }
+    
+    .rates {
+        display: block;
+    }
+    
+    .pagetwo img {
+        width: 100%;
+    }
+    body,html{
+        overflow-x:hidden;
+    }
 }
