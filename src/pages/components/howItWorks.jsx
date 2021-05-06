@@ -6,7 +6,7 @@ export default class HowItWorks extends Component {
     constructor(props){
         super();
         this.state = {
-            openmodal:true
+            openmodal:false
         }
         this.handleToggleModal = this.handleToggleModal.bind(this);
     }
