@@ -27,7 +27,7 @@
 }
 .pagedesc .col-md-12.col-12 {
     display: flex;
-    height: 558px;
+    height: auto;
     /* padding: 12vh; */
 }
 .pagetext {
@@ -457,7 +457,8 @@ img.bgimg {
     }
     img.bgimg {
         position: initial;
-        width: 100vw;
+        width: auto;
+        height: auto;
     }
     
     .col-md-6.col-6.bgapp {

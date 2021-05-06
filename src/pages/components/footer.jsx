@@ -18,8 +18,12 @@ export default class Footer extends Component {
                         Start banking without borders today. 
                         </h1>
                         <div className="appstores">
-                            <img src={PlayStore} alt="Google PlayStore"/>
-                            <img src={AppStore} alt="Ios Playstore"/>
+                            <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'>
+                                <img src={PlayStore} alt="Google PlayStore"/>
+                            </a>
+                            <a href='https://apps.apple.com/us/app/moneymie/id1538278032'>
+                                <img src={AppStore} alt="Ios Playstore"/>
+                            </a>
                         </div>
                         <div className='social-media'>
                     <div className="row">

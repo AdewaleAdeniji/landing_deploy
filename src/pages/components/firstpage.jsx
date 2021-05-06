@@ -22,7 +22,9 @@ export default class Page extends Component {
                         <a href='https://apps.apple.com/us/app/moneymie/id1538278032'>
                             <img src={PlayStore} alt="Google PlayStore"/>
                         </a>
+                        <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'>
                             <img src={AppStore} alt="Ios Playstore"/>
+                        </a>
                         </div>
                     </div>
                     <div className="col-md-6 col-6 bgapp">
