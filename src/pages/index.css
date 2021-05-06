@@ -273,6 +273,7 @@ button.btn-play {
     height: 462px;
     align-items: center;
     justify-content: center;
+    margin-top: 24px;
 }
 footer {
     /* background: url('../assets/images/footerbg2.png'); */
@@ -412,7 +413,7 @@ img.bgimg {
     }
     img.bgimg {
         position: initial;
-        width: 90vw;
+        width: 100vw;
     }
     
     .col-md-6.col-6.bgapp {
@@ -515,6 +516,9 @@ img.videosection {
     width: 80vw;
     height: auto;
 }   
+.videosection {
+    margin-top: 16px;
+}
 footer {
     border-radius: 40px 40px 0px 0px;
 }

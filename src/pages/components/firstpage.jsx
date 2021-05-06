@@ -6,6 +6,7 @@ import BgApp from '../../assets/images/bgmoney.png';
 import DescImage from '../../assets/images/desc.png';
 
 export default class Page extends Component {
+    
     render(){
         return (
             <div className="pagedesc">
@@ -18,7 +19,9 @@ export default class Page extends Component {
                         Open instant Naira and USD wallets. Experience seamless banking in Nigeria from the US. ZERO fees.
                         </h6>
                         <div className="appstores">
+                        <a href='https://apps.apple.com/us/app/moneymie/id1538278032'>
                             <img src={PlayStore} alt="Google PlayStore"/>
+                        </a>
                             <img src={AppStore} alt="Ios Playstore"/>
                         </div>
                     </div>
