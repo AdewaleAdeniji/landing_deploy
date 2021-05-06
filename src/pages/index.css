@@ -411,7 +411,8 @@ img.bgimg {
         margin: 3vh;
     }
     img.bgimg {
-        position: inherit;
+        position: initial;
+        width: 90vw;
     }
     
     .col-md-6.col-6.bgapp {
@@ -422,4 +423,141 @@ img.bgimg {
         max-width: 100% !important;
         padding-top: 48px;
     }
+    
+.ratesection {
+    /* padding: 1vh; */
+    margin-top: 24px;
+    padding:0;
+}
+
+.rates {
+    text-align: center;
+    /* padding: 2vh; */
+}
+
+.rates .rate {
+    margin-bottom: 16px;
+}
+
+
+
+.pagetwo {
+    margin: 1vh;
+}
+
+.pagetwo h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+/* identical to box height, or 125% */
+
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.pagetwo h6 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+/* or 137% */
+
+
+/* Money Grey/Grey 600 */
+    color: #6B6F7D;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.how-itworks h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+/* identical to box height, or 125% */
+    text-align: center;
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.how-itworks {
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+img.videosection {
+    width: 80vw;
+    height: auto;
+}   
+footer {
+    border-radius: 40px 40px 0px 0px;
+}
+
+footer .col-md-6 h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+/* or 125% */
+
+
+/* Money Green/Green 400 */
+    color: #41DC6D;
+}
+
+footer img {
+    width: 125px;
+    height: 46px;
+}
+
+footer .social-media {
+    margin-top: 48px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+/* or 133% */
+
+
+/* Money Purple/Purple 300 */
+    color: #A194DB;
+}
+
+img.footerimg {
+    position: initial;
+}
+footer .col-md-6 {
+    padding-left: 1vh;
+}
+}
+.ratesection h1 {
+    text-transform:uppercase;
 }
