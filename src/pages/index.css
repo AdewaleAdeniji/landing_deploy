@@ -361,4 +361,65 @@ img.bgimg {
     body,html{
         overflow-x:hidden;
     }
+    .pagedesc h1 {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+    /* or 125% */
+    
+    
+    /* Money Green/Green 400 */
+        color: #41DC6D;
+    }
+    
+    
+    
+    .col-md-6.col-6.pagetext {
+        margin: 0;
+        padding: 3vh;
+        padding-top: 72px;
+    }
+    
+    .pagedesc h6 {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+    /* or 137% */
+    
+    
+    /* Money White */
+        color: #FFFFFF;
+    }
+    
+    .pagedesc .appstores img {
+        width:125px;
+        height:46px;
+    }
+    .col-md-6 {
+        width: 100%  !important;
+        max-width: 100% !important;
+    }
+    nav.navbar.sticky-top.landing {
+        display: block !important;
+    }
+    
+    .navlinks {
+        margin: 3vh;
+    }
+    img.bgimg {
+        position: inherit;
+    }
+    
+    .col-md-6.col-6.bgapp {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-top: 48px;
+    }
 }
