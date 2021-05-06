@@ -4,6 +4,7 @@ import FxRate from './pages/fx-rate';
 import { BrowserRouter,Switch,Route} from 'react-router-dom';
 import EasterPromo from './pages/easterpromo';
 import Stores from './pages/stores';
+import Landing from './pages/index';
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
         <Route path="/fxrates" component={FxRate}/>
         <Route path="/easter2k" component={EasterPromo} />
         <Route path="/store" component={Stores} />
+        <Route path="/newlanding" component={Landing}/>
         <Route component={EasterPromo} />
+        
         </Switch>
     </BrowserRouter>
   );

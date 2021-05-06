@@ -1,0 +1,350 @@
+.landing {
+    background: #3A3391;
+}
+.navlinks a {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+/* identical to box height, or 137% */
+    text-align: center;
+
+/* Money White */
+    color: #FFFFFF;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+    transition: .7s;
+}
+.navlinks a:hover {
+    color: aliceblue;
+    
+}
+.pagedesc .col-md-12.col-12 {
+    display: flex;
+    height: 558px;
+    /* padding: 12vh; */
+}
+.pagetext {
+    margin: 10vh;
+}
+.pagedesc {
+    background: #3A3391;
+    overflow: hidden;
+}
+.pagedesc h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 72px;
+/* or 120% */
+    letter-spacing: -0.02em;
+
+/* Money Green/Green 400 */
+    color: #41DC6D;
+}
+
+.pagedesc h6 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 24px;
+/* or 140% */
+
+
+/* Money White */
+    color: #FFFFFF;
+}
+.pagedesc .appstores {
+    display: flex;
+    margin-top: 60px;
+}
+.pagedesc .appstores img {
+    width: 191px;
+    height: 70px;
+    margin-right: 2vh;
+}
+.bgapp {
+    /* background: url('../assets/images/bgmoney.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25vh;
+}
+.ratesection {
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+}
+
+.ratesection h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+/* identical to box height, or 137% */
+    text-align: center;
+
+/* Money Grey/Grey 800 */
+    color: #282F45;
+    margin-bottom: 24px;
+}
+.rates {
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rates .rate {
+    background: #F9FFFA;
+/* Money Green/Green 600 */
+    border: 0.5px dashed #1C9B40;
+    border-radius: 16px;
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    padding: 2vh;
+    flex-grow: 0;
+    margin: 0px 40px;
+    display: flex;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.rates .rate h3 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+/* identical to box height, or 125% */
+    text-align: center;
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+.currency img {
+    height: 32px;
+    width: 32px;
+    margin-right: 1vh;
+}
+
+img.ratearrow {
+    width: 24px;
+    height: 24px;
+}
+
+.rate .currency {
+    margin-right: 48px;
+    margin-left: 48px;
+}
+
+.currencyname {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+/* identical to box height, or 137% */
+
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+}
+.pagetwo .col-md-12 {
+    display: flex;
+}
+
+.pagetwo {
+    margin: 10vh;
+}
+
+.pagetwo h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 72px;
+/* or 120% */
+    letter-spacing: -0.02em;
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.pagetwo h6 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+/* or 140% */
+
+
+/* Money Grey/Grey 600 */
+    color: #6B6F7D;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.pagetwo img {
+    width: 400px;
+}
+
+.pagetwo .col-md-6 {
+    margin-right: 60px;
+}
+.how-itworks h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 72px;
+/* identical to box height, or 120% */
+    letter-spacing: -0.02em;
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+}
+
+.how-itworks {
+    height: 700px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+button.btn-play {
+    background: #22B94C;
+    border-radius: 50%;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    border: none;
+    padding: 0px;
+    font-size: 30px;
+    /* text-align: center; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.videosection {
+    background: url('../assets/images/videoimg.png');
+    cursor: pointer;
+    width: 750px;
+    height: 462px;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    /* background: url('../assets/images/footerbg2.png'); */
+    background-position: 50% 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 120px 120px 0px 0px;
+    /* height: auto; */
+    background:  #150F2E;
+    /* overflow-x: hidden;
+    overflow:hidden; */
+    padding-bottom: 0.8vh;
+    /* padding-top: 2vh; */
+}
+body {
+    overflow-x: hidden;
+}
+footer .col-md-12 {
+    display: flex;
+    justify-content: center;
+}
+footer .col-md-6 {
+    padding-left: 7vh;
+    padding-top: 7vh;
+}
+footer .social-media {
+    margin-top: 0px;
+}
+footer .social-media .row h2 {
+    color: #FFFFFF;
+}
+footer .col-md-6 h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 72px;
+/* or 120% */
+    letter-spacing: -0.02em;
+
+/* Money Green/Green 400 */
+    color: #41DC6D;
+}
+footer .appstores {
+    margin-top: 32px;
+}
+footer img {
+    width: 191px;
+    height: 70px;
+    margin-right: 2vh;
+}
+
+footer .appstores {
+    display: flex;
+}
+img.footerimg {
+    width: auto;
+    height: auto;
+    /* margin-bottom: -16vh; */
+    position: absolute;
+    top: -10vh;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 115%;
+}
+img.bgimg {
+    position: absolute;
+    top: 1vh;
+}
+@media(max-width:600px){
+    .col-md-12.col-12 {
+        display: block !important;
+        height: auto !important;
+    }
+}

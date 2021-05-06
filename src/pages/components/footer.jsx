@@ -1,0 +1,51 @@
+import React,{Component} from 'react';
+import AppStore from '../../assets/images/ios.png';
+import PlayStore from '../../assets/images/android.png';
+import MoneyMieApp from '../../assets/images/moneyapp.png';
+import Email from '../../assets/images/footer_email.png';
+import FInstagram from '../../assets/images/footer_instagram.png';
+import Twitter from '../../assets/images/footer_twitter.png';
+import Facebook from '../../assets/images/footer_facebook.png';
+import FooterImage from '../../assets/images/footerbg.png';
+
+export default class Footer extends Component {
+    render(){
+        return (
+            <footer>
+                <div className="col-md-12">
+                    <div class="col-md-6">
+                        <h1>
+                        Start banking without borders today. 
+                        </h1>
+                        <div className="appstores">
+                            <img src={PlayStore} alt="Google PlayStore"/>
+                            <img src={AppStore} alt="Ios Playstore"/>
+                        </div>
+                        <div className='social-media'>
+                    <div className="row">
+                        <h2>CONTACT US ON</h2>
+                        <a href="mailto:hello@moneymie.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Email}/>
+                        </a>
+                        <a href="https://facebook.com/moneymie/" target="_blank" rel="noopener noreferrer">
+                        `<img src={Facebook}/>
+                        </a>
+                        <a href="https://twitter.com/getMoneymie" target="_blank" rel="noopener noreferrer">
+                            <img src={Twitter}/>
+                        </a>
+                        <a href="https://www.instagram.com/moneymieapp" target="_blank" rel="noopener noreferrer">
+                            <img src={FInstagram}/>
+                        </a>
+                    </div>
+                    Moneymie is a financial technology company. Moneymie offers its products and services in partnership with banking software provider Sila and Evolve Bank & Trust (Member FDIC).
+
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src={FooterImage} className="footerimg"/>
+                    </div>
+                </div>
+            </footer>
+        )
+    }
+}
