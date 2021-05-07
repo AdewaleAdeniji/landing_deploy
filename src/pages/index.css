@@ -465,6 +465,7 @@ img.bgimg {
         position: initial;
         width: auto;
         height: auto;
+        margin-right: 2vh;
     }
     
     .col-md-6.col-6.bgapp {
