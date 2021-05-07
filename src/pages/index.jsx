@@ -7,6 +7,7 @@ import PageTwo from './components/pageTwo';
 import PageThree from './components/pageThree';
 import HowItWorks from './components/howItWorks';
 import Footer from './components/footer';
+import './animate.css';
 
 class Landing extends Component {
 

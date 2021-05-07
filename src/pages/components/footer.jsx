@@ -12,8 +12,8 @@ export default class Footer extends Component {
     render(){
         return (
             <footer>
-                <div className="col-md-12">
-                    <div class="col-md-6">
+                <div className="col-md-12 animated bounce">
+                    <div class="col-md-6 animated fadeInLeft">
                         <h1>
                         Start banking without borders today. 
                         </h1>
@@ -45,7 +45,7 @@ export default class Footer extends Component {
 
                     </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 animated shake">
                         <img src={FooterImage} className="footerimg"/>
                     </div>
                 </div>

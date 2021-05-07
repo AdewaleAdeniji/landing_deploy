@@ -22,7 +22,7 @@ export default class HowItWorks extends Component {
         return ( 
 
             <React.Fragment>
-            <div className="how-itworks">
+            <div className="how-itworks animated bounce">
                 <h1>How Moneymie works</h1>
             <img src={Video} className="videosection" alt="How it works Image Placeholder" title="Watch How It works" onClick={this.handleToggleModal}/>
                 

@@ -613,3 +613,35 @@ footer .col-md-6 {
 .ratesection h1 {
     text-transform:uppercase;
 }
+.fadeInUp {
+    animation-name:fadeInUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    
+}
+
+.fadeInDown {
+    animation-name:fadeInDown;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.fadeInLeft {
+    animation-name:fadeInLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.fadeInRight {
+    animation-name:fadeInRight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.bounce {
+    animation-name:bounce;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.shake {
+    animation-name:shake;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}

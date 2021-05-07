@@ -33,12 +33,12 @@ class Rate extends Component {
     }
     render(){
         return (
-            <div  className={!this.state.rates  ? ' hidden' : 'ratesection'}>
+            <div  className={!this.state.rates  ? ' hidden' : 'ratesection animated fadeInDown'}>
                 <h1>
                     Today's Rate
                 </h1>
                 <div className="rates">
-                    <div className="rate">
+                    <div className="rate animated fadeInLeft">
                         <div className="currency">
                             <h3>$1</h3>
                             <div className="currencyname">
@@ -54,7 +54,7 @@ class Rate extends Component {
                         </div>
                     </div>
                     <div className="rate">
-                        <div className="currency">
+                        <div className="currency animated fadeInRight">
                             <h3>&#8358; {this.state.sell} </h3>
                             <div className="currencyname">
                                 <img src={Nigeria}/> NGN
