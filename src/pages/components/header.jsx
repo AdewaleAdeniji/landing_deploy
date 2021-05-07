@@ -7,7 +7,7 @@ import NavLogo from '../../assets/images/navlogo.png';
 export default class Header extends Component {
     
     state = {
-        mobilemenu:true   
+        mobilemenu:false
     }
     toggleMenu(){
         //console.log(event.target,event.currentTarget);
