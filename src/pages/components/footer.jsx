@@ -26,24 +26,54 @@ export default class Footer extends Component {
                             </a>
                         </div>
                         <div className='social-media'>
-                    <div className="row">
-                        <h2>CONTACT US ON</h2>
-                        <a href="mailto:hello@moneymie.com" target="_blank" rel="noopener noreferrer">
-                            <img src={Email}/>
-                        </a>
-                        <a href="https://facebook.com/moneymie/" target="_blank" rel="noopener noreferrer">
-                        `<img src={Facebook}/>
-                        </a>
-                        <a href="https://twitter.com/getMoneymie" target="_blank" rel="noopener noreferrer">
-                            <img src={Twitter}/>
-                        </a>
-                        <a href="https://www.instagram.com/moneymieapp" target="_blank" rel="noopener noreferrer">
-                            <img src={FInstagram}/>
-                        </a>
-                    </div>
-                    Moneymie is a financial technology company. Moneymie offers its products and services in partnership with banking software provider Sila and Evolve Bank & Trust (Member FDIC).
+                            <div className="row">
+                                <h2>CONTACT US ON</h2>
+                                <a href="mailto:hello@moneymie.com" target="_blank" rel="noopener noreferrer">
+                                    <img src={Email}/>
+                                </a>
+                                <a href="https://facebook.com/moneymie/" target="_blank" rel="noopener noreferrer">
+                                `<img src={Facebook}/>
+                                </a>
+                                <a href="https://twitter.com/getMoneymie" target="_blank" rel="noopener noreferrer">
+                                    <img src={Twitter}/>
+                                </a>
+                                <a href="https://www.instagram.com/moneymieapp" target="_blank" rel="noopener noreferrer">
+                                    <img src={FInstagram}/>
+                                </a>
+                            </div>
+                            Moneymie is a financial technology company. Moneymie offers its products and services in partnership with banking software provider Sila and Evolve Bank & Trust (Member FDIC).
 
-                    </div>
+                        </div>
+                        <div className="footerlinks">
+                            <a href="#">
+                                Terms and Conditons
+                            </a>
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                            <a href="#">
+                                No safe harbour for fraud
+                            </a>
+                            <a href="#">
+                                Security
+                            </a>
+                        </div>
+                        <div className="mobilefooterlinks">
+                            <a href="#">
+                                Terms and Conditons
+                            </a>
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                        </div>
+                        <div className="mobilefooterlinks">
+                            <a href="#">
+                                No safe harbour for fraud
+                            </a>
+                            <a href="#">
+                                Security
+                            </a>
+                        </div>
                     </div>
                     <div class="col-md-6 animated shake">
                         <img src={FooterImage} className="footerimg"/>

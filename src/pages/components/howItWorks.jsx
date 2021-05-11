@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Video from '../../assets/images/videoimg.png';
+import Video from '../../assets/images/videoimg.svg';
 
 
 export default class HowItWorks extends Component {

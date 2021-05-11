@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import Logo from '../../assets/images/logo.png';
+import Logo from '../../assets/images/logo.svg';
 import {Link} from 'react-router-dom';
 import NavLogo from '../../assets/images/navlogo.png';
 
@@ -32,8 +32,11 @@ export default class Header extends Component {
             </button>
             <div className="navlinks">
             <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">
+                       Blog
+            </a>
+            <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">
                         Get Moneymie for Business <i className="fa fa-angle-right"></i>
-                </a>
+            </a>
             </div>
         </nav>
         <div className={this.state.mobilemenu ? 'mobilenav' : 'hidden' } onClick={this.handleToggle.bind(this)}>
@@ -43,6 +46,11 @@ export default class Header extends Component {
                     <i className="fa fa-times" onClick={this.toggleMenu.bind(this)}></i>
                 </header>
                 <ul>
+                    <li>
+                        <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">
+                                Blog
+                        </a>
+                    </li>
                     <li>
                         <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">
                                 Get Moneymie for Business <i className="fa fa-angle-right"></i>

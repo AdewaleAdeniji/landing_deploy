@@ -5,6 +5,7 @@ import { BrowserRouter,Switch,Route} from 'react-router-dom';
 import EasterPromo from './pages/easterpromo';
 import Stores from './pages/stores';
 import Landing from './pages/index';
+import Ramadan from './pages/ramadan-landing';
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
         <Route path="/easter2k" component={EasterPromo} />
         <Route path="/store" component={Stores} />
         <Route path="/newlanding" component={Landing}/>
+        <Route component={Ramadan} path="/ramadan"/>
         <Route component={EasterPromo} />
+        
         
         </Switch>
     </BrowserRouter>

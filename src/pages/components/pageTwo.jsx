@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Frame from '../../assets/images/frame1.png';
+import Frame from '../../assets/images/frame1.svg';
 
 class PageTwo extends Component {
     render(){

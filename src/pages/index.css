@@ -13,12 +13,13 @@
 /* Money White */
     color: #FFFFFF;
 
-
+    
 /* Inside Auto Layout */
     flex: none;
     order: 0;
     flex-grow: 0;
     margin: 0px 0px;
+    margin-right: 56px;
     transition: .7s;
 }
 .navlinks a:hover {
@@ -32,6 +33,7 @@ button.menubtn {
     display: flex;
     height: auto;
     /* padding: 12vh; */
+    max-width: 1152px;
 }
 .pagetext {
     margin: 10vh;
@@ -332,6 +334,25 @@ footer img {
 footer .appstores {
     display: flex;
 }
+.footerlinks a {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+/* identical to box height, or 133% */
+
+
+/* Money Purple/Purple 400 */
+    color: #974BFD;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 20px;
+}
 img.footerimg {
     width: auto;
     height: auto;
@@ -344,7 +365,7 @@ img.footerimg {
 }
 img.bgimg {
     position: absolute;
-    top: 1vh;
+    top: 1.5vh;
 }
 .popupmodal {
     position: fixed;
@@ -393,7 +414,22 @@ img.bgimg {
 .mobilenav{
     display: none;
 }
+.footerlinks {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    width: 50vw;
+}
+.mobilefooterlinks {
+    display: none;
+}
 @media(max-width:600px){
+    .footerlinks {
+        display: none;
+    }
+    .mobilefooterlinks{
+        display: block;
+    }
     .col-md-12.col-12 {
         display: block !important;
         height: auto !important;
@@ -653,6 +689,7 @@ button.menubtn {
 }
 .mobilenav li {
     list-style-type:none;
+    margin-bottom: 3vh;
 }
 
 
@@ -687,6 +724,7 @@ button.menubtn {
     color: #3A3391;
     /* border-bottom: 1px solid #3A3391; */
     font-size: 12px;
+    margin-right: 56px;
 }
 }
 .ratesection h1 {
