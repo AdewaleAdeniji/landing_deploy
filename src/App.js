@@ -17,7 +17,7 @@ function App() {
         <Route path="/easter2k" component={EasterPromo} />
         <Route path="/store" component={Stores} />
         <Route path="/newlanding" component={Landing}/>
-        <Route component={Ramadan} path="/ramadan"/>
+        <Route component={Ramadan} path="/donations"/>
         <Route component={EasterPromo} />
         
         
