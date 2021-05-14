@@ -365,8 +365,11 @@ footer .appstores {
     order: 0;
     flex-grow: 0;
     margin: 0px 18px;
+    transition: .6s;
 }
-
+.footerlinks a:hover {
+    color: #fff;
+}
 img.footerimg {
         width: auto;
         height: 106%;
