@@ -386,6 +386,19 @@ img.bgimg {
 .social-media .row {
     margin-bottom: 17px;
 }
+
+.terms .col-md-12.col-12 {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+}
+.terms .faqtext { 
+    line-height: 38px;
+}
+.termsbox {
+    width: 80vw;
+    margin-left: 10vw;
+}
 .popupmodal {
     position: fixed;
     top: 0;

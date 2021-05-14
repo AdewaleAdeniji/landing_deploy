@@ -7,7 +7,7 @@ import FInstagram from '../../assets/images/footer_instagram.png';
 import Twitter from '../../assets/images/footer_twitter.png';
 import Facebook from '../../assets/images/footer_facebook.png';
 import FooterImage from '../../assets/images/newimages/f11a.png';
-
+import {Link} from 'react-router-dom';
 export default class Footer extends Component {
     render(){
         return (
@@ -45,31 +45,31 @@ export default class Footer extends Component {
 
                         </div>
                         <div className="footerlinks">
-                            <a href="#">
+                            <Link to="/terms">
                                 Terms and Conditons
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="/privacy">
                                 Privacy Policy
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="/nosafe">
                                 No safe harbour for fraud
-                            </a>
+                            </Link>
                             <a href="#">
                                 Security
                             </a>
                         </div>
                         <div className="mobilefooterlinks">
-                            <a href="#">
+                        <Link to="/terms">
                                 Terms and Conditons
-                            </a>
-                            <a href="#">
+                            </Link>
+                            <Link to="/privacy">
                                 Privacy Policy
-                            </a>
+                            </Link>
                         </div>
                         <div className="mobilefooterlinks">
-                            <a href="#">
+                        <Link to="/nosafe">
                                 No safe harbour for fraud
-                            </a>
+                            </Link>
                             <a href="#">
                                 Security
                             </a>

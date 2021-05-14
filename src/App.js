@@ -6,6 +6,9 @@ import EasterPromo from './pages/easterpromo';
 import Stores from './pages/stores';
 import Landing from './pages/index';
 import Ramadan from './pages/ramadan-landing';
+import Terms from './pages/terms';
+import Privacy from './pages/privacy';
+import NoSafe from './pages/nosafe';
 
 function App() {
   return (
@@ -17,8 +20,12 @@ function App() {
         <Route path="/easter2k" component={EasterPromo} />
         <Route path="/store" component={Stores} />
         <Route path="/newlanding" component={Landing}/>
+        <Route path="/terms" component={Terms}/>
+        <Route path="/privacy" component={Privacy}/>
         <Route component={Ramadan} path="/donations"/>
-        <Route component={EasterPromo} />
+        <Route component={NoSafe} path="/nosafe"/>
+        <Route component={Landing} />
+
         
         
         </Switch>
