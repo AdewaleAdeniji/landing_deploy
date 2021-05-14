@@ -54,9 +54,7 @@ export default class Footer extends Component {
                             <Link to="/nosafe">
                                 No safe harbour for fraud
                             </Link>
-                            <a href="#">
-                                Security
-                            </a>
+                            
                         </div>
                         <div className="mobilefooterlinks">
                         <Link to="/terms">
@@ -70,9 +68,7 @@ export default class Footer extends Component {
                         <Link to="/nosafe">
                                 No safe harbour for fraud
                             </Link>
-                            <a href="#">
-                                Security
-                            </a>
+                            
                         </div>
                     </div>
                     <div class="col-md-6 animated shake">
