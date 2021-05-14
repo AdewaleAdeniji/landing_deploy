@@ -56,7 +56,7 @@ export default function Home() {
 
   ];
 
-  const imageData = [Image2, Food1, Food2, Food3];
+   const imageData = [Image2, Food1, Food2, Food3];
 
   return (
     <div className={styles.container}>
@@ -68,9 +68,8 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.navContainer}>
           <div className={styles.nav}>
-            <Link to="/">
-              <img src={Logo} alt="Vercel Logo" width={140} height={28} />
-            </Link>
+
+            <img src={Logo} alt="Vercel Logo" width={140} height={28} />
             <div className={styles.navLinkContainer}>
               <h4 className={styles.navLink}><a href="#faq">FAQ</a></h4>
               {isOpen ? <svg onClick={() => setIsOpen(false)} id="i-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" fill="none">
@@ -100,7 +99,7 @@ export default function Home() {
             </h1>
 
               <h5 className={styles.bannerSubHeading}>
-                We donated $1000, Now its your turn
+                117 people have donated $1000 so far, now it's your turn
             </h5>
               <a href="https://moneymie.link/app">
                 <button className={styles.bannerButton}>Make a donation</button>
@@ -109,7 +108,7 @@ export default function Home() {
               <RWebShare
                 data={{
                   text: "Support the cause to feed families this ramadan.",
-                  url: "moneymie.link/app",
+                  url: "https://moneymie.com/donations",
                   title: "Moneymie",
                 }}
                 onClick={() => console.log("shared successfully!")}
@@ -119,7 +118,7 @@ export default function Home() {
 
             </div>
 
-            <img src={Image1} alt="Image 1" width={517} height={466} priority layout="responsive" />
+            <img src={Image1}  alt="Image 1" className={styles.bannerImage} priority />
           </div>
         </div>
         <div className={styles.talkSectionContainer} id="talk">
@@ -143,7 +142,7 @@ export default function Home() {
 
                 {imageData.map((data, i) => (
                   <div key={i} className={styles.carouselContainer}>
-                    <img src={data} alt="Image 1" id="image1" width={495} height={506} priority layout="responsive" />
+                    <img src={data} alt="Image 1" className={styles.carouselImage} priority layout="responsive" />
                   </div>
                 ))}
               </Carousel>
@@ -151,6 +150,7 @@ export default function Home() {
 
                 {imageData.map((_, i) => (
                   <div
+                    key={i}
                     onClick={() => setCurrentIndex(i)}
                     className={i === currentIndex ? styles.activeThumb : styles.thumb}></div>
                 ))}
