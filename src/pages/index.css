@@ -466,6 +466,7 @@ nav a img {
     height: 28px;
     width: 139px;
 }
+
 @media screen and (min-width:600px){    
     .navbar .navbar-brand {
         margin-left: 8vw;

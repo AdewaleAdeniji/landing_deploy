@@ -27,7 +27,7 @@ export default class Page extends Component {
                         </a>
                         </div>
                     </div>
-                    <div className="col-md-6 col-6 bgapp animated shake">
+                    <div className="col-md-6 col-6 bgapp animated shake   request-loader">
                         <img src={DescImage} className="bgimg"/>
                         
                     </div>
