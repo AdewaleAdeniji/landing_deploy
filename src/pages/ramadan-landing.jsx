@@ -68,8 +68,9 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.navContainer}>
           <div className={styles.nav}>
-
-            <img src={Logo} alt="Vercel Logo" width={140} height={28} />
+            <Link to="/">
+              <img src={Logo} alt="Vercel Logo" width={140} height={28} />
+              </Link>
             <div className={styles.navLinkContainer}>
               <h4 className={styles.navLink}><a href="#faq">FAQ</a></h4>
               {isOpen ? <svg onClick={() => setIsOpen(false)} id="i-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" fill="none">
