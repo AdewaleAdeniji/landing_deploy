@@ -15,7 +15,7 @@ function App() {
      
      <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={LandingPage}/>
+        <Route exact path="/" component={Landing}/>
         <Route path="/fxrates" component={FxRate}/>
         <Route path="/easter2k" component={EasterPromo} />
         <Route path="/store" component={Stores} />

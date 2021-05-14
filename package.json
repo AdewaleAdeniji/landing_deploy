@@ -12,15 +12,16 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.6.0",
     "colorette": "^1.2.0",
+    "next": "10.2.0",
+    "node-sass": "^6.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-html-parser": "^2.0.2",
+    "react-responsive-carousel": "^3.2.18",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "sweetalert2": "^10.15.6",
-    "next": "10.2.0",
-    "react-responsive-carousel": "^3.2.18",
-    "react-web-share": "^1.1.0"
+    "react-web-share": "^1.1.0",
+    "sweetalert2": "^10.15.6"
   },
   "scripts": {
     "start": "react-scripts start",
