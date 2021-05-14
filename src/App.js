@@ -24,7 +24,7 @@ function App() {
         <Route path="/privacy" component={Privacy}/>
         <Route component={Ramadan} path="/donations"/>
         <Route component={NoSafe} path="/nosafe"/>
-        <Route component={Land} />
+        <Route component={Landing} />
 
         
         
