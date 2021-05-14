@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-import Logo from '../../assets/images/logo.svg';
+import Logo from '../../assets/images/newimages/logo.png';
 import {Link} from 'react-router-dom';
 import NavLogo from '../../assets/images/navlogo.png';
 
@@ -31,7 +31,7 @@ export default class Header extends Component {
                 <i className="fa fa-bars"></i>
             </button>
             <div className="navlinks">
-            <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">
+            <a href="https://medium.com/moneymie" target="_blank"  rel="noopener noreferrer">
                        Blog
             </a>
             <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">
