@@ -19,12 +19,12 @@ function App() {
         <Route path="/fxrates" component={FxRate}/>
         <Route path="/easter2k" component={EasterPromo} />
         <Route path="/store" component={Stores} />
-        <Route path="/newlanding" component={Landing}/>
+        <Route path="/oldlanding" component={LandingPage}/>
         <Route path="/terms" component={Terms}/>
         <Route path="/privacy" component={Privacy}/>
         <Route component={Ramadan} path="/donations"/>
         <Route component={NoSafe} path="/nosafe"/>
-        <Route component={Landing} />
+        <Route component={Land} />
 
         
         
