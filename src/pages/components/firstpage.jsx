@@ -3,7 +3,7 @@ import AppStore from '../../assets/images/ios.png';
 import PlayStore from '../../assets/images/android.png';
 import MoneyMieApp from '../../assets/images/moneyapp.png';
 import BgApp from '../../assets/images/bgmoney.png';
-import DescImage from '../../assets/images/desc.png';
+import DescImage from '../../assets/images/newimages/f11a.png';
 
 export default class Page extends Component {
     

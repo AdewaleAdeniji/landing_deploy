@@ -6,7 +6,7 @@ import Email from '../../assets/images/footer_email.png';
 import FInstagram from '../../assets/images/footer_instagram.png';
 import Twitter from '../../assets/images/footer_twitter.png';
 import Facebook from '../../assets/images/footer_facebook.png';
-import FooterImage from '../../assets/images/footerbg.png';
+import FooterImage from '../../assets/images/newimages/f11a.png';
 
 export default class Footer extends Component {
     render(){

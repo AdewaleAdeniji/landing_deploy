@@ -366,19 +366,22 @@ footer .appstores {
     flex-grow: 0;
     margin: 0px 18px;
 }
+
 img.footerimg {
-    width: auto;
-    height: auto;
-    /* margin-bottom: -16vh; */
-    position: absolute;
-    top: -10vh;
-    overflow: hidden;
-    max-width: 100%;
-    max-height: 115%;
+        width: auto;
+        height: 106%;
+        /* margin-bottom: -16vh; */
+        position: absolute;
+        /* top: -5vh; */
+        bottom: 0;
+        overflow: hidden;
+        max-width: 100%;
+        max-height: 115%;
+    
 }
 img.bgimg {
     position: absolute;
-    top: 1.5vh;
+    top: 20.5vh;
 }
 .social-media .row {
     margin-bottom: 17px;
@@ -741,6 +744,8 @@ footer .social-media {
 
 img.footerimg {
     position: initial;
+    width: auto;
+    height: auto;
 }
 footer .col-md-6 {
     padding-left: 1vh;
