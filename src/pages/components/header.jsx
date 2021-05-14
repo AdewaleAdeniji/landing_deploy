@@ -47,7 +47,7 @@ export default class Header extends Component {
                 </header>
                 <ul>
                     <li>
-                        <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">
+                        <a href="https://medium.com/moneymie" target="_blank"  rel="noopener noreferrer">
                                 Blog
                         </a>
                     </li>
