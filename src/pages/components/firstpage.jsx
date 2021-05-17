@@ -19,10 +19,11 @@ export default class Page extends Component {
                         Open instant Naira and USD wallets. Experience seamless banking in Nigeria from the US. ZERO fees.
                         </h6>
                         <div className="appstores animated fadeInLeft">
-                        <a href='https://apps.apple.com/us/app/moneymie/id1538278032'>
+                        <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'>
+                        
                             <img src={PlayStore} alt="Google PlayStore"/>
                         </a>
-                        <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'>
+                        <a href='https://apps.apple.com/us/app/moneymie/id1538278032'>
                             <img src={AppStore} alt="Ios Playstore"/>
                         </a>
                         </div>
