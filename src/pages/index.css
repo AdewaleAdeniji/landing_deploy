@@ -880,3 +880,4 @@ button.menubtn {
     animation-duration: 2s;
     animation-iteration-count: 1;
 }
+.termsbox ul {list-style-type: disc;}
