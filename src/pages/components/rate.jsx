@@ -27,7 +27,7 @@ class Rate extends Component {
             }
         })
         .catch((err)=>{
-            window.location.reload();
+            // window.location.reload();
         })  
      
     }
