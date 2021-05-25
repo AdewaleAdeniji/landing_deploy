@@ -35,6 +35,12 @@ button.menubtn {
     /* padding: 12vh; */
     max-width: 1160px;
 }
+.terms .col-md-12.col-12 {
+    display: flex;
+    height: auto;
+    /* padding: 12vh; */
+    max-width: calc(100%) !important;
+}
 .pagetext {
     margin: 10vh;
 }
