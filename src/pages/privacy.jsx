@@ -202,7 +202,7 @@ We do not share nonpublic personal financial information we collect about Vermon
 <b>Questions</b>
 <p>
 If you have any questions on the privacy policy, please contact us at:
-Moneymie <a href="mailto:support@moneymie.com">support@moneymie.com</a>
+<a href="mailto:support@moneymie.com">support@moneymie.com</a>
 </p>
 
 
