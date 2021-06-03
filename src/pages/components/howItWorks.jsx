@@ -31,7 +31,7 @@ export default class HowItWorks extends Component {
             <div className={this.state.openmodal ? 'popupmodal' : 'hidden' }>
                 <i className="fa fa-close" onClick={this.handleToggleModal}></i>
                 <div className="popcontent">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7cAQjU5dQkY" title="How Moneymie Works" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7cAQjU5dQkY" title="How Moneymie Works" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
             </div>
             </React.Fragment>

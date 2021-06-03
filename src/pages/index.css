@@ -66,6 +66,7 @@ button.menubtn {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
+    word-spacing: 2px;
     line-height: 28px;
     margin-top: 24px;
 /* or 140% */
@@ -224,7 +225,7 @@ img.ratearrow {
     line-height: 28px;
 /* or 140% */
 
-
+    padding-right:70px;
 /* Money Grey/Grey 600 */
     color: #6B6F7D;
 
@@ -370,7 +371,7 @@ footer .appstores {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 18px;
+    margin-right: 18px;
     transition: .6s;
 }
 .footerlinks a:hover {
@@ -394,11 +395,12 @@ img.bgimg {
 }
 .social-media .row {
     margin-bottom: 17px;
+    margin-left: 0;
 }
 
 .terms .col-md-12.col-12 {
     width: 100% !important;
-    display: flex;
+    display: flex !important;
     justify-content: center;
 }
 .terms .faqtext { 
@@ -613,7 +615,10 @@ nav a img {
         max-width: 100% !important;
     }
     nav.navbar.sticky-top.landing {
-        display: block !important;
+        /*display: block!important; */
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
     }
     
     .navlinks {
