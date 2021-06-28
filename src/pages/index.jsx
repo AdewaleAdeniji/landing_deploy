@@ -18,7 +18,7 @@ class Landing extends Component {
                 <div>
                     <Header/>
                     <Desc/>
-                    <Rate/>
+                    {/* <Rate/> */}
                     <PageTwo/>
                     <PageThree/>
                     <HowItWorks/>
