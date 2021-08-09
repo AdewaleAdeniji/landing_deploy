@@ -2,13 +2,20 @@ import React, {useState} from 'react';
 import './LandingPage.css';
 import Logo from '../assets/images/moneymie-logo.png';
 import MobileApp from '../assets/images/mobile-app.png';
+import Arrow from '../assets/images/arrow.png';
 import Instagram from '../assets/images/instagram.png';
 import AppStore from '../assets/images/appstore.png';
 import PlayStore from '../assets/images/playstore.png';
 import Telegram from '../assets/images/telegram.png';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import {Link} from 'react-router-dom';
+import Email from '../assets/images/footer_email.png';
+import FInstagram from '../assets/images/footer_instagram.png';
+import Twitter from '../assets/images/footer_twitter.png';
+import Facebook from '../assets/images/footer_facebook.png';
 
 const useStyles = makeStyles(theme => ({
     'input': {
@@ -99,17 +106,24 @@ export const LandingPage = () => {
     return (
         <div>
         <div className='container'>
-            <div className='logo'><img src={Logo} alt='Moneymie logo'/></div>
+            <div className='logo'><img src={Logo} alt='Moneymie logo'/>
+            <h2>
+                <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">Get Moneymie for Business  <i className="fa fa-angle-double-right"></i> </a>
+            </h2>
+            <h2>
+                <Link to="/donations">Ramadan Donations</Link>
+           </h2>    
+            </div>
 
             <div className='content'>
                 <div>
                     <div className='title'>
-                        Borderless banking
+                    Digital Bank for African Migrants 
                     </div>
 
                     <div className='description'>
-                        Moneymie offers a multi-currency account with USD$ and ₦. Now you can exchange between both, send and recieve money easily.
-                        And no fees.
+                    Seamless banking across borders.
+                    Instant NGN and USD wallets so you can bank in both worlds for FREE.
                     </div>
 
                     <div className='launching'>
@@ -121,20 +135,37 @@ export const LandingPage = () => {
                         <a href='https://apps.apple.com/us/app/moneymie/id1538278032'><img src={AppStore} alt={'App Store image'} style={{marginRight: '10px'}} /></a>
                         <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'><img src={PlayStore} alt={'Play Store image'} /></a>
 
-                    </div>
+                        </div>
 
 
 
                     <div className='social-media'>
-                        Moneymie is a financial technology company. Banking Services provided by Sila Inc, Evolve Bank (Member FDIC) or Circle Internet Financial Limited. MSB services provided by Circle Internet Financial Limited.
+                    <div className="row">
+                        <h2>CONTACT US ON</h2>
+                        <a href="mailto:hello@moneymie.com" target="_blank" rel="noopener noreferrer">
+                            <img src={Email}/>
+                        </a>
+                        <a href="https://facebook.com/moneymie/" target="_blank" rel="noopener noreferrer">
+                        `<img src={Facebook}/>
+                        </a>
+                        <a href="https://twitter.com/getMoneymie" target="_blank" rel="noopener noreferrer">
+                            <img src={Twitter}/>
+                        </a>
+                        <a href="https://www.instagram.com/moneymieapp" target="_blank" rel="noopener noreferrer">
+                            <img src={FInstagram}/>
+                        </a>
+                    </div>
+                    Moneymie is a financial technology company. Moneymie offers its products and services in partnership with banking software provider Sila and Evolve Bank & Trust (Member FDIC).
 
                     </div>
                 </div>
                 <div className='mobile-app'>
-                    <img src={MobileApp} alt='Moneymie Mobile App'/>
+                    <img src={MobileApp} alt='Moneymie Mobile App' className="imgapp"/>
+                    
                 </div>
             </div>
         </div>
+        
         <div className='footer'>
             <div></div>
             <div className='bg1'></div>

@@ -1,0 +1,894 @@
+.landing {
+    background: #3A3391;
+}
+.navlinks a {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+/* identical to box height, or 137% */
+    text-align: center;
+
+/* Money White */
+    color: #FFFFFF;
+
+    
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+    margin-right: 56px;
+    transition: .7s;
+}
+.navlinks a:hover {
+    color: aliceblue;
+    
+}
+button.menubtn {
+    display: none;
+}
+.pagedesc .col-md-12.col-12 {
+    display: flex;
+    height: auto;
+    /* padding: 12vh; */
+    max-width: 1160px;
+}
+.terms .col-md-12.col-12 {
+    display: flex;
+    height: auto;
+    /* padding: 12vh; */
+    max-width: calc(100%) !important;
+}
+.pagetext {
+    margin: 10vh;
+}
+.pagedesc {
+    background: #3A3391;
+    overflow: hidden;
+}
+.pagedesc h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 72px;
+/* or 120% */
+    letter-spacing: -0.02em;
+
+/* Money Green/Green 400 */
+    color: #41DC6D;
+}
+
+.pagedesc h6 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    word-spacing: 2px;
+    line-height: 28px;
+    margin-top: 24px;
+/* or 140% */
+
+
+/* Money White */
+    color: #FFFFFF;
+}
+.pagedesc .appstores {
+    display: flex;
+    margin-top: 60px;
+}
+.pagedesc .appstores img {
+    width: 191px;
+    height: 70px;
+    margin-right: 2vh;
+}
+.bgapp {
+    /* background: url('../assets/images/bgmoney.png'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 25vh;
+}
+.ratesection {
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh;
+}
+
+.ratesection h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+/* identical to box height, or 137% */
+    text-align: center;
+
+/* Money Grey/Grey 800 */
+    color: #282F45;
+    margin-bottom: 24px;
+}
+.rates {
+    display: flex;
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rates .rate {
+    background: #F9FFFA;
+/* Money Green/Green 600 */
+    border: 0.5px dashed #1C9B40;
+    border-radius: 16px;
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    padding: 2vh;
+    flex-grow: 0;
+    margin: 0px 40px;
+    display: flex;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.rates .rate h3 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+/* identical to box height, or 125% */
+    text-align: center;
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 4px 0px;
+}
+
+.currency img {
+    height: 32px;
+    width: 32px;
+    margin-right: 1vh;
+}
+
+img.ratearrow {
+    width: 24px;
+    height: 24px;
+}
+
+.rate .currency {
+    margin-right: 48px;
+    margin-left: 48px;
+}
+
+.currencyname {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+/* identical to box height, or 137% */
+
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+}
+.pagetwo .col-md-12 {
+    display: flex;
+}
+
+.pagetwo {
+    margin: 10vh;
+}
+
+.pagetwo h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 72px;
+/* or 120% */
+    letter-spacing: -0.02em;
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.pagetwo h6 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+/* or 140% */
+
+    padding-right:70px;
+/* Money Grey/Grey 600 */
+    color: #6B6F7D;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.pagetwo img {
+    width: 400px;
+}
+
+.pagetwo .col-md-6 {
+    margin-right: 60px;
+}
+.how-itworks h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 72px;
+/* identical to box height, or 120% */
+    letter-spacing: -0.02em;
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+}
+
+.how-itworks {
+    height: 700px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 167px;
+}
+
+button.btn-play {
+    background: #22B94C;
+    border-radius: 50%;
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    border: none;
+    padding: 0px;
+    font-size: 30px;
+    /* text-align: center; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+.videosection {
+    /* background: url('../assets/images/videoimg.png'); */
+    cursor: pointer;
+    width: 750px;
+    height: 462px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.jk {
+    background: #000;
+    cursor: pointer;
+    width: 80vw;
+    height: 460px;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 24px;
+    /* float: right; */
+    display: flex;
+    margin-left: 10vw;
+}
+footer {
+    /* background: url('../assets/images/footerbg2.png'); */
+    background-position: 50% 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 120px 120px 0px 0px;
+    /* height: auto; */
+    background:  #150F2E;
+    /* overflow-x: hidden;
+    overflow:hidden; */
+    padding-bottom: 0.8vh;
+    /* padding-top: 2vh; */
+}
+body {
+    overflow-x: hidden;
+}
+footer .col-md-12 {
+    display: flex;
+    justify-content: center;
+}
+footer .col-md-6 {
+    padding-left: 7vh;
+    padding-top: 7vh;
+}
+footer .social-media {
+    margin-top: 48px;
+}
+footer .social-media .row h2 {
+    color: #FFFFFF;
+}
+footer .col-md-6 h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 72px;
+/* or 120% */
+    letter-spacing: -0.02em;
+
+/* Money Green/Green 400 */
+    color: #41DC6D;
+}
+footer .appstores {
+    margin-top: 32px;
+}
+footer img {
+    width: 191px;
+    height: 70px;
+    margin-right: 28px;
+}
+
+footer .appstores {
+    display: flex;
+}
+.footerlinks a {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+/* identical to box height, or 133% */
+
+
+/* Money Purple/Purple 400 */
+    color: #974BFD;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right: 18px;
+    transition: .6s;
+}
+.footerlinks a:hover {
+    color: #fff;
+}
+img.footerimg {
+        width: auto;
+        height: 106%;
+        /* margin-bottom: -16vh; */
+        position: absolute;
+        /* top: -5vh; */
+        bottom: 0;
+        overflow: hidden;
+        max-width: 100%;
+        max-height: 115%;
+    
+}
+img.bgimg {
+    position: absolute;
+    top: 20.5vh;
+}
+.social-media .row {
+    margin-bottom: 17px;
+    margin-left: 0;
+}
+
+.terms .col-md-12.col-12 {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center;
+}
+.terms .faqtext { 
+    line-height: 38px;
+}
+.termsbox {
+    width: 80vw;
+    margin-left: 10vw;
+}
+.popupmodal {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    /* padding: 25vh; */
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.popupmodal i.fa.fa-close {
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: 2em;
+    cursor: pointer;
+    transition:.5s;
+}
+.popupmodal i.fa.fa-close:hover {
+     color:#3A3391;   
+}
+.popupmodal {
+    animation-name: animodal;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes animodal{
+    0% {
+        opacity:0;
+        transform:rotate(180deg);
+        transform:scale(0);
+    }
+    
+    100% {
+        opacity:1;
+        transform:rotate(0deg);
+         transform:scale(1);
+    }
+}
+.mobilenav{
+    display: none;
+}
+.footerlinks {
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    width: 50vw;
+    margin-top: 16px;
+}
+.mobilefooterlinks {
+    display: none;
+}
+footer .col-md-12 .social-media {
+    color: #A194DB;
+}
+nav a img {
+    height: 28px;
+    width: 139px;
+}
+
+@media screen and (min-width:600px){    
+    .navbar .navbar-brand {
+        margin-left: 8vw;
+    }
+    navbar {
+        padding: 0;
+    }
+}
+@media only screen and (max-width:1200px) and (min-width:600px){
+    .pagedesc .col-md-12.col-12  {
+        width: 68vw;
+    }
+    .navbar .navbar-brand {
+        margin-left: 10vw;
+    }
+    .pagedesc h1 {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 52px;
+        letter-spacing: -0.02em;
+        color: #41DC6D;
+    }
+    footer .col-md-6 h1 {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 52px;
+        letter-spacing: -0.02em;
+        color: #41DC6D;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+    .footerlinks {
+        display: none;
+    }
+    .mobilefooterlinks{
+        display: block;
+    }
+    .mobilefooterlinks a {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 16px;
+    /* identical to box height, or 133% */
+    
+    
+    /* Money Purple/Purple 400 */
+        color: #974BFD;
+        margin-right: 48px;
+    }
+    
+    .mobilefooterlinks {
+        margin-top: 18px;
+    }
+    .col-md-12.col-12 {
+        display: block !important;
+        height: auto !important;
+    }
+    .col-md-12 {
+        display: block !important;
+    }
+    
+    .rates {
+        display: block;
+    }
+    
+    .pagetwo img {
+        width: 100%;
+    }
+    body,html{
+        overflow-x:hidden;
+    }
+    .pagedesc h1 {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+    /* or 125% */
+    
+    
+    /* Money Green/Green 400 */
+        color: #41DC6D;
+    }
+    
+    
+    
+    .col-md-6.col-6.pagetext {
+        margin: 0;
+        padding: 3vh;
+        padding-top: 72px;
+    }
+    
+    .pagedesc h6 {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+    /* or 137% */
+    
+    
+    /* Money White */
+        color: #FFFFFF;
+    }
+    
+    .pagedesc .appstores img {
+        width:125px;
+        height:46px;
+    }
+    .col-md-6 {
+        width: 100%  !important;
+        max-width: 100% !important;
+    }
+    nav.navbar.sticky-top.landing {
+        /*display: block!important; */
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navlinks {
+        margin: 3vh;
+    }
+    img.bgimg {
+        position: initial;
+        width: auto;
+        height: auto;
+        margin-right: 2vh;
+    }
+    
+    .col-md-6.col-6.bgapp {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-top: 48px;
+    }
+    
+.ratesection {
+    /* padding: 1vh; */
+    margin-top: 24px;
+    padding:0;
+}
+
+.rates {
+    text-align: center;
+    /* padding: 2vh; */
+}
+
+.rates .rate {
+    margin-bottom: 16px;
+}
+
+
+
+.pagetwo {
+    margin: 1vh;
+}
+
+.pagetwo h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+/* identical to box height, or 125% */
+
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.pagetwo h6 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+/* or 137% */
+
+
+/* Money Grey/Grey 600 */
+    color: #6B6F7D;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.how-itworks h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+/* identical to box height, or 125% */
+    text-align: center;
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+
+
+/* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+}
+
+.how-itworks {
+    margin-top: 50px;
+    height: auto;
+    margin-bottom: 100px;   
+}
+
+img.videosection {
+    width: 80vw;
+    height: auto;
+}   
+.videosection {
+    margin-top: 16px;
+}
+footer {
+    border-radius: 40px 40px 0px 0px;
+}
+
+footer .col-md-6 h1 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+/* or 125% */
+
+
+/* Money Green/Green 400 */
+    color: #41DC6D;
+}
+
+footer img {
+    width: 125px;
+    height: 46px;
+}
+
+footer .social-media {
+    margin-top: 48px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+/* or 133% */
+
+
+/* Money Purple/Purple 300 */
+    color: #A194DB;
+}
+
+img.footerimg {
+    position: initial;
+    width: auto;
+    height: auto;
+}
+footer .col-md-6 {
+    padding-left: 1vh;
+}
+.popcontent iframe {
+    width: 100%;
+}
+button.menubtn {
+    border: none;
+    display: block;
+    background: transparent;
+    color: #fff;
+    float: right;
+    font-size: 1.3em;
+}
+.navlinks {
+    display: none;
+}
+.mobilenav {
+    display: block;
+    position: fixed;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    
+    right: 0;
+    animation-name:fadeInLeft;
+    animation-duration: 1.2s;
+    animation-iteration-count: 1;
+}
+.mobilenav .navcontents {
+    width:65%;
+    background:#fff;
+    
+    height:100%;
+}
+.mobilenav ul {
+    padding:2vh;
+    padding-top:5vh;
+}
+.mobilenav li {
+    list-style-type:none;
+    margin-bottom: 3vh;
+}
+
+
+.mobilenav header {
+    /* position: absolute; */
+    top: 0;
+    height: 8%;
+    /* background: #000; */
+    display: flex;
+    padding: 1vh;
+    justify-content: left;
+    align-items: center;
+}
+
+.mobilenav header img {
+    height: 28px;
+    width: 140px;
+}
+
+.mobilenav header i  {
+    color: #000;
+    float: right;
+    position: absolute;
+    font-weight: lighter;
+    font-size: 1.7em;
+    left: 55vw;
+}
+.mobilenav li a {
+    font-size: 15px;
+}
+.navlinks a {
+    color: #3A3391;
+    /* border-bottom: 1px solid #3A3391; */
+    font-size: 12px;
+    margin-right: 56px;
+}
+}
+.ratesection h1 {
+    text-transform:uppercase;
+}
+.fadeInUp {
+    animation-name:fadeInUp;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    
+}
+
+.fadeInDown {
+    animation-name:fadeInDown;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.fadeInLeft {
+    animation-name:fadeInLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.fadeInRight {
+    animation-name:fadeInRight;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.bounce {
+    animation-name:bounce;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.shake {
+    animation-name:shake;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.termsbox ul {list-style-type: disc;}
