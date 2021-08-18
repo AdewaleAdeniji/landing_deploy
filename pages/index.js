@@ -38,7 +38,7 @@ export default function Home() {
     window.intercomSettings = {app_id: "v63lode2"};
   }, []);
   return (
-    <Layout pageTitle="Moneymie, digital bank for African migrants">
+    <Layout pageTitle="Digital dollars for Africans everywhere. ">
         <HeaderNavBar/>
         <Hero/>
         <Partners/>

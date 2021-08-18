@@ -6,26 +6,26 @@ const Layout = (props) => {
       <Head>
         <meta charset="utf-8" />
         <title>{props.pageTitle}</title>
-        <title>Moneymie, digital bank for African migrants</title>
-        <meta name="title" content="Moneymie, digital bank for African migrants"/>
-        <meta name="description" content="$ and ₦ instant accounts, transfers from $ to ₦ and back, naira debit cards, savings and more..."/>
-        <meta itemProp="name" content="Moneymie, digital bank for African migrants"/>
-        <meta itemProp="description" content="$ and ₦ instant accounts, transfers from $ to ₦ and back, naira debit cards, savings and more..."/>
+        
+        <meta name="title" content="Digital dollars for Africans everywhere. "/>
+        <meta name="description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
+        <meta itemProp="name" content="Digital dollars for Africans everywhere. "/>
+        <meta itemProp="description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
         <meta itemProp="image" content="/images/favicon.png"/>
 
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://facebook.com/moneymie/"/>
-        <meta property="og:title" content="Moneymie, digital bank for African migrants"/>
-        <meta property="og:description" content="$ and ₦ instant accounts, transfers from $ to ₦ and back, naira debit cards, savings and more..."/>
+        <meta property="og:title" content="Digital dollars for Africans everywhere. "/>
+        <meta property="og:description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
         <meta property="og:image" content="/images/favicon.png"/>
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image"/>
         <meta property="twitter:url" content="https://twitter.com/getMoneymie"/>
-        <meta property="twitter:title" content="Moneymie, digital bank for African migrants"/>
-        <meta property="twitter:description" content="$ and ₦ instant accounts, transfers from $ to ₦ and back, naira debit cards, savings and more..."/>
+        <meta property="twitter:title" content="Digital dollars for Africans everywhere. "/>
+        <meta property="twitter:description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
         <meta property="twitter:image" content="/images/favicon.png"/>
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
         <link rel="icon" href="/images/favicon.png" type="image/x-icon"/> 
@@ -37,7 +37,7 @@ const Layout = (props) => {
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossOrigin="anonymous"/>
         <meta
         name="description"
-        content="$ and ₦ instant accounts, transfers from $ to ₦ and back, naira debit cards, savings and more..."
+        content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."
         />
         <link rel="manifest" href="/images/manifest.json"/>
         <link rel="apple-touch-icon" href="/images/favicon.png"/>
