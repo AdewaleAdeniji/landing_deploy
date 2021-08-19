@@ -12,7 +12,7 @@ const Layout = (props) => {
         <meta itemProp="name" content="Digital dollars for Africans everywhere. "/>
         <meta itemProp="description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
         <meta itemProp="image" content="/images/favicon.png"/>
-
+        <meta name="facebook-domain-verification" content="90dtiyvkvo4o12fykq5cp7s9inbpeq" />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website"/>
