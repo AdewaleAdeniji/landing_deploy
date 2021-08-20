@@ -9,12 +9,12 @@ const Layout = (props) => {
         
         <meta name="title" content="Digital dollars for Africans everywhere. "/>
         <meta name="description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
-        
+        <meta name="facebook-domain-verification" content="90dtiyvkvo4o12fykq5cp7s9inbpeq" />
+        <meta name="facebook-domain-verification" content="jtjhek2y2k1ie3q7z09pzfyqawydb4" />
         <meta itemProp="name" content="Digital dollars for Africans everywhere. "/>
         <meta itemProp="description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
         <meta itemProp="image" content="/images/favicon.png"/>
-        <meta name="facebook-domain-verification" content="90dtiyvkvo4o12fykq5cp7s9inbpeq" />
-        <meta name="facebook-domain-verification" content="jtjhek2y2k1ie3q7z09pzfyqawydb4" />
+        
         {/* <!-- Open Graph / Facebook --> */}  
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://facebook.com/moneymie/"/>
