@@ -31,7 +31,7 @@
     width: 200px;
     background: #fff;
     border-radius: 5px;
-    height: 150px;
+    height: 200px;
     z-index: 999999999999;
 /*     padding: 10px; */
     border-radius: 10px;
@@ -39,6 +39,9 @@
     padding-top:10px;
     overflow-x: hidden;
     overflow-y:scroll;
+  }
+  .sendwrapper .selectcountrydropdown {
+      height: 150px;
   }
 
 .selectcountrydropdown .selectoption {
@@ -1012,6 +1015,11 @@ button.menubtn {
         width: 200px !important;
         padding: 7px;
         font-size: 12px;
+        transition: .5s;
+        outline:0.5px solid #3A3391;;
+    }
+    input[type="tel"]:hover , input[type="tel"]:focus{
+        border: 0.5px solid #3A3391;
     }
     .sendlinkform button {
         margin-left: 10px;

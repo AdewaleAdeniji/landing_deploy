@@ -61,7 +61,7 @@ h1.title-text {
     color: #43495C;
     margin-bottom: 108px;
 }
-@media (min-width: 200px) and (max-width: 762px) and (max-width:1200px) {
+@media (max-width:1200px) {
     /* .small-screen {
         display:;
     } */

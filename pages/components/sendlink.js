@@ -296,8 +296,8 @@ const SendLinkForm = (props) => {
     const [error,setError] = useState(false);
     const [active,setActiveButton] = useState(false);
     const [loading,setLoading] = useState(false)
-    const [phoneCode,setPhoneCode] = useState("+234");
-    const [countryCode,setCountryCode] = useState("ng");
+    const [phoneCode,setPhoneCode] = useState("+1");
+    const [countryCode,setCountryCode] = useState("us");
     const [showSelect,setSelect] = useState(false);
     const [showtoast,setToast] = useState(false);
     const [toastMessage,setMessage] = useState('');
@@ -355,7 +355,7 @@ const SendLinkForm = (props) => {
     if(usernumber.length<6){
         setActiveButton(false);
     }
-    else if(usernumber!=''&&usernumber.indexOf("+")<0){
+    else if(usernumber!=''){
         
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
@@ -394,6 +394,9 @@ const SendLinkForm = (props) => {
             inform("Please fill in your number and ensure remove your country code",true);
         }
     }
+    const handleFillInput = () => {
+        setPhoneNumber(phoneCode);
+    }
     const handleClickCountry = (e) => {
         let countrydata = e.target.attributes.getNamedItem('data-country').value;
         let country = e.target.attributes.getNamedItem('data-val').value;
@@ -404,6 +407,7 @@ const SendLinkForm = (props) => {
         var countrycode = (countryarray[1]).toLowerCase();
         setPhoneCode(phonecode);
         setCountryCode(countrycode);
+        setPhoneNumber(phonecode);
     }
     const handleCountries = (country) => {
         setSelect(true);
@@ -434,7 +438,7 @@ const SendLinkForm = (props) => {
                             </div>
                             <i className="fa fa-angle-down"></i>
                         </div>
-                            <input type="tel" placeholder="Enter your phone number" value={usernumber} onChange={HandleNumberChange}/>
+                            <input type="tel" placeholder="Enter your phone number" value={usernumber} onChange={HandleNumberChange}onClick={handleFillInput}/>
                         <Fade top>
                         <div className={showSelect ? "countrydropdown" : 'hidden'}>
                             
