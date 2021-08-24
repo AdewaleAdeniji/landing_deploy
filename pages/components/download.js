@@ -4,21 +4,21 @@ import Flip from 'react-reveal/Flip';
 
 const Download = (props) => {
     return (
-        <Fade right>
+        <Fade duration={3000}right>
         <div className="downloadsection">
-            <Fade top>
+            <Fade duration={3000}top>
                 <div className="downloadtext">
                     Thousands of people are already saving more with moneymie. Secure your bag. Sign up now.
                 </div>
             </Fade>
             
             <div className="downloadbuttons">
-                <Fade left>
+                <Fade duration={3000}left>
                     <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'>
                         <img src="/images/androidownload.svg"/>
                     </a>
                 </Fade>
-                <Fade right>
+                <Fade duration={3000}right>
                     <a href='https://apps.apple.com/us/app/moneymie/id1538278032'>
                         <img className="ios" src="/images/iosdownload.svg"/>
                     </a>

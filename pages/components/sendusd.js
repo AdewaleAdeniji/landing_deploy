@@ -9,7 +9,7 @@ const SendUsd = (props) => {
     return (
         <>
         <div className="col-md-12 sendusdsection sm-screen">
-            <Fade left>
+            <Fade duration={3000}left>
             <div className="col-md-6">
                 {/* <div className="sendusdimg"> */}
                     {/* <Image className="sendusd" src={SendUSD} layout="intrinsic"/> */}
@@ -17,7 +17,7 @@ const SendUsd = (props) => {
                 {/* </div> */}
             </div>
             </Fade>
-            <Fade right>
+            <Fade duration={3000}right>
             <div className="col-md-6">
                 {/* <div className="makeusdimg"> */}
                     {/* <Image className="makeusd" src={MakeUSD} layout="intrinsic"/> */}

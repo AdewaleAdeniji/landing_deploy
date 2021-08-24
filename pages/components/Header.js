@@ -17,7 +17,7 @@ const HeaderNavBar = (props) => {
     }
     return (
         <>
-        <Fade top>
+        <Fade duration={3000}top>
         <div className="nav navbar navdesktop">
             <Link href="/">
                 {/* <Image src={Logo} alt="Moneymie Logo" className="navlogo"/> */}

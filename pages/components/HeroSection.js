@@ -368,7 +368,7 @@ const Hero =  (props) => {
         redirect: 'follow'
         };
         setLoading(true);
-        fetch("https://staging.moneymie.com/api/v2/public/route/sendDownloadLink", requestOptions)
+        fetch("https://apis.moneymie.com/api/v2/public/route/sendDownloadLink", requestOptions)
         .then(response => response.json())
         .then(result => {
             setLoading(false);
@@ -379,7 +379,7 @@ const Hero =  (props) => {
                 setActiveButton(false);
             }
             else {
-                throw result.message;
+                throw "Download Link failed to send to your number, Please check and try again";
             }
         })
         .catch(error =>{
@@ -442,7 +442,7 @@ const Hero =  (props) => {
                             <i className="fa fa-angle-down"></i>
                         </div>
                             <input type="tel" placeholder="Enter your phone number" value={usernumber} onChange={HandleNumberChange} onClick={handleFillInput}/>
-                        <Fade top>
+                        <Fade duration={3000}top>
                         <div className={showSelect ? "countrydropdown" : 'hidden'}>
                             
                             <div className="selectcountrydropdown">
@@ -484,7 +484,7 @@ const Hero =  (props) => {
             </div>
             </Bounce>
             <div className="col-md-6 hero-image">
-                <Fade right>
+                <Fade duration={3000}right>
                     <div className="img-section">
                         {/* <img src="/images/loop.gif" className="loop"/> */}
                         <img src="/images/hero-img.svg" className="heroimg"/>

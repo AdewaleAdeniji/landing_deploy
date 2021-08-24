@@ -4,14 +4,14 @@ import Fade from 'react-reveal/Fade';
 const TrustSignals = (props) => {
     return (
         <div className="trustsection">
-            <Fade bottom>
+            <Fade duration={3000}duration={3000} bottom>
             <div className="trust-title">
                 Why you should trust moneymie?
             </div>
             </Fade>
-            <Fade top>
+            <Fade duration={3000}bottom>
             <div className="trust-content">
-                <Fade left>
+                <Fade duration={3000}bottom>
                 <div className="trust-item">
                     <div className="trust-item-image">
                         <img src="/images/coin.svg"/>
@@ -25,7 +25,7 @@ const TrustSignals = (props) => {
                     </div>
                 </div>
                 </Fade>
-                <Fade top>
+                <Fade duration={3000}bottom>
                 <div className="trust-item">
                     <div className="trust-item-image">
                         <img src="/images/data.svg"/>
@@ -39,7 +39,7 @@ const TrustSignals = (props) => {
                     </div>
                 </div>
                 </Fade>
-                <Fade right>
+                <Fade duration={3000}bottom>
                 <div className="trust-item">
                     <div className="trust-item-image">
                         <img src="/images/trusted.svg"/>

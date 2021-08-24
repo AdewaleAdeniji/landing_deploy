@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 
 const Partners = (props) =>{
     return (
-        <Fade top>
+        <Fade duration={3000}top>
         <div className="partnersarea">
             <div className="sectiontitle">
                 Backers and Partners

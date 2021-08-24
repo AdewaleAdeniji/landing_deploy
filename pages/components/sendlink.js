@@ -371,7 +371,7 @@ const SendLinkForm = (props) => {
         redirect: 'follow'
         };
         setLoading(true);
-        fetch("https://staging.moneymie.com/api/v2/public/route/sendDownloadLink", requestOptions)
+        fetch("https://apis.moneymie.com/api/v2/public/route/sendDownloadLink", requestOptions)
         .then(response => response.json())
         .then(result => {
             setLoading(false);
@@ -382,7 +382,7 @@ const SendLinkForm = (props) => {
                 setActiveButton(false);
             }
             else {
-                throw result.message;
+                throw "Download Link failed to send to your number, Please check and try again";
             }
         })
         .catch(error =>{
@@ -423,7 +423,7 @@ const SendLinkForm = (props) => {
         setCountryCode(countrycode);
     }
     return (
-        <Fade bottom>
+        <Fade duration={3000}bottom>
             <div className="sendsection">
             <div className="sendwrapper">
                 <div className="sendtitle">
@@ -439,7 +439,7 @@ const SendLinkForm = (props) => {
                             <i className="fa fa-angle-down"></i>
                         </div>
                             <input type="tel" placeholder="Enter your phone number" value={usernumber} onChange={HandleNumberChange}onClick={handleFillInput}/>
-                        <Fade top>
+                        <Fade duration={3000}top>
                         <div className={showSelect ? "countrydropdown" : 'hidden'}>
                             
                             <div className="selectcountrydropdown">

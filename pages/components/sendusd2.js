@@ -11,12 +11,12 @@ const SendUSD = (props) => {
     return (
         <>
         <div className="col-md-12 sendusdsection big-screen">
-            <Fade left>
+            <Fade duration={3000}left>
             <div className="col-md-6">
             <img src='/images/sendusd2.png' className="sendusd"/>
             </div>
             </Fade>
-            <Fade right>
+            <Fade duration={3000}right>
             <div className="col-md-6">
                 <div className="makeusdcontainer">
                     <div className="smalltext">

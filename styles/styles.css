@@ -9,7 +9,8 @@
     height: 60px;
     background: #fff;
     display: flex;
-    padding: 18px;
+    /* padding: 18px; */
+    align-items: center;
     justify-content: space-between;
     z-index: 999;
     transition: .6s;
@@ -162,7 +163,7 @@ button {
     width: 328px;
     height: 100%;
     padding: 13px;
-    font-family: Inter;
+    font-family:'DM Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -308,6 +309,7 @@ img.react-reveal.flash-bg-1.flash-3.navdesktop {
 .trustsection {
     text-align: center;
     margin-bottom: 100px;
+    margin-top: 200px;
 }
 
 .trust-content {
@@ -411,6 +413,7 @@ img {
 .reviewsection {
     padding-left: 144px;
     margin-bottom: 100px;
+    margin-top: 174px;
 }
 
 .reviews {
@@ -504,7 +507,7 @@ img {
     color: #0D152E;
 }
 .downloadsection {
-    margin-top: 50px;
+    margin-top: 150px;
     margin-left: 146px;
     margin-bottom: 100px;
 }
@@ -524,7 +527,7 @@ img {
     margin-bottom: 40px;
 }
 .sendsection {
-    margin-top: 98px;
+    margin-top: 150px;
     margin-left: 145px;
     margin-bottom: 100px;
     margin-right: 143px;
@@ -663,7 +666,7 @@ img {
     border-top: 0.5px solid #9B9EA9;
     padding-top: 22.5px;
     margin-top: 74.75px;
-    padding-bottom: 58px;
+    padding-bottom: 174px;
 }
 .hidden {
     display: none;
