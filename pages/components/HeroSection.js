@@ -822,7 +822,7 @@ const Hero =  (props) => {
             setLoading(false);
 
             if(result.code==100&&result.status){
-                inform("Download link sent to your number");
+                inform("Download link has been sent to your phone number");
                 setPhoneNumber('');
                 setActiveButton(false);
             }
