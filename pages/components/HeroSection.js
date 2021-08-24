@@ -427,7 +427,7 @@ const Hero =  (props) => {
                 <div className="col-md-6 herotextarea">
                 
                 <div className="hero-title-text">
-                    Digital dollars for Africans everywhere.
+                    A dollar account for global citizens
                 </div>
                 <div className="hero-sub-text">
                     Send and receive digital dollars with anyone anywhere, make online payments and earn yield.
