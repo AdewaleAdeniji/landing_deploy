@@ -4,7 +4,7 @@ import Fade from 'react-reveal/Fade';
 const TrustSignals = (props) => {
     return (
         <div className="trustsection">
-            <Fade duration={3000}duration={3000} bottom>
+            <Fade duration={3000} bottom>
             <div className="trust-title">
                 Why you should trust moneymie?
             </div>
