@@ -26,7 +26,7 @@ const SendUsd = (props) => {
             </div>
             </Fade>
         </div>
-        <img src="/images/flash-bg-1.png" className="flash-bg-1 navdesktop"/>
+        <img src="/images/img-flash.svg" className="flash-bg-1 navdesktop sm-screen"/>
         </>
     )
 }

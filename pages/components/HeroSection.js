@@ -7,6 +7,7 @@ import Swal from 'sweetalert2'
 import { countries,getEmojiFlag } from 'countries-list';
 import ShowToast from './toast';
 import sortArray from 'sort-array';
+import Typewriter from 'typewriter-effect/dist/core';
 const Hero =  (props) => {
     const [countrys,setCountries] = useState({"AD": { "name": "Andorra", "native": "Andorra", "phone": "376", "continent": "EU", "capital": "Andorra la Vella", "currency": "EUR", "languages": ["ca"], "emoji": "🇦🇩", "emojiU": "U+1F1E6 U+1F1E9" },
     "AE": { "name": "United Arab Emirates", "native": "دولة الإمارات العربية المتحدة", "phone": "971", "continent": "AS", "capital": "Abu Dhabi", "currency": "AED", "languages": ["ar"], "emoji": "🇦🇪", "emojiU": "U+1F1E6 U+1F1EA" },
@@ -762,6 +763,21 @@ const Hero =  (props) => {
             })
             console.log(e.target.classList);
         })
+        var app = document.getElementById('subtext');
+
+        var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 75,
+        });
+        typewriter
+        .pauseFor(1000)
+        .typeString('Send and receive digital dollars with <span style="color: #533DB5;">anyone</span> anywhere, make online payments and earn yield.')
+        .pauseFor(1000)
+        .deleteAll()
+        .typeString('Every cent saved by a <span style="color: #533DB5;">migrant</span> helps do more back home. So we built a bank that helps migrants thrive everywhere. <strong>Zero monthly fees. Zero remittance fees. </strong>')
+        .pauseFor(1000)
+        .start();
+
 
     },[])
     const HandleNumberChange = async (e) => {
@@ -877,8 +893,8 @@ const Hero =  (props) => {
                 <div className="hero-title-text">
                     A dollar account for global citizens
                 </div>
-                <div className="hero-sub-text">
-                    Send and receive digital dollars with anyone anywhere, make online payments and earn yield.
+                <div className="hero-sub-text" id="subtext">
+                    
                 </div>
                 <div className="sendlinkform">
                 <div className="inputarea">
@@ -929,7 +945,7 @@ const Hero =  (props) => {
                 <Fade duration={3000}right>
                     <div className="img-section">
                         {/* <img src="/images/loop.gif" className="loop"/> */}
-                        <img src="/images/hero-img.svg" className="heroimg"/>
+                        <img src="/images/hero-image-hero.svg" className="heroimg"/>
                     </div>
                 </Fade>
             </div>

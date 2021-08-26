@@ -25,7 +25,7 @@ const Download = (props) => {
                 </Fade>
             </div>
         </div>
-        <img src="/images/flash-bg-1.png" className="flash-bg-1 flash-3 navdesktop"/>
+        <img src="/images/img-flash.svg" className="flash-bg-1 flash-3 navdesktop"/>
         </Fade>
     )
 }
