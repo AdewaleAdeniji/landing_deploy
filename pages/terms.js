@@ -32,7 +32,9 @@ const Terms = (props) => {
 
                         <b>Electronic Fund Transfers (“EFTs”) and Account Balances. 
                         </b>
-                        <p>By creating a Moneymie Account and initiating bank deposits or withdrawals (i.e., EFTs), you agree to the Terms of Service and Privacy Policy of our financial software provider, Sila Inc. (together, the “Sila ToS”). You must comply with the Sila ToS when creating or using your Moneymie Account. The Sila ToS may be modified from time to time, and the governing version is incorporated by reference into these Terms of Service. Any term not defined in this [paragraph, section, or addendum] but defined in the Sila ToS assumes the meaning as defined in the Sila ToS. IT IS YOUR RESPONSIBILITY TO READ AND UNDERSTAND THE SILA ToS BECAUSE IT CONTAINS TERMS AND CONDITIONS CONCERNING YOUR MONEYMIE ACCOUNT, INCLUDING BUT NOT LIMITED TO LIMITATIONS, REVERSAL, AND ARBITRATION PROVISIONS, AND YOUR RELEVANT RIGHTS AND LIABILITIES.
+                        <p>By creating a Moneymie Account and initiating bank deposits or withdrawals (i.e., EFTs), you agree to the Terms of Service and Privacy Policy of our financial software provider, Sila Inc. (together, the 
+                            <a className="sila-link" href="https://silamoney.com/terms-of-service/" target="_blank" rel="noreferrer">“Sila ToS”
+                            </a>). You must comply with the Sila ToS when creating or using your Moneymie Account. The Sila ToS may be modified from time to time, and the governing version is incorporated by reference into these Terms of Service. Any term not defined in this [paragraph, section, or addendum] but defined in the Sila ToS assumes the meaning as defined in the Sila ToS. IT IS YOUR RESPONSIBILITY TO READ AND UNDERSTAND THE SILA ToS BECAUSE IT CONTAINS TERMS AND CONDITIONS CONCERNING YOUR MONEYMIE ACCOUNT, INCLUDING BUT NOT LIMITED TO LIMITATIONS, REVERSAL, AND ARBITRATION PROVISIONS, AND YOUR RELEVANT RIGHTS AND LIABILITIES.
                         </p>
 
                         <b>Use of the Platform</b>
