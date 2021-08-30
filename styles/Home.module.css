@@ -112,7 +112,9 @@
   height: 1em;
   margin-left: 0.5rem;
 }
-
+.sila-link {
+  color: #3A3391;
+}
 @media (max-width: 600px) {
   .grid {
     width: 100%;

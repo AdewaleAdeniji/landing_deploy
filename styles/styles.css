@@ -21,6 +21,9 @@
     border-radius: 16px;
     color: #FFFFFF;
 }
+.sila-link {
+    color: #3A3391;
+}
 .nav .navlogo {
     margin-left: 144px;
     cursor: pointer;
