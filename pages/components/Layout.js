@@ -4,7 +4,7 @@ const Layout = (props) => {
   return (
     <div>
       <Head>
-        <meta charset="utf-8" />
+        <meta charSet="utf-8" />
         <title>{props.pageTitle}</title>
         
         <meta name="title" content="A dollar account for global citizens"/>

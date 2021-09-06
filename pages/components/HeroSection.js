@@ -945,7 +945,7 @@ const Hero =  (props) => {
                 <Fade duration={3000}right>
                     <div className="img-section">
                         {/* <img src="/images/loop.gif" className="loop"/> */}
-                        <img src="/images/hero-image-hero.svg" className="heroimg"/>
+                        <img src="/images/side_image.svg" className="heroimg"/>
                     </div>
                 </Fade>
             </div>
