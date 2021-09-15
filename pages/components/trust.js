@@ -47,7 +47,7 @@ const TrustSignals = (props) => {
                     <div className="trust-text">
                         <h4>Trusted by 5k+ people</h4>
                         <div>
-                        Over 5000 Africans 🇳🇬  in the United States 🇺🇸 already use Moneymie.
+                        Over 5000 Africans  in the United States 🇺🇸 already use Moneymie.
                         </div>
 
                     </div>
