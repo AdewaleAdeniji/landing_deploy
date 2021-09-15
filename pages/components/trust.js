@@ -17,7 +17,7 @@ const TrustSignals = (props) => {
                         <img src="/images/coin.svg" alt="Coin Image"/>
                     </div>
                     <div className="trust-text">
-                        <h4>Your coins are secured</h4>
+                        <h4>Your money is FDIC insured</h4>
                         <div>
                         Digital dollars are tokens<br/> pegged to the value of real dollars.
                         </div>
@@ -31,7 +31,7 @@ const TrustSignals = (props) => {
                         <img src="/images/data.svg" alt="Data image"/>
                     </div>
                     <div className="trust-text">
-                        <h4>Your money is FDIC insured</h4>
+                        <h4>Your data is secured</h4>
                         <div>
                         Multiple levels of security and <br/>military grade encryption. 
                         </div>
