@@ -13,14 +13,14 @@ const SendUSD = (props) => {
         <div className="col-md-12 sendusdsection big-screen">
             <Fade duration={3000}left>
             <div className="col-md-6">
-            <img src='/images/sendusd2.png' className="sendusd"/>
+                <img src='/images/sendusd2.png' className="sendusd" alt="You can send digital dollars to anyone one. Digital dollars can be converted through licensed payout partners to multiple currencies."/>
             </div>
             </Fade>
             <Fade duration={3000}right>
             <div className="col-md-6">
                 <div className="makeusdcontainer">
                     <div className="smalltext">
-                        <img src="/images/arrowusd.png"/>
+                        <img src="/images/arrowusd.png" alt="Make wire transfers from your digital dollar wallet to any dollar bank account in the US and over 90 countries."/>
                         Domestic and International wire transfers
                     </div>
                     <h1 className="title-text">

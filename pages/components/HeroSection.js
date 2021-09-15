@@ -890,18 +890,18 @@ const Hero =  (props) => {
             <Bounce left>
                 <div className="col-md-6 herotextarea">
                 
-                <div className="hero-title-text">
-                 Digital dollars for Africans everywhere.
-                </div>
-                <div className="hero-sub-text" id="subtext">
+                <h1 className="hero-title-text">
+                    Digital dollars for Africans everywhere.
+                </h1>
+                <h6 className="hero-sub-text" id="subtext">
                     
-                </div>
+                </h6>
                 <div className="sendlinkform">
                 <div className="inputarea">
                         
                         <div className="options" onClick={handleCountries}>
                             <div className="chosenflag">
-                                <img src={`https://flagcdn.com/48x36/${countryCode}.png`}  width="16" height="12"/>
+                                <img src={`https://flagcdn.com/48x36/${countryCode}.png`}  width="16" height="12" alt="User Country"/>
                             </div>
                             <i className="fa fa-angle-down"></i>
                         </div>
@@ -929,10 +929,10 @@ const Hero =  (props) => {
                 </div>
                 <div className="downloadbuttons">
                     <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'>
-                        <img src="/images/androidownload.svg"/>
+                        <img src="/images/androidownload.svg" alt="Android Download Image"/>
                     </a>
                     <a href='https://apps.apple.com/us/app/moneymie/id1538278032'>
-                        <img className="ios" src="/images/iosdownload.svg"/>
+                        <img className="ios" src="/images/iosdownload.svg" alt="Ios Download Image"/>
                     </a>
                 </div>
         
@@ -945,7 +945,7 @@ const Hero =  (props) => {
                 <Fade duration={3000}right>
                     <div className="img-section">
                         {/* <img src="/images/loop.gif" className="loop"/> */}
-                        <img src="/images/side_image.svg" className="heroimg"/>
+                        <img src="/images/side_image.svg" className="heroimg" alt="Moneymie Transaction Screen"/>
                     </div>
                 </Fade>
             </div>

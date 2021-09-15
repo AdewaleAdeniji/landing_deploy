@@ -883,7 +883,7 @@ const SendLinkForm = (props) => {
                         
                         <div className="options" onClick={handleCountries}>
                             <div className="chosenflag">
-                                <img src={`https://flagcdn.com/48x36/${countryCode}.png`}  width="16" height="12"/>
+                                <img src={`https://flagcdn.com/48x36/${countryCode}.png`}  width="16" height="12" alt="User country"/>
                             </div>
                             <i className="fa fa-angle-down"></i>
                         </div>

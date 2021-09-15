@@ -8,7 +8,7 @@ const Footer = (props) => {
         <div className="footersection">
             <div className="footer-top">
                 <div className="footer-item">
-                    <img src="/images/logo.svg"/>
+                    <img src="/images/logo.svg" alt="Moneymie Logo"/>
                 </div>
                 <div className="footer-item">
                     <ul>
@@ -16,7 +16,9 @@ const Footer = (props) => {
                             COMPANY
                         </li>
                         <li><a href="https://medium.com/moneymie" target="_blank"  rel="noopener noreferrer">Blog</a></li>
-                        <li><a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">Moneymie for Business</a></li>
+                        <li>
+                            <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">Moneymie for Business</a>
+                        </li>
                     </ul>
                 </div>
                 <div className="footer-item">
@@ -38,16 +40,16 @@ const Footer = (props) => {
                         </li>
                         <li>
                             <a  href="mailto:hello@moneymie.com" target="_blank" rel="noopener noreferrer" className="contacticon" >
-                                <img src="/images/@.png"/>
+                                <img src="/images/@.png" alt="Email Icon"/>
                             </a>
                             <a  href="https://facebook.com/moneymie/" target="_blank" rel="noopener noreferrer" className="contacticon">
-                                <img src="/images/facebooknew.png" className="fb"/>
+                                <img src="/images/facebooknew.png" className="fb" alt="Facebook Image"/>
                             </a>
                             <a href="https://twitter.com/getMoneymie" target="_blank" rel="noopener noreferrer" className="contacticon">
-                                <img src="/images/twitternew.png"/>
+                                <img src="/images/twitternew.png" alt="Twitter Image"/>
                             </a>
                             <a href="https://www.instagram.com/moneymieapp" target="_blank" rel="noopener noreferrer" className="contacticon">
-                                <img src="/images/instanew.png"/>
+                                <img src="/images/instanew.png" alt="Instagram Icon"/>
                             </a>
                         </li>
                     </ul>

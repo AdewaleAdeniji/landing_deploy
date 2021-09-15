@@ -11,17 +11,17 @@ const Partners = (props) =>{
             <div className="partnerswrapper">
                 <div className="partners">
                     <div className="partnersection">
-                        <img src="/images/sherpa.svg"/>
-                        <img src="/images/vgg.svg"/>
-                        <img src="/images/futureafrica.svg"/>
-                        <img src="/images/l5.svg"/>
+                        <img src="/images/sherpa.svg" alt="Sherpa - Moneymie Business Partners"/>
+                        <img src="/images/vgg.svg" alt="VGG - Moneymie Business Partners"/>
+                        <img src="/images/futureafrica.svg" alt="Future Africa  - Moneymie Business Partners"/>
+                        <img src="/images/l5.svg" alt="L5 - Moneymie Business Partners"/>
                     </div>
                 </div>
                 <div className="partners">
                     <div className="partnersection">
-                        <img src="/images/sila.svg"/>
-                        <img src="/images/flutterwave.svg"/>
-                        <img src="/images/circle.svg"/>
+                        <img src="/images/sila.svg" alt="Sila  - Moneymie Business Partners"/>
+                        <img src="/images/flutterwave.svg" alt="Flutterwave  - Moneymie Business Partners"/>
+                        <img src="/images/circle.svg" alt="Circle  - Moneymie Business Partners"/>
                     </div>
                 </div>
             </div>

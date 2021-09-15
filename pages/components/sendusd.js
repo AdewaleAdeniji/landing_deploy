@@ -13,7 +13,7 @@ const SendUsd = (props) => {
             <div className="col-md-6">
                 {/* <div className="sendusdimg"> */}
                     {/* <Image className="sendusd" src={SendUSD} layout="intrinsic"/> */}
-                    <img src='/images/sendusd2.png' className="sendusd"/>
+                    <img src='/images/sendusd2.png' className="sendusd" alt="You can send digital dollars to anyone one. Digital dollars can be converted through licensed payout partners to multiple currencies."/>
                 {/* </div> */}
             </div>
             </Fade>
@@ -21,7 +21,7 @@ const SendUsd = (props) => {
             <div className="col-md-6">
                 {/* <div className="makeusdimg"> */}
                     {/* <Image className="makeusd" src={MakeUSD} layout="intrinsic"/> */}
-                    <img src='/images/makeusd.png' className="makeusd"/>
+                    <img src='/images/makeusd.png' className="makeusd" alt="Make wire transfers from your digital dollar wallet to any dollar bank account in the US and over 90 countries."/>
                 {/* </div> */}
             </div>
             </Fade>

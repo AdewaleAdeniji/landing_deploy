@@ -15,17 +15,17 @@ const Download = (props) => {
             <div className="downloadbuttons">
                 <Fade duration={3000}left>
                     <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'>
-                        <img src="/images/androidownload.svg"/>
+                        <img src="/images/androidownload.svg" alt="Android Download Image"/>
                     </a>
                 </Fade>
                 <Fade duration={3000}right>
                     <a href='https://apps.apple.com/us/app/moneymie/id1538278032'>
-                        <img className="ios" src="/images/iosdownload.svg"/>
+                        <img className="ios" src="/images/iosdownload.svg" alt="Ios Download Image"/>
                     </a>
                 </Fade>
             </div>
         </div>
-        <img src="/images/img-flash.svg" className="flash-bg-1 flash-3 navdesktop"/>
+        <img src="/images/img-flash.svg" className="flash-bg-1 flash-3 navdesktop" alt="image flash"/>
         </Fade>
     )
 }

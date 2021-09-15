@@ -14,7 +14,7 @@ const TrustSignals = (props) => {
                 <Fade duration={3000}bottom>
                 <div className="trust-item">
                     <div className="trust-item-image">
-                        <img src="/images/coin.svg"/>
+                        <img src="/images/coin.svg" alt="Coin Image"/>
                     </div>
                     <div className="trust-text">
                         <h4>Your coins are secured</h4>
@@ -28,7 +28,7 @@ const TrustSignals = (props) => {
                 <Fade duration={3000}bottom>
                 <div className="trust-item">
                     <div className="trust-item-image">
-                        <img src="/images/data.svg"/>
+                        <img src="/images/data.svg" alt="Data image"/>
                     </div>
                     <div className="trust-text">
                         <h4>Your data is secured</h4>
@@ -42,7 +42,7 @@ const TrustSignals = (props) => {
                 <Fade duration={3000}bottom>
                 <div className="trust-item">
                     <div className="trust-item-image">
-                        <img src="/images/trusted.svg"/>
+                        <img src="/images/trusted.svg" alt="Trusted Image"/>
                     </div>
                     <div className="trust-text">
                         <h4>Trusted by 5k+ people</h4>
@@ -56,7 +56,7 @@ const TrustSignals = (props) => {
             </div>
                 
             </Fade>
-            <img src="/images/flash-bg-2.png" className="flash-bg-2 navdesktop"/>
+            <img src="/images/flash-bg-2.png" className="flash-bg-2 navdesktop" alt="Dollar Icon"/> 
         </div>
     )
 }

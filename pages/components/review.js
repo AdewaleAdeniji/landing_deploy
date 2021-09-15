@@ -17,10 +17,10 @@ const Reviews = (props) => {
                     <div className="review-head">
                         <div className="review-rate">
                             <h1>4.3</h1>
-                            <img src="/images/stars.svg"/>
+                            <img src="/images/stars.svg" alt="Star"/>
                         </div>
                         <div className="review-app">
-                            <img src="/images/playstoreicon.svg"/>
+                            <img src="/images/playstoreicon.svg" alt="Playstore Icon"/>
                             Playstore Review
                         </div>
 

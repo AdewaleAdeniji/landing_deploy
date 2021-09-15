@@ -6,9 +6,10 @@ const Layout = (props) => {
       <Head>
         <meta charSet="utf-8" />
         <title>{props.pageTitle}</title>
-        
+        <meta http-equiv="content-language" content="en"/>
         <meta name="title" content="A dollar account for global citizens"/>
         <meta name="description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
+        
         <meta name="facebook-domain-verification" content="90dtiyvkvo4o12fykq5cp7s9inbpeq" />
         <meta name="facebook-domain-verification" content="jtjhek2y2k1ie3q7z09pzfyqawydb4" />
         <meta itemProp="name" content="A dollar account for global citizens"/>
