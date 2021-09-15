@@ -6,7 +6,7 @@ const Layout = (props) => {
       <Head>
         <meta charSet="utf-8" />
         <title>{props.pageTitle}</title>
-        <meta http-equiv="content-language" content="en"/>
+        <meta httpEquiv="content-language" content="en"/>
         <meta name="title" content="A dollar account for global citizens"/>
         <meta name="description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
         
