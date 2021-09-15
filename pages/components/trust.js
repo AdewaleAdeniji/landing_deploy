@@ -31,7 +31,7 @@ const TrustSignals = (props) => {
                         <img src="/images/data.svg" alt="Data image"/>
                     </div>
                     <div className="trust-text">
-                        <h4>Your data is secured</h4>
+                        <h4>Your money is FDIC insured</h4>
                         <div>
                         Multiple levels of security and <br/>military grade encryption. 
                         </div>
@@ -47,7 +47,7 @@ const TrustSignals = (props) => {
                     <div className="trust-text">
                         <h4>Trusted by 5k+ people</h4>
                         <div>
-                        Over 5000 Nigerians 🇳🇬  in the United States 🇺🇸 already use Moneymie.
+                        Over 5000 Africans 🇳🇬  in the United States 🇺🇸 already use Moneymie.
                         </div>
 
                     </div>

@@ -19,7 +19,7 @@ const HeaderNavBar = (props) => {
         <>
         <Fade duration={3000}top>
         <div className="nav navbar navdesktop">
-            <Link href="/">
+            <Link href="/" passHref>
                 {/* <Image src={Logo} alt="Moneymie Logo" className="navlogo"/> */}
                 <img src="images/logo.svg" className="navlogo" alt="Moneymie Logo"/>
             </Link>
@@ -29,7 +29,7 @@ const HeaderNavBar = (props) => {
             </div>
         </div>
         <div className="nav navbar mobilenav">
-            <Link href="/">
+            <Link href="/" passHref>
                 <img src="images/logo.svg" className="navlogo" alt="Moneymie Logo"/>
             </Link>
             <div className="align-right navlinks">

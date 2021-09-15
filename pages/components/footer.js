@@ -57,10 +57,10 @@ const Footer = (props) => {
             </div>
             <div className="footer-bottom">
                 <div className="footer-text">
-                Moneymie is a financial technology company and not a bank. Moneymie offers its products and services in partnership with custodial wallet provider, Circle, banking software provider Sila and Evolve Bank & Trust (Member FDIC).  Crypto to fiat conversions are done via payout partners in compliance with rules in different jurisdictions.
+                Moneymie is a financial technology company and not a bank. Moneymie offers its products and services in partnership with custodial wallet provider, Circle, banking software provider Sila and Evolve Bank & Trust (Member FDIC).  
                 </div>
                 <div className="footer-text">
-                Digital currency is not legal tender, is not backed by any federal government and Moneymie accounts are not FDIC insured. While Moneymie and its custodial partners make every effort to keep your money safe and covered, please note that any purchase and use of digital dollars entails risk. 
+                
                 </div>
             </div>
         </div>
