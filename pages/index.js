@@ -38,7 +38,7 @@ export default function Home() {
     window.intercomSettings = {app_id: "v63lode2"};
   }, []);
   return (
-    <Layout pageTitle="A dollar account for global citizens">
+    <Layout pageTitle="Digital dollars for Africans everywhere.">
         <HeaderNavBar/>
         <Hero/>
         <Partners/>
