@@ -765,18 +765,18 @@ const Hero =  (props) => {
         })
         var app = document.getElementById('subtext');
 
-        var typewriter = new Typewriter(app, {
-        loop: true,
-        delay: 75,
-        });
-        typewriter
-        .pauseFor(1000)
-        .typeString('Send and receive digital dollars with <span style="color: #533DB5;">anyone</span> anywhere, make online payments and earn yield.')
-        .pauseFor(1000)
-        .deleteAll()
-        .typeString('Every cent saved by a <span style="color: #533DB5;">migrant</span> helps do more back home. So we built a bank that helps migrants thrive everywhere. <strong>Zero monthly fees. Zero remittance fees. </strong>')
-        .pauseFor(1000)
-        .start();
+        // var typewriter = new Typewriter(app, {
+        // loop: true,
+        // delay: 75,
+        // });
+        // typewriter
+        // .pauseFor(1000)
+        // .typeString('Send and receive digital dollars with <span style="color: #533DB5;">anyone</span> anywhere, make online payments and earn yield.')
+        // .pauseFor(1000)
+        // .deleteAll()
+        // .typeString('Every cent saved by a <span style="color: #533DB5;">migrant</span> helps do more back home. So we built a bank that helps migrants thrive everywhere. <strong>Zero monthly fees. Zero remittance fees. </strong>')
+        // .pauseFor(1000)
+        // .start();
 
 
     },[])
@@ -894,7 +894,7 @@ const Hero =  (props) => {
                     Better Banking for African Migrants 
                 </h1>
                 <h6 className="hero-sub-text" id="subtext">
-                    
+                Every cent saved by a migrant helps do more back home. So we built a bank that helps migrants thrive everywhere.
                 </h6>
                 <div className="sendlinkform">
                 <div className="inputarea">
