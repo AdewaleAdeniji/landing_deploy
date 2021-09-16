@@ -891,7 +891,7 @@ const Hero =  (props) => {
                 <div className="col-md-6 herotextarea">
                 
                 <h1 className="hero-title-text">
-                    Digital dollars for Africans everywhere.
+                    Better Banking for African Migrants 
                 </h1>
                 <h6 className="hero-sub-text" id="subtext">
                     

@@ -7,28 +7,28 @@ const Layout = (props) => {
         <meta charSet="utf-8" />
         <title>{props.pageTitle}</title>
         <meta httpEquiv="content-language" content="en"/>
-        <meta name="title" content="A dollar account for global citizens"/>
+        <meta name="title" content="Better Banking for African Migrants" />
         <meta name="description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
         <meta name="keywords" content="moneymie,send money to nigeria, nigeria in diaspora, send money to africa, diaspora bank, digital dollars, moneymie, financial services, cross border payments"/>
 
 
         <meta name="facebook-domain-verification" content="90dtiyvkvo4o12fykq5cp7s9inbpeq" />
         <meta name="facebook-domain-verification" content="jtjhek2y2k1ie3q7z09pzfyqawydb4" />
-        <meta itemProp="name" content="A dollar account for global citizens"/>
+        <meta itemProp="name" content="Better Banking for African Migrants" />
         <meta itemProp="description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
         <meta itemProp="image" content="/images/favicon.png"/>
         
         {/* <!-- Open Graph / Facebook --> */}  
         <meta property="og:type" content="website"/>
         <meta property="og:url" content="https://facebook.com/moneymie/"/>
-        <meta property="og:title" content="A dollar account for global citizens"/>
+        <meta property="og:title" content="Better Banking for African Migrants" />
         <meta property="og:description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
         <meta property="og:image" content="/images/favicon.png"/>
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image"/>
         <meta property="twitter:url" content="https://twitter.com/getMoneymie"/>
-        <meta property="twitter:title" content="A dollar account for global citizens"/>
+        <meta property="twitter:title" content="Better Banking for African Migrants" />
         <meta property="twitter:description" content="Send and receive digital dollars with anyone anywhere, make online payments and earn yield."/>
         <meta property="twitter:image" content="/images/favicon.png"/>
         <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon"/>
