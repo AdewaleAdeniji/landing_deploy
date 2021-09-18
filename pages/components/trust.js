@@ -17,9 +17,9 @@ const TrustSignals = (props) => {
                         <img src="/images/coin.svg" alt="Coin Image"/>
                     </div>
                     <div className="trust-text">
-                        <h4>Your money is FDIC insured</h4>
+                        <h4>Your money is insured</h4>
                         <div>
-                        Digital dollars are tokens<br/> pegged to the value of real dollars.
+                        The money you bring into Moneymie is FDIC insured.
                         </div>
 
                     </div>
