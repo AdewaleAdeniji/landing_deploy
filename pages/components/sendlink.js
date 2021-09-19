@@ -809,8 +809,8 @@ const SendLinkForm = (props) => {
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
         var raw = JSON.stringify({
-        "phone": phoneCode+usernumber,
-        "country": "NGN"
+        "phone": usernumber,
+        "country": countryCode
         });
 
         var requestOptions = {
