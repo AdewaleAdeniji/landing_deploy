@@ -713,6 +713,8 @@ img {
     left: -35%;
     width: fit-content;
     bottom:-100%;
+    background: #FFFFFF;
+    display: none;
     /* overflow: scroll; */
 }
 .sendsection .countrydropdown {

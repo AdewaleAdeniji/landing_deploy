@@ -12,7 +12,6 @@ const ShowToast = (props) => {
         // props.show = false;
     }
     
-    console.log(showToast,props.show);
     return (
         <Fade duration={3000}top>
         <div id={props.show ? "toast-container" : 'hidden'} className="toast-top-right" onClick={closeToast}>
