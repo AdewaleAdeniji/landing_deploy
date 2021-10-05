@@ -11,7 +11,7 @@ const TrustSignals = (props) => {
             </Fade>
             <Fade duration={3000}bottom>
             <div className="trust-content">
-                <Fade duration={3000}bottom>
+                <Fade duration={3000} bottom>
                 <div className="trust-item">
                     <div className="trust-item-image">
                         <img src="/images/coin.svg" alt="Coin Image"/>

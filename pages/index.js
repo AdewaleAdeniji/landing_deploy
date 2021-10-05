@@ -16,12 +16,20 @@ import SendUSD from './components/sendusd2';
 
 
 export default function Home() {
+  
   useEffect(function() {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+   
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-    gtag('config', 'UA-155055672-1');
+          gtag('config', 'UA-155055672-1');
+        
+    // window.dataLayer = window.dataLayer || [];
+    // function gtag(){dataLayer.push(arguments);}
+    // gtag('js', new Date());
+
+    // gtag('config', 'UA-155055672-1');
 
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

@@ -45,6 +45,8 @@ const Layout = (props) => {
         />
         <link rel="manifest" href="/images/manifest.json"/>
         <link rel="apple-touch-icon" href="/images/favicon.png"/>
+        {/* Global site tag (gtag.js) - Google Analytics  */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155055672-1"></script>
         
       </Head>
       <div className="initdiv">
