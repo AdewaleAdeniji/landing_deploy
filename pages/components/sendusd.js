@@ -13,7 +13,7 @@ const SendUsd = (props) => {
             <div className="col-md-6">
                 {/* <div className="sendusdimg"> */}
                     {/* <Image className="sendusd" src={SendUSD} layout="intrinsic"/> */}
-                    <img src='/images/sendusd3.png' className="sendusd" alt="You can send digital dollars to anyone one. Digital dollars can be converted through licensed payout partners to multiple currencies."/>
+                    <img src='/images/sendusd4.png' className="sendusd" alt="You can send digital dollars to anyone one. Digital dollars can be converted through licensed payout partners to multiple currencies."/>
                 {/* </div> */}
             </div>
             </Fade>

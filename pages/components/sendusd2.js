@@ -13,7 +13,7 @@ const SendUSD = (props) => {
         <div className="col-md-12 sendusdsection big-screen">
             <Fade duration={3000}left>
             <div className="col-md-6">
-                <img src='/images/sendusd3.png' className="sendusd" alt="You can send digital dollars to anyone one. Digital dollars can be converted through licensed payout partners to multiple currencies."/>
+                <img src='/images/sendusd4.png' className="sendusd" alt="You can send digital dollars to anyone one. Digital dollars can be converted through licensed payout partners to multiple currencies."/>
             </div>
             </Fade>
             <Fade duration={3000}right>
