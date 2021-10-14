@@ -1,0 +1,78 @@
+.herosection .col-md-12.herotextarea {
+    display: block !important;
+}
+.sa {
+    background: url('/images/sa/Hero.png');
+}
+.downloadbuttons {
+    display: flex;
+}
+.btn-how-it-works {
+    background: #1C9B40;
+    border-radius: 8px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height, or 137% */
+    border: none;
+    text-align: center;
+
+    /* Money Green/Green 100 */
+
+    color: #EEFCF2;
+    padding: 20px;
+    width: 223px;
+    height: 58px;
+    margin-left: 40px;
+}
+.herosection .col-md-12.herotextarea {
+    padding-left: 144px;
+    padding-top: 108px;
+    width: 70%;
+}
+
+
+.initdiv {
+    width: 100%;
+    overflow: hidden;
+}
+.sendwrapper.sas {
+    width: 70%;
+}
+.sendwrapper .downloadbuttons {
+    justify-content: center;
+}
+.sareview {
+    background: #F9FFFA;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+@media (max-width:720px) {
+    .sendsection {
+        height: fit-content;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .herosection .col-md-12.herotextarea {
+        padding-left: 10px;
+        padding-top: 10px;
+        width: 85%;
+    }
+    .downloadbuttons {
+        display: block;
+    }
+    .btn-how-it-works {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .sendwrapper .downloadbuttons {
+        display: none;
+    }
+}
+@media (max-width:1200px) and (min-width:720px) {
+    .herosection .col-md-12.herotextarea {
+        width: 100%;
+    }
+}

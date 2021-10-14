@@ -542,6 +542,7 @@ img {
     border-radius: 12px;
     background-size: cover;
     /* width: 1152px; */
+    background-repeat: no-repeat;
     background: url('/images/<Fade duration={3000}2.png');
 }
 .img-section{
@@ -1259,6 +1260,9 @@ button.menubtn {
     #toast-container {
         right: 10vw  !important;
     }
+}
+@media(min-width:520px) and (max-width:720px){
+    
 }
 .reviewer {
     height: 32px;
