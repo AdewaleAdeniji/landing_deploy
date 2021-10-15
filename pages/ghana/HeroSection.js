@@ -18,24 +18,11 @@ const Hero =  (props) => {
     const [showtoast,setToast] = useState(false);
     const [toastMessage,setMessage] = useState('');
     const [toastType,setToastType] = useState(false);
+    const [openModal, setOpenModal] = useState(false);
     useEffect(()=>{
        
         
         var app = document.getElementById('subtext');
-
-        // var typewriter = new Typewriter(app, {
-        // loop: true,
-        // delay: 75,
-        // });
-        // typewriter
-        // .pauseFor(1000)
-        // .typeString('Send and receive digital dollars with <span style="color: #533DB5;">anyone</span> anywhere, make online payments and earn yield.')
-        // .pauseFor(1000)
-        // .deleteAll()
-        // .typeString('Every cent saved by a <span style="color: #533DB5;">migrant</span> helps do more back home. So we built a bank that helps migrants thrive everywhere. <strong>Zero monthly fees. Zero remittance fees. </strong>')
-        // .pauseFor(1000)
-        // .start();
-
 
     },[])
     const HandleNumberChange = async (e) => {
@@ -161,6 +148,9 @@ const Hero =  (props) => {
         }
 
     }
+   const handleToggleModal = () => { 
+       setOpenModal(!openModal);
+    }
     return (
         <>
         <div className="col-md-12 herosection ghana">
@@ -180,7 +170,7 @@ const Hero =  (props) => {
                     <a href='https://apps.apple.com/us/app/moneymie/id1538278032'>
                         <img className="ios" src="/images/iosdownload.svg" alt="Ios Download Image"/>
                     </a>
-                    <button className="btn btn-how-it-works">
+                    <button className="btn btn-how-it-works" onClick={handleToggleModal}>
                         <i className="fa fa-play"></i> See How It works
                     </button>
                 </div>
@@ -191,6 +181,12 @@ const Hero =  (props) => {
             </div>
             </Bounce>
             
+        </div>
+        <div className={openModal ? 'popupmodal' : 'hidden' }>
+                <i className="fa fa-close" onClick={handleToggleModal}></i>
+                <div className="popcontent">
+                <iframe width="560" height="315" src="/videos/how-it-works.mp4" title="How Moneymie Works" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
         </div>
         <ShowToast message={toastMessage} type={toastType} show={showtoast}/>
         </>
