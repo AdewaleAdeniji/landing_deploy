@@ -1,0 +1,6 @@
+@media(max-width:1000px){
+    .feature-item {
+        margin-top: 40px !important;
+        width: 100% !important;
+    }
+}

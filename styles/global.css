@@ -1,0 +1,67 @@
+.hero-title-text {
+    color: #3A3391;
+ }
+ .hero-sub-text {
+     color: #6B6F7D;
+     margin-bottom: 0;
+ }
+ .global .btn-hero {
+     margin-top: 16px;
+ }
+ 
+ .hero-image {
+     display: flex;
+     justify-content: center;
+ }
+ img.heroimg {
+     width: 500px;
+     height: 500px;
+     margin: 55px;
+ }
+ @media (max-width:700px) {
+     img.heroimg {
+         width: 300px;
+         height: 300px;
+     }
+ }
+ img.savings {
+    width: 350px;
+    image-rendering: pixelated;
+}
+.savingsection {
+    /* background: url('/images/savings/bg.svg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.waitlistmail {
+    width: 328px;
+    padding:18px;
+    height: 48px;
+    background: #FFFFFF;
+/* Money Grey/Grey 500 */
+
+    border: 0.5px solid #9B9EA9;
+    border-radius: 8px;
+
+}
+@media(min-width:1000px){
+    .feature-item {
+        margin-right: 120px;
+    }
+}
+@media(max-width:1000px){
+    .feature-item {
+        margin-top: 40px !important;
+        width: 100% !important;
+    }
+}
+.savings-sp {
+    background: #FFFAFD;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top:200px;
+    padding-bottom: 100px;
+}
+.features {
+    background: #FEF6EB;
+}

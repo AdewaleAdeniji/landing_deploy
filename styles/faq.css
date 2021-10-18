@@ -1,0 +1,86 @@
+
+.faq {
+    width: 100%;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+.faq .faqtitle {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+    text-align: left;
+
+    /* Money Purple/Purple 600 */
+    cursor: pointer;
+    color: #3A3391;
+    transition: .5s;
+}
+.faqtitle:hover {
+    color: #2318c7;
+}
+.faq .faqtitle i {
+    float: right;   
+    font-weight: lighter;
+    font-size: 30px;
+    color: #9B9EA9;
+    font-style: normal;
+    cursor: pointer;
+}
+.faq .faqtitle i:hover {
+    color: #3A3391;
+}
+.faq .faqtext {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    /* or 137% */
+    margin-top: 2vh;
+    animation-name: faqtext;
+    animation-duration: .6s;
+    animation-iteration-count: 1;
+    /* Money Grey/Grey 600 */
+    text-align: left;
+    color: #6B6F7D;
+}
+.faq .hidden {
+    display: none;
+}
+.col-md-12.faqsection {
+    height: 536px;
+    background: #FFFAFD;
+    padding-top: 160px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.faqs {
+    width:60%;
+}
+
+.faqs h2 {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
+/* identical to box height, or 122% */
+    text-align: center;
+    letter-spacing: -0.02em;
+
+/* Money Purple/Purple 600 */
+    color: #3A3391;
+}
+
+@media (max-width:600px){
+    .faq .faqtext {
+        text-align: left;
+    }
+    .col-md-12.faqsection {
+        height: fit-content;
+    }
+}

@@ -665,6 +665,7 @@ const Hero =  (props) => {
                     </div>
                 <button type="button" className={active ? 'active' : ''} onClick={SendSMS}>{loading ? 'Sending...' : 'Text me the link'}</button>
                 </div>
+                
                 <div className="downloadbuttons">
                     <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'>
                         <img src="/images/androidownload.svg" alt="Android Download Image"/>

@@ -4,7 +4,13 @@ import './ghana/ghana.css';
 import '../styles/toast.css';
 import '../styles/sendusd.css';
 import './sa/sa.css';
-import './nigeria/ng.css'
+import './nigeria/ng.css';
+
+import '../styles/header.css';
+
+import '../styles/global.css';
+import '../styles/faq.css';
+
 ;function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
