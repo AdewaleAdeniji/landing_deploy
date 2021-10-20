@@ -153,7 +153,7 @@ const SendWait = (props) => {
                 <div className="span">Enter your details and we will tell you when it’s ready </div>
                 <div className="sendlinkform">
                 <div className="inputarea">
-                    <input type="tel" placeholder="Enter your email address" value={usernumber}/>
+                    <input type="tel" placeholder="Enter your email address"/>
                 </div>
                     
                 <button type="button" className={active ? 'active' : ''}>{loading ? 'Sending...' : 'Join waitlist'}</button>

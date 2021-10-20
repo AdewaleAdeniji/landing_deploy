@@ -155,7 +155,7 @@ const SendLinkForm = (props) => {
                 </div>
                 <div className="downloadbuttons">
                     <a href='https://play.google.com/store/apps/details?id=moneymie.bank.nigeria.remit.sendmoney'>
-                        <img src="/images/ghana/android.svg" alt="Android Download Image"/>
+                        <img src="/images/ghana/android-app.png" alt="Android Download Image"/>
                     </a>
                     <a href='https://apps.apple.com/us/app/moneymie/id1538278032'>
                         <img className="ios" src="/images/ghana/ios.svg" alt="Ios Download Image"/>
