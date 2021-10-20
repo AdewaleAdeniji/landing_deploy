@@ -378,6 +378,9 @@ img {
     width:360px;
     margin-right: 33px;
 }
+button {
+    cursor: pointer;
+}
 @media (max-width:1000px){
     .trust-item{
         width: 100%;
