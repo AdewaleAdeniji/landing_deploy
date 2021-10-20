@@ -15,7 +15,7 @@ const Features = (props) => {
                 
                 <div className="feature-item">
                     <div className="feature-item-image">
-                        <img src="/images/laptop.svg" alt="Coin Image"/>
+                        <img src="/images/savings/lock.png" alt="Coin Image"/>
                     </div>
                     <div className="trust-text">
                         <h4> Fixed savings</h4>
@@ -28,12 +28,12 @@ const Features = (props) => {
 
                 <div className="feature-item">
                     <div className="feature-item-image">
-                        <img src="/images/man.svg" alt="Coin Image"/>
+                        <img src="/images/savings/auto.png" alt="Coin Image"/>
                     </div>
                     <div className="trust-text">
-                        <h4>Merchants</h4>
+                        <h4>Automated savings</h4>
                         <div>
-                        Pay or recieve payments from foreign distributors and retailers
+                        Set how much you want to save per period, for how long and you’re all set.
                         </div>
 
                     </div>
@@ -41,12 +41,12 @@ const Features = (props) => {
 
                 <div className="feature-item">
                     <div className="feature-item-image">
-                        <img src="/images/car.svg" alt="Coin Image"/>
+                        <img src="/images/savings/goal.png" alt="Coin Image"/>
                     </div>
                     <div className="trust-text">
-                        <h4>Car Dealers</h4>
+                        <h4>Goal Based</h4>
                         <div>
-                        Buy from car marketplaces
+                        Save towards that property, school, vacation or supporting family back home.
                         </div>
 
                     </div>
@@ -54,28 +54,16 @@ const Features = (props) => {
 
                 <div className="feature-item">
                     <div className="feature-item-image">
-                        <img src="/images/money.svg" alt="Coin Image"/>
+                        <img src="/images/savings/card.png" alt="Coin Image"/>
                     </div>
                     <div className="trust-text">
-                        <h4>Investors</h4>
+                        <h4>Ease in Ease out</h4>
                         <div>
-                        Make payments globally
+                        Withdrawals are instant to your debit card or 2-3 days via ACH.
                         </div>
                     </div>
                 </div>
 
-                <div className="feature-item">
-                    <div className="feature-item-image">
-                        <img src="/images/student.svg" alt="Coin Image"/>
-                    </div>
-                    <div className="trust-text">
-                        <h4>Students</h4>
-                        <div>
-                        Pay for school abroad
-                        </div>
-
-                    </div>
-                </div>
                 
              
             

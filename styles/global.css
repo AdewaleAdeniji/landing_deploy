@@ -18,16 +18,16 @@
      height: 500px;
      margin: 55px;
  }
- @media (max-width:700px) {
-     img.heroimg {
-         width: 300px;
-         height: 300px;
-     }
- }
  img.savings {
     width: 350px;
     image-rendering: pixelated;
 }
+ /* @media (max-width:700px) {
+     img.heroimg {
+         width: 300px;
+         height: 300px;
+     }
+ } */
 .savingsection {
     /* background: url('/images/savings/bg.svg'); */
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 }
 @media(min-width:1000px){
     .feature-item {
-        margin-right: 120px;
+        margin-right: 20px;
     }
 }
 @media(max-width:1000px){
@@ -64,4 +64,12 @@
 }
 .features {
     background: #FEF6EB;
+    margin-top: 0px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+.sendwrapper .span {
+    color: #fff;
+    text-align: center;
+    margin-top: 5px;
 }

@@ -11,6 +11,7 @@ import HowItWorks from './savings/howItWorks';
 import Global from './savings/global';
 import Footer from './savings/footer';
 import FAQ from './savings/faq';
+import SendWait from './savings/sendwait';
 export default function Savings() {
   useEffect(function() {
     window.dataLayer = window.dataLayer || [];
@@ -39,8 +40,7 @@ export default function Savings() {
         <Hero/>
         <HowItWorks/>
         <Features/>
-        <Global/>
-        <FAQ/>
+        <SendWait/>
         <Footer/>
     </Layout>
   )
