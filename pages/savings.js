@@ -4,14 +4,15 @@ import React, {  useEffect } from 'react';
 import styles from '../styles/Home.module.css'
 import Layout from './components/Layout';
 //components for index page
-import HeaderNavBar from './saving/HeaderNav';
-import Hero  from './saving/HeroSection';
-import Features from './saving/features';
-import HowItWorks from './saving/howItWorks';
-import Global from './saving/global';
-import Footer from './saving/footer';
-import FAQ from './saving/faq';
-import SendWait from './saving/sendwait';
+import HeaderNavBar from './savings/HeaderNav';
+import Hero  from './savings/HeroSection';
+import Features from './savings/features';
+import HowItWorks from './savings/howItWorks';
+import Global from './savings/global';
+import Footer from './savings/footer';
+import FAQ from './savings/faq';
+import SendWait from './savings/sendwait';
+
 export default function Savings() {
   useEffect(function() {
     window.dataLayer = window.dataLayer || [];
