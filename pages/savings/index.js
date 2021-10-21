@@ -1,17 +1,16 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import React, {  useEffect } from 'react';
-import styles from '../styles/Home.module.css'
-import Layout from './components/Layout';
+import Layout from '../components/Layout';
 //components for index page
-import HeaderNavBar from './savings/HeaderNav';
-import Hero  from './savings/HeroSection';
-import Features from './savings/features';
-import HowItWorks from './savings/howItWorks';
-import Global from './savings/global';
-import Footer from './savings/footer';
-import FAQ from './savings/faq';
-import SendWait from './savings/sendwait';
+import HeaderNavBar from './HeaderNav';
+import Hero  from './HeroSection';
+import Features from './features';
+import HowItWorks from './howItWorks';
+import Global from './global';
+import Footer from './footer';
+import FAQ from './faq';
+import SendWait from './sendwait';
 
 export default function Savings() {
   useEffect(function() {
