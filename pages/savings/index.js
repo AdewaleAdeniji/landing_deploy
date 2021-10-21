@@ -35,7 +35,7 @@ export default function Savings() {
     window.intercomSettings = {app_id: "v63lode2"};
   }, []);
   return (
-    <Layout pageTitle="Moneymie for Business">
+    <Layout pageTitle="Start saving, start winning. For free.">
         <HeaderNavBar/>
         <Hero/>
         <HowItWorks/>
