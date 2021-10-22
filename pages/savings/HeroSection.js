@@ -28,7 +28,7 @@ const Hero =  (props) => {
                 Moneymie’s saving tools help you save in ways traditional banks have failed to provide. Now you can really smash those financial goals.
                 </h6>
                 <div className="sendlinkform">
-                <input type="email" className="waitlistmail" placeholder="Enter your email address" value={useremail} onChange={HandleEmailChange}/>
+                <input type="email" className="waitlistmail" placeholder="Enter your email address" />
                 <button type="button" className={active ? 'active' : ''} onClick={SendSMS}>{loading ? 'Sending...' : 'Join our waitlist '}</button>
                 </div>
                 

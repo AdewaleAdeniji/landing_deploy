@@ -26,10 +26,10 @@ const Reviews = (props) => {
 
                     </div>
                     <div className="reviewtext">
-                    “This is the easiest Transaction platform I have encountered in recent times. You have created the best tool for Nigerian immigrants. So proud of you both. May the LORD bless more of your ventures in Jesus Name.”
+                    “Create a Moneymie account and send money to Ghana in 5 minutes. No stress or delays.”
                     
                     <h4 className="reviewer">
-                        Bayonle A, Houston TX
+                        
                     </h4>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ const Reviews = (props) => {
 
                     </div>
                     <div className="reviewtext">
-                    “The process is unbelievably seamless. And no charges!! #Heaven. Girl the money is in my GTBank already. No be juju be that.”
+                    “I like how seamless transactions are and how cool the interface is. It’s also zero fees… what’s there not to love?”
                     
                     <h4 className="reviewer">
                         {/* Bayonle A, Houston TX */}

@@ -19,7 +19,7 @@ const TrustSignals = (props) => {
                     <div className="trust-text">
                         <h4>Simple and Convenient</h4>
                         <div>
-                        Create a Moneymie account and send money to Ghana in 5 minutes. No stress or delays. 
+                        Create a Moneymie account and send money to South Africa in 5 minutes. No stress or delays. 
                         </div>
 
                     </div>
@@ -33,8 +33,8 @@ const TrustSignals = (props) => {
                     <div className="trust-text">
                         <h4>Low transfer fees </h4>
                         <div>
-                        Send cedis directly to a Ghanaian bank account 
-                        or mobile money wallet at the lowest possible cost. 
+                        Send Rand directly to a South African bank account or mobile money wallet at the lowest possible cost. 
+
 
                         </div>
 
@@ -49,7 +49,7 @@ const TrustSignals = (props) => {
                     <div className="trust-text">
                         <h4>Safe and Trusted </h4>
                         <div>
-                        More than 5,000 Africans in the US use Moneymie to send money to Nigeria and Ghana. Here is what they have to say about Moneymie
+                        More than 5,000 Africans in the US use Moneymie to send money to South Africa. Here is what they have to say about Moneymie
                         </div>
 
                     </div>

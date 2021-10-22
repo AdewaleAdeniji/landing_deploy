@@ -7,7 +7,7 @@ const Layout = (props) => {
         <meta charSet="utf-8" />
         <title>{props.pageTitle}</title>
         <meta httpEquiv="content-language" content="en"/>
-        <meta name="title" content={props.pageTitle}/>
+        <meta name="title" content="Better Banking for African Migrants" />
         <meta name="description" content="Moneymie’s saving tools help you save in ways traditional banks have failed to provide. Now you can really smash those financial goals."/>
         <meta name="keywords" content="Moneymie,send money to nigeria, nigeria in diaspora, send money to africa, diaspora bank, digital dollars, moneymie, financial services, cross border payments"/>
 

@@ -26,10 +26,10 @@ const Reviews = (props) => {
 
                     </div>
                     <div className="reviewtext">
-                    “This is the easiest Transaction platform I have encountered in recent times. You have created the best tool for Nigerian immigrants. So proud of you both. May the LORD bless more of your ventures in Jesus Name.”
+                    “Its fast and reliable, no need to start asking people to help me send money to nigeria now.”
                     
                     <h4 className="reviewer">
-                        Bayonle A, Houston TX
+                        {/* Bayonle A, Houston TX */}
                     </h4>
                     </div>
                 </div>
@@ -48,7 +48,7 @@ const Reviews = (props) => {
 
                     </div>
                     <div className="reviewtext">
-                    “The process is unbelievably seamless. And no charges!! #Heaven. Girl the money is in my GTBank already. No be juju be that.”
+                    “Easy and straight forward app addressing FX transfer challenges across international borders. No regrets whatsoever since I started using and customer service is top-notch through email and telegram channels..”
                     
                     <h4 className="reviewer">
                         {/* Bayonle A, Houston TX */}
