@@ -76,3 +76,19 @@ button {
     text-align: center;
     margin-top: 5px;
 }
+.info {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #47D187;
+    margin-top: 15px;
+}
+.danger {
+    color:rgb(138, 19, 19);
+}
+.sendwrapper .danger {
+    color: #fff;
+}
