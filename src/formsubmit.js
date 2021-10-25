@@ -1,6 +1,6 @@
 import React from 'react';
-import constants from '../constants';
-import { httpPost } from '../requests';
+import constants from './constants';
+import { httpPost } from './requests';
 const formsubmit = {};
 
 formsubmit.validateEmail = (email) => {

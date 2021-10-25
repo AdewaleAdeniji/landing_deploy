@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react';
 import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
-import formsubmit from './formsubmit';
+import formsubmit from '../../src/formsubmit';
 
 
 const Hero =  (props) => {

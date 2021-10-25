@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import Fade from 'react-reveal/Fade';
-import formsubmit from './formsubmit';
+import formsubmit from '../../src/formsubmit';
 
 const SendWait = (props) => {
     const [active, setActiveState ]=  useState(false);
