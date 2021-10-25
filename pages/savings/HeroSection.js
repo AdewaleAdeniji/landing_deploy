@@ -3,28 +3,47 @@ import Image from 'next/image';
 import Fade from 'react-reveal/Fade';
 import Bounce from 'react-reveal/Bounce';
 import formsubmit from '../../src/formsubmit';
-
+import { validateEmail, submitEmail } from '../../src/formsubmit';
 
 const Hero =  (props) => {
-    const [active, setActiveState ]=  useState(false);
+    const [active, setActiveState] =  useState(false);
     const [loading , setLoading] = useState(false);
     const [email, setEmail] = useState('');
     const [toast, setToast] = useState({ type: true,message:''});
-    const AddToWaitlist = async () => {
-        if(formsubmit.validateEmail(email)){
-            setLoading(true);
-            setActiveState(false);
-            setToast({
-                type:true,
-                message:''
-            })
-            const submitemail =  await formsubmit.submitEmail(email);
+    const submitEmail = async (email) => {
+        const payload = { 
+            "email":email,
+            "waitlist-group-key":"moneymie-savings"
+        };
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+
+        var raw = JSON.stringify(payload);
+
+        var requestOptions = {
+        method: 'POST',
+        headers: myHeaders,
+        body: raw,
+        redirect: 'follow'
+        };
+
+        await fetch("https://staging.moneymie.com/api/v2/public/user/waitlists", requestOptions)
+        .then(response => response.json())
+        .then(async (data)=>{
             setLoading(false);
             setActiveState(true);
-            if(submitemail){
+            if(data.status&&data.code==100){
                 setToast({
                     type:true,
                     message:'Thank you. We would inform you once we launch this feature'
+                })
+                
+            }
+            else if(data.code==900){
+                
+                setToast({
+                    type:false,
+                    message:data.message
                 })
             }
             else {
@@ -33,6 +52,24 @@ const Hero =  (props) => {
                     message:'Request Failed at the moment,Please try again'
                 })
             }
+        })
+        .catch(error => { 
+            setToast({
+                type:false,
+                message:'Request Failed at the moment,Please try again'
+            })
+        });
+}
+    const AddToWaitlist = async () => {
+        if(validateEmail(email)){
+            setLoading(true);
+            setActiveState(false);
+            setToast({
+                type:true,
+                message:''
+            })
+            submitEmail(email);
+            
         }
         else {
             setActiveState(false);
@@ -44,7 +81,7 @@ const Hero =  (props) => {
     } 
     const HandleEmailChange = (e) => {
         setEmail(e.target.value);
-        const setactive = formsubmit.validateEmail(e.target.value);
+        const setactive = validateEmail(e.target.value);
         setActiveState(setactive);
         
     }
@@ -63,7 +100,7 @@ const Hero =  (props) => {
                 </h6>
                 <div className="sendlinkform">
                 <input type="email" className="waitlistmail" placeholder="Enter your email address" onChange={HandleEmailChange} value={email}/>
-                <button type="button" className={active ? 'active' : ''} onClick={AddToWaitlist} disabled={!active}>{loading ? 'Sending...' : 'Join our waitlist '}</button>
+                <button type="button" className={active ? 'active' : ''} onClick={AddToWaitlist} disabled={!active}>{loading ? 'Joining....' : 'Join our waitlist '}</button>
                 </div>
                 <div className={toast.message!='' ?  toast.type ? "info" : "info danger" : 'hidden' }>
                     {toast.message} 

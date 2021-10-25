@@ -24,7 +24,7 @@ const HeaderNavBar = (props) => {
             </Link>
             <div className="align-right navlinks">
                 <a href="https://medium.com/moneymie" target="_blank"  rel="noopener noreferrer">Blog</a>
-                <a className="mforb" href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">Get Moneymie for Business</a>
+                <a className="mforb" href="https://business.moneymie.com" target="_blank"  rel="noopener noreferrer">Get Moneymie for Business</a>
             </div>
         </div>
         <div className="nav navbar mobilenav">
@@ -51,7 +51,7 @@ const HeaderNavBar = (props) => {
                                     </a>
                                 </li>
                                 <li>
-                                    <a  href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">
+                                    <a  href="https://business.moneymie.com" target="_blank"  rel="noopener noreferrer">
                                             Get Moneymie for Business <i className="fa fa-angle-right"></i>
                                     </a>
                                 </li>

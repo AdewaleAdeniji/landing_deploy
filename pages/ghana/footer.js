@@ -17,7 +17,7 @@ const Footer = (props) => {
                         </li>
                         <li><a href="https://medium.com/moneymie" target="_blank"  rel="noopener noreferrer">Blog</a></li>
                         <li>
-                            <a href="https://moneymie.link/usdcpay" target="_blank"  rel="noopener noreferrer">Moneymie for Business</a>
+                            <a href="https://business.moneymie.com" target="_blank"  rel="noopener noreferrer">Moneymie for Business</a>
                         </li>
                     </ul>
                 </div>
