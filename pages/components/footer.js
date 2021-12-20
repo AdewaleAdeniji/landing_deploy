@@ -8,7 +8,7 @@ const Footer = (props) => {
         <div className="footersection">
             <div className="footer-top">
                 <div className="footer-item">
-                    <img src="/images/logo.svg" alt="Moneymie Logo"/>
+                    <img src="https://tech-244-new-design.d3std8zbt7sjj7.amplifyapp.com/static/media/moneymie-logo.e19bcead.png" alt="Moneymie Logo"/>
                 </div>
                 <div className="footer-item">
                     <ul>

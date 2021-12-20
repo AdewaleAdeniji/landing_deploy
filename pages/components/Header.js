@@ -21,7 +21,7 @@ const HeaderNavBar = (props) => {
         <div className="nav navbar navdesktop">
             <Link href="/" passHref>
                 {/* <Image src={Logo} alt="Moneymie Logo" className="navlogo"/> */}
-                <img src="images/logo.svg" className="navlogo" alt="Moneymie Logo"/>
+                <img src="https://tech-244-new-design.d3std8zbt7sjj7.amplifyapp.com/static/media/moneymie-logo.e19bcead.png" className="navlogo" alt="Moneymie Logo"/>
             </Link>
             <div className="align-right navlinks">
                 <a href="https://medium.com/moneymie" target="_blank"  rel="noopener noreferrer">Blog</a>
