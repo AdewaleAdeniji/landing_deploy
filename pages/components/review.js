@@ -4,9 +4,9 @@ import Flip from 'react-reveal/Flip';
 
 const Reviews = (props) => {
     return (
-        <Fade duration={3000}bottom>
+        <Fade duration={500}bottom>
         <div className="reviewsection">
-            <Fade duration={3000}right>
+        <Fade duration={500} bottom>
             <div className="review-title">
                 Wonderful words from our users
             </div>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Footer = (props) => {
     return (
-        <Fade duration={3000}bottom>
+        <Fade duration={500}bottom>
         <div className="footersection">
             <div className="footer-top">
                 <div className="footer-item">

@@ -625,7 +625,7 @@ const Hero =  (props) => {
     return (
         <>
         <div className="col-md-12 herosection">
-            <Bounce left>
+            <Bounce duration={500} left>
                 <div className="col-md-6 herotextarea">
                 
                 <h1 className="hero-title-text">
@@ -681,7 +681,7 @@ const Hero =  (props) => {
             </div>
             </Bounce>
             <div className="col-md-6 hero-image">
-                <Fade duration={3000}right>
+            <Fade duration={500} bottom>
                     <div className="img-section">
                         {/* <img src="/images/loop.gif" className="loop"/> */}
                         <img src="/images/side_image.svg" className="heroimg" alt="Moneymie Transaction Screen"/>

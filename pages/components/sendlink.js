@@ -612,7 +612,7 @@ const SendLinkForm = (props) => {
 
     }
     return (
-        <Fade duration={3000}bottom>
+        <>
             <div className="sendsection">
             <div className="sendwrapper">
                 <div className="sendtitle">
@@ -662,7 +662,7 @@ const SendLinkForm = (props) => {
 
         </div>
         <ShowToast message={toastMessage} type={toastType} show={showtoast}/>
-        </Fade>
+        </>
     )
 }
 export default SendLinkForm;

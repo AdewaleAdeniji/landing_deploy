@@ -11,12 +11,12 @@ const SendUSD = (props) => {
     return (
         <>
         <div className="col-md-12 sendusdsection big-screen">
-            <Fade duration={3000}left>
+        <Fade duration={500} bottom>
             <div className="col-md-6">
                 <img src='/images/sendusd4.png' className="sendusd" alt="You can send digital dollars to anyone one. Digital dollars can be converted through licensed payout partners to multiple currencies."/>
             </div>
             </Fade>
-            <Fade duration={3000}right>
+            <Fade duration={500} bottom>
             <div className="col-md-6">
                 <div className="makeusdcontainer">
                     <div className="smalltext">
