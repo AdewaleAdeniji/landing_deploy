@@ -1,3 +1,4 @@
+@import url('blog.css');
 .initdiv {
     width: 100%;
     overflow: hidden;
@@ -1054,7 +1055,6 @@ button.menubtn {
         padding: 7px;
         font-size: 12px;
         transition: .5s;
-        outline:0.5px solid #3A3391;;
     }
     input[type="tel"]:hover , input[type="tel"]:focus{
         border: 0.5px solid #3A3391;

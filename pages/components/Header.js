@@ -24,8 +24,11 @@ const HeaderNavBar = (props) => {
                 <img src="https://tech-244-new-design.d3std8zbt7sjj7.amplifyapp.com/static/media/moneymie-logo.e19bcead.png" className="navlogo" alt="Moneymie Logo"/>
             </Link>
             <div className="align-right navlinks">
-                <a href="https://medium.com/moneymie" target="_blank"  rel="noopener noreferrer">Blog</a>
-                <a href="https://business.moneymie.com" target="_blank"  rel="noopener noreferrer">Get Moneymie for Business</a>
+                <a href="https://business.moneymie.com" target="_blank"  rel="noopener noreferrer">Get Moneymie for Business
+                 &nbsp;&nbsp;<i className='fa fa-angle-right'></i> </a>
+                <a id="my_custom_link">Seek Advice </a>
+                 
+                <a href="https://medium.com/moneymie" target="_blank" className="blog"  rel="noopener noreferrer">Blog</a>
             </div>
         </div>
         <div className="nav navbar mobilenav">
@@ -49,6 +52,11 @@ const HeaderNavBar = (props) => {
                                 <li>
                                     <a href="https://medium.com/moneymie" target="_blank"  rel="noopener noreferrer">
                                             Blog
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://medium.com/moneymie" target="_blank"  rel="noopener noreferrer">
+                                    Seek Advice
                                     </a>
                                 </li>
                                 <li>

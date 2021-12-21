@@ -1,0 +1,141 @@
+a.blog {
+    background: #22B94C;
+    color: #fff;
+}
+.blog-tabs {
+    margin-top: 60px;
+    background: #FEF6EB;
+    height: 60px;
+    padding-left: 143px;
+}
+
+.blog-tabs .tabs {
+    width: 500px;
+    padding: 0;
+}
+
+.tabs ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    height: 60px;
+    padding: 0;
+    /* justify-content: space-between; */
+}
+
+.tabs li.tab {
+    /* margin-right: 32px; */
+    /* background: red; */
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    width: fit-content;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Money Purple/Purple 600 */
+    color: #6B6F7D;
+    padding-right: 20px;
+    transition: .6s;
+    padding-left: 20px;
+}
+
+.tabs li.tab.active {
+    color: #3A3391;
+    border-bottom: 3px solid #3A3391;
+}
+.tabs li.tab:hover {
+    color: #3A3391;
+    border-bottom: .5px solid #3A3391;
+}
+.blog-featured {
+    /* height: 729px; */
+    background-color: #fff;
+    background: url('/images/blog-bg.svg');
+    background-position: right;
+    padding-left: 143px;
+    padding-top: 104px;
+    display: flex;
+    padding-bottom: 120px;
+}
+.blog-featured .blog-image img {
+    width: 563px;
+    height: 505px;
+}
+
+.blog-image {
+    margin-top: 104px;
+}
+
+.blog-d {
+    margin-left: 68px;
+    margin-top: 135px;
+}
+
+.blog-featured .blog-tag {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Money Grey/Grey 600 */
+    color: #6B6F7D;
+}
+
+.blog-title {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 72px;
+/* or 120% */
+    letter-spacing: -0.02em;
+
+/* Money Purple/Purple 800 */
+    color: #19145C;
+    margin-top: 20px;
+}
+
+
+.blog-d .blog-date {
+    margin-top: 20px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Money Grey/Grey 600 */
+    color: #6B6F7D;
+}
+
+button.btn-read {
+    width: 175px;
+    height: 40px;
+    background: #3A3391;
+    border-radius: 8px;
+    margin-top: 33px;
+    border: none;
+    color: #fff;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+/* identical to box height, or 137% */
+    text-align: center;
+    color: #FFFFFF;
+}
