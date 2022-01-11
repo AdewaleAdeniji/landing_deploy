@@ -1,141 +1,351 @@
 a.blog {
-    background: #22B94C;
-    color: #fff;
+  background: #22b94c;
+  color: #fff;
 }
 .blog-tabs {
-    margin-top: 60px;
-    background: #FEF6EB;
-    height: 60px;
-    padding-left: 143px;
+  margin-top: 60px;
+  background: #fef6eb;
+  height: 60px;
+  padding-left: 143px;
 }
 
 .blog-tabs .tabs {
-    width: 500px;
-    padding: 0;
+  width: 500px;
+  padding: 0;
 }
 
 .tabs ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    height: 60px;
-    padding: 0;
-    /* justify-content: space-between; */
+  display: flex;
+  list-style: none;
+  align-items: center;
+  height: 60px;
+  padding: 0;
+  /* justify-content: space-between; */
 }
 
 .tabs li.tab {
-    /* margin-right: 32px; */
-    /* background: red; */
-    height: 60px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    align-items: center;
-    width: fit-content;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
-/* identical to box height, or 129% */
+  /* margin-right: 32px; */
+  /* background: red; */
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  width: fit-content;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
 
-
-/* Money Purple/Purple 600 */
-    color: #6B6F7D;
-    padding-right: 20px;
-    transition: .6s;
-    padding-left: 20px;
+  /* Money Purple/Purple 600 */
+  color: #6b6f7d;
+  padding-right: 20px;
+  transition: 0.6s;
+  padding-left: 20px;
 }
 
 .tabs li.tab.active {
-    color: #3A3391;
-    border-bottom: 3px solid #3A3391;
+  color: #3a3391;
+  border-bottom: 3px solid #3a3391;
 }
 .tabs li.tab:hover {
-    color: #3A3391;
-    border-bottom: .5px solid #3A3391;
+  color: #3a3391;
+  border-bottom: 0.5px solid #3a3391;
 }
 .blog-featured {
-    /* height: 729px; */
-    background-color: #fff;
-    background: url('/images/blog-bg.svg');
-    background-position: right;
-    padding-left: 143px;
-    padding-top: 104px;
-    display: flex;
-    padding-bottom: 120px;
+  /* height: 729px; */
+  background-color: #fff;
+  background: linear-gradient(90deg, #fff 30%, #fef6eb 30%);
+  background-position: right;
+  padding-left: 143px;
+  padding-top: 104px;
+  display: flex;
+  padding-bottom: 120px;
 }
 .blog-featured .blog-image img {
-    width: 563px;
-    height: 505px;
+  width: 563px;
+  height: 505px;
 }
 
 .blog-image {
-    margin-top: 104px;
+  margin-top: 104px;
 }
 
 .blog-d {
-    margin-left: 68px;
-    margin-top: 135px;
+  margin-left: 68px;
+  margin-top: 135px;
 }
 
 .blog-featured .blog-tag {
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-/* identical to box height, or 129% */
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
 
-
-/* Money Grey/Grey 600 */
-    color: #6B6F7D;
+  /* Money Grey/Grey 600 */
+  color: #6b6f7d;
 }
 
 .blog-title {
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 72px;
-/* or 120% */
-    letter-spacing: -0.02em;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 72px;
+  width: 80%;
+  /* or 120% */
+  letter-spacing: -0.02em;
 
-/* Money Purple/Purple 800 */
-    color: #19145C;
-    margin-top: 20px;
+  /* Money Purple/Purple 800 */
+  color: #19145c;
+  margin-top: 20px;
 }
 
-
 .blog-d .blog-date {
-    margin-top: 20px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+  margin-top: 20px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  /* Money Grey/Grey 600 */
+  color: #6b6f7d;
+}
+
+button.btn-read {
+  width: 175px;
+  height: 40px;
+  background: #3a3391;
+  border-radius: 8px;
+  margin-top: 33px;
+  border: none;
+  color: #fff;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height, or 137% */
+  text-align: center;
+  color: #ffffff;
+}
+.blog-grid {
+  padding-top: 100px;
+  padding-left: 140px;
+  padding-bottom: 100px;
+}
+
+.blog-grid h2 {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height, or 122% */
+  letter-spacing: -0.02em;
+
+  /* Money Purple/Purple 600 */
+  color: #3a3391;
+  margin: 0;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+
+.grid-blogs {
+  display: flex;
+}
+
+.blog {
+  width: 363px;
+  margin-right: 28px;
+}
+
+.grid-blogs .blog-image {
+  margin-top: 0px;
+  width: 100%;
+}
+
+.blog-image img {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.grid-blogs .blog .content {
+  margin-top: 38px;
+}
+
+.category {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  /* Money Grey/Grey 600 */
+  color: #6b6f7d;
+}
+.blog .blog-title {
+  font-size: 24px;
+  line-height: 30px;
+  width: 85%;
+}
+
+.blog-date {
+  margin-top: 8px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  /* Money Grey/Grey 600 */
+  color: #6b6f7d;
+}
+.blog-grid.education {
+  background: #f9fffa;
+}
+.blog-grid.health {
+  background: #fffafd;
+}
+.blog-block {
+  padding-top: 100px;
+  padding-left: 140px;
+  width: 80vw;
+  padding-bottom: 132px;
+}
+
+.blog-block h2 {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  /* identical to box height, or 122% */
+  letter-spacing: -0.02em;
+
+  /* Money Purple/Purple 600 */
+  color: #3a3391;
+  margin: 0;
+}
+
+.block-blogs {
+  margin-top: 35px;
+}
+
+.block-blogs .blog {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 35px;
+  justify-content: left;
+  border-bottom: 0.5px solid #ced9e8;
+  padding-bottom: 35px;
+}
+
+.block-blogs .blog-image img {
+  /* width: 264px; */
+  height: 167px;
+  object-fit: cover;
+}
+
+.block-blogs .blog-image {
+  margin-top: 0;
+  margin-right: 35px;
+}
+
+.block-blogs .blog .blog-title {
+  width: 100%;
+}
+
+.loginsection {
+  padding: 5px 16px;
+  min-height: 400px;
+}
+.blog-details {
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 100px;
+}
+
+.blog-details .blog-title {
+  width: 100%;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 72px;
+/* or 120% */
+  letter-spacing: -0.02em;
+
+/* Money Grey/Grey 800 */
+  color: #282F45;
+  margin-bottom: 24px;
+}
+
+.catergory {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
 /* identical to box height, or 129% */
 
 
 /* Money Grey/Grey 600 */
-    color: #6B6F7D;
+  color: #6B6F7D;
 }
 
-button.btn-read {
-    width: 175px;
-    height: 40px;
-    background: #3A3391;
-    border-radius: 8px;
-    margin-top: 33px;
-    border: none;
-    color: #fff;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-/* identical to box height, or 137% */
-    text-align: center;
-    color: #FFFFFF;
+.blog-meta {
+  /* display: flex; */
+}
+
+.blog-meta ul {
+  display: flex;
+  justify-content: left;
+}
+
+.blog-meta li {
+  margin-right: 40px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+/* identical to box height, or 129% */
+
+
+/* Money Grey/Grey 600 */
+  color: #6B6F7D;
+}
+
+.blog-details .blog-image {
+  margin-top: 66px;
+}
+
+.blog-details .blog-image img {width: 100%;}
+
+.blog-content {
+  margin-top: 74px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+/* or 137% */
+
+
+/* Money Grey/Grey 700 */
+  color: #43495C;
+}
+button.submit-form:disabled {
+  background: #6b6f7d;
 }

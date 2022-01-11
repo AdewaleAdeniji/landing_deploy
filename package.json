@@ -10,18 +10,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.1.1",
+    "@chakra-ui/react": "^1.7.4",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "axios": "^0.24.0",
+    "check-password-strength": "^2.0.3",
     "countries-list": "^2.6.1",
+    "framer-motion": "^5.5.5",
     "joi": "^17.4.2",
     "jquery": "^3.6.0",
     "json-beautify": "^1.1.1",
+    "moment": "^2.29.1",
     "next": "^11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-otp-input": "^2.4.0",
     "react-reveal": "^1.2.2",
+    "react-toastify": "^8.1.0",
     "sort-array": "^4.1.4",
     "sweetalert2": "^11.1.0",
     "toastr": "^2.1.4",
-    "typewriter-effect": "^2.18.0"
+    "typewriter-effect": "^2.18.0",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "eslint": "7.31.0",

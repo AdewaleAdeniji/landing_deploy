@@ -1,12 +1,23 @@
+import Head from "next/head";
+import Image from "next/image";
 import React, { useEffect } from "react";
+import styles from "../styles/Home.module.css";
 import Layout from "./components/Layout";
 import HeaderNavBar from "./components/Header";
+import Hero from "./components/HeroSection";
+import Partners from "./components/partners";
+import SendUsd from "./components/sendusd";
+import TrustSignals from "./components/trust";
+import Reviews from "./components/review";
+import Download from "./components/download";
+import SendLinkForm from "./components/sendlink";
 import Footer from "./components/footer";
-import BlogTabs from "../components/blogtab";
-import { FeaturedBlog } from "../components/featured";
-import { GridBlog } from "../components/gridblogs";
-import { BlockBlog } from "../components/blockblogs";
-export default function Blogs(props) {
+import SendUSD from "./components/sendusd2";
+import { isLoggedIn } from "../components/user";
+import { useRouter } from "next/dist/client/router";
+import { toast } from "react-toastify";
+export default function Home() {
+  const history = useRouter();
   useEffect(function () {
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -79,36 +90,56 @@ export default function Blogs(props) {
         }
       }
     })();
-    window.intercomSettings = { app_id: "v63lode2",custom_launcher_selector:'#my_custom_link' };
+    window.intercomSettings = {
+      app_id: "v63lode2",
+      custom_launcher_selector: "#my_custom_link",
+    };
   }, []);
-  const BLOG_URL = 'http://ec2-3-18-44-14.us-east-2.compute.amazonaws.com';
-  const CONTENT_API_KEY = 'ed21690cfdb1a24af4718cbfa8';
-
-  async function getPosts() {
-    const res = await fetch(
-      `${BLOG_URL}/ghost/api/v3/content/posts/?key=${CONTENT_API_KEY}&include=feature_image,tags`
-    ).then((res) => res.json())
-    
-    const posts = res.posts
-  
-    return posts
-  }
-  const getStaticProps = async ({ params }) => {
-    const posts = await getPosts()
-    return {
-      revalidate: 10,
-      props: { posts }
+  useEffect(() => {
+    window.setTimeout(() => {
+      if(document.getElementById("my_custom_link")){
+        document.getElementById("my_custom_link").click();
+      }
+      console.log("clicked");
+      window.setTimeout(() => {}, 2000);
+    }, 5000);
+    return () => {
+      // Anything in here is fired on component unmount.
+      //console.log('onmount');
+      try {
+      var iframe = document.getElementsByClassName(
+        "intercom-launcher-frame"
+      )[0];
+      var elmnt =
+        iframe.contentWindow.document.getElementsByClassName(
+          "intercom-launcher"
+        )[0];
+      elmnt.click();
+        }
+        catch(err){
+          console.log(err);
+        }
+    };
+  });
+  if (!isLoggedIn()) {
+    if (typeof window !== "undefined") {
+      window.location.href = "/login";
+      toast.info('You need to login before contacting support',{
+        position:'bottom-center'
+      })
     }
   }
-  console.log(props);
   return (
-    <Layout pageTitle="Moneymie Blog: Better Banking for African Migrants">
+    <Layout pageTitle="Better Banking for African Migrants">
       <HeaderNavBar />
-        <BlogTabs active="all"/>
-        <FeaturedBlog/>
-        <GridBlog type="education" title="Education"/>
-        <GridBlog type="health" title="Health"/>
-        <BlockBlog type="tax" title="Tax"/>
+      <a className="hidden" id="my_custom_link"></a>
+      <div className="col-md-12 herosection loginsection">
+        <div className="form-container">
+          <h2>
+            Setting up... <i className="fa fa-spinner fa-spin"></i>
+          </h2>
+        </div>
+      </div>
       <Footer />
     </Layout>
   );

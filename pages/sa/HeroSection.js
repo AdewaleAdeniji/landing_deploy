@@ -152,7 +152,6 @@ const Hero =  (props) => {
             const len = searchTerm.length;
             const newc = countries.filter((country) =>{
                 const st = country.name.substr(0,len).toLowerCase();
-                console.log(st,searchTerm,len);
                 if(st==searchTerm){
                     return true;
                 }

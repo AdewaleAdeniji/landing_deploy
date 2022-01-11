@@ -13,6 +13,7 @@ import Download from './components/download';
 import SendLinkForm from './components/sendlink';
 import Footer from './components/footer';
 import SendUSD from './components/sendusd2';
+import FloatingButton from './components/FloatButton';
 
 
 export default function Home() {
@@ -48,6 +49,7 @@ export default function Home() {
   return (
     <Layout pageTitle="Better Banking for African Migrants">
         <HeaderNavBar/>
+        <FloatingButton/>
         <Hero/>
         <Partners/>
         <SendUSD/>
@@ -56,6 +58,7 @@ export default function Home() {
         <Reviews/>
         <Download/>
         <SendLinkForm/>
+        
         <Footer/>
     </Layout>
   )

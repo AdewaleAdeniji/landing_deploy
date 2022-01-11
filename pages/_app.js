@@ -11,7 +11,7 @@ import '../styles/header.css';
 import '../styles/global.css';
 import '../styles/faq.css';
 
-;function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
