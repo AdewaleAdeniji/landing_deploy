@@ -9,8 +9,8 @@ import ShowToast from './toast';
 import sortArray from 'sort-array';
 // import { message } from 'statuses';
 const SendLinkForm = (props) => {
-    // console.log(JSON.stringify(countries));
-    // console.log(countrieslist);
+    // //console.log(JSON.stringify(countries));
+    // //console.log(countrieslist);
     
     const [co,setCountry] = useState([
         { "name": "Andorra", "native": "Andorra", "phone": "376", "continent": "EU", "capital": "Andorra la Vella", "currency": "EUR", "languages": ["ca"], "emoji": "🇦🇩", "emojiU": "U+1F1E6 U+1F1E9", "countrycode": "AD" },
@@ -473,7 +473,7 @@ const SendLinkForm = (props) => {
         })
         setList(newcountry);
         setCountry(newcountry);
-        // console.log(newcountry);
+        // //console.log(newcountry);
         document.body.addEventListener('click',(e)=>{
             // setSelect(false);
             const arr = e.target.classList;
@@ -496,7 +496,7 @@ const SendLinkForm = (props) => {
             if(usernum!=''){
                 await number.validateAsync(usernum)
                 setPhoneNumber(usernum);
-                // console.log('here');
+                // //console.log('here');
                 setActiveButton(true);
             }
         }
@@ -569,7 +569,7 @@ const SendLinkForm = (props) => {
     const handleClickCountry = (e) => {
         let countrydata = e.target.attributes.getNamedItem('data-country').value;
         let country = e.target.attributes.getNamedItem('data-val').value;
-        // console.log(countrydata,val);
+        // //console.log(countrydata,val);
         setSelect(false);
         var countryarray = country.split(":");
         var phonecode = "+"+countryarray[0];

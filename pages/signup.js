@@ -49,10 +49,10 @@ const Register = (props) => {
     dob,
     password
   ) => {
-    //console.log(dob);
+    ////console.log(dob);
     const passtext = 'Password should contain 8 characters, an uppercase, and at least one number';
    const  passwordstrength = passwordStrength(password);
-   //console.log(passwordstrength);
+   ////console.log(passwordstrength);
    const diff = moment().diff(moment(dob),'years');
    
    var pwd = passwordstrength.contains;
@@ -90,7 +90,7 @@ const Register = (props) => {
       return toast.error('Invalid Date of Birth');
     }
     else {
-      //console.log('good')
+      ////console.log('good')
       //setLoading(true);
       const payload = {
         "password" : password,
@@ -101,15 +101,15 @@ const Register = (props) => {
         "phoneNumber" : phoneCode+phone,
         "country" : JSON.parse(country).countrycode
     }
-    console.log(payload);
+    //console.log(payload);
     try {
       toast.loading('Signing up...');
     const register = await signup(payload);
     setLoading(false);
     toast.dismiss();
-    console.log(register);
+    //console.log(register);
     if(register.status==201){
-      console.log(register.data);
+      //console.log(register.data);
       toast.success('Account created successfully.');
       payload.password = '';
       localStorage.setItem('moneymie_landing_signup',JSON.stringify(payload));

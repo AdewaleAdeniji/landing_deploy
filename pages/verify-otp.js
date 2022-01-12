@@ -104,7 +104,7 @@ const VerifyOTP = (props) => {
   var signup = {};
   if (typeof window !== "undefined") {
     const profile = localStorage.getItem("moneymie_landing_signup");
-    console.log(profile);
+    //console.log(profile);
     if (profile) {
       signup = JSON.parse(profile);
     } else {
@@ -121,7 +121,7 @@ const VerifyOTP = (props) => {
         const verify = await verifyOTPcode(otp);
         setLoading(false);
         toast.dismiss();
-        console.log(verify);
+        //console.log(verify);
         if(verify.status==200){
           const res = verify;
           const data = res.data.data;

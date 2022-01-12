@@ -507,7 +507,7 @@ const Hero =  (props) => {
             if(usernum!=''){
                 await number.validateAsync(usernum)
                 setPhoneNumber(usernum);
-                // console.log('here');
+                // //console.log('here');
                 setActiveButton(true);
             }
         }
@@ -581,7 +581,7 @@ const Hero =  (props) => {
         
         let countrydata = e.target.attributes.getNamedItem('data-country').value;
         let country = e.target.attributes.getNamedItem('data-val').value;
-        // console.log(countrydata,val);
+        // //console.log(countrydata,val);
         setSelect(false);
         var countryarray = country.split(":");
         var phonecode = "+"+countryarray[0];
@@ -613,7 +613,7 @@ const Hero =  (props) => {
             const len = searchTerm.length;
             const newc = countries.filter((country) =>{
                 const st = country.name.substr(0,len).toLowerCase();
-                console.log(st,searchTerm,len);
+                //console.log(st,searchTerm,len);
                 if(st==searchTerm){
                     return true;
                 }

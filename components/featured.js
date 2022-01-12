@@ -1,20 +1,27 @@
-export const FeaturedBlog = () => {
+import moment from "moment";
+import { useRouter } from "next/dist/client/router";
+export const FeaturedBlog = ({blogdetail}) => {
+    ////console.log(blogdetail);
+    const history = useRouter();
+    const read = () => {
+        history.push(`/blogs/${blogdetail.slug}`);
+    }
     return (
         <div className="blog-featured">
             <div className="blog-image">
-                <img src="/images/blog.svg" alt="Featured blog"/>
+                <img src={blogdetail?.feature_image||`/images/logo.svg`} alt="Featured blog"/>
             </div>
             <div className="blog-d">
                 <div className="blog-tag">
-                    FINANCE
+                   {blogdetail?.tags[0]?.name}
                 </div>
                 <div className="blog-title">
-                How to build credit score in the US
+                {blogdetail?.title}
                 </div>
                 <div className="blog-date">
-                May, 26, 2020
+                {moment(blogdetail?.published_at).format("MMM, Do, Y")}
                 </div>
-                <button className="btn-read">Read Article</button>
+                <button className="btn-read" onClick={read}>Read Article</button>
             </div>
         </div>
     )

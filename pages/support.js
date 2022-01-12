@@ -13,7 +13,7 @@ import Download from "./components/download";
 import SendLinkForm from "./components/sendlink";
 import Footer from "./components/footer";
 import SendUSD from "./components/sendusd2";
-import { isLoggedIn } from "../components/user";
+import { isLoggedIn, getUser } from "../components/user";
 import { useRouter } from "next/dist/client/router";
 import { toast } from "react-toastify";
 export default function Home() {
@@ -90,43 +90,50 @@ export default function Home() {
         }
       }
     })();
+    var user = {};
+    if (typeof window !== "undefined") {
+      user = getUser();
+      //console.log(user);
+    }
     window.intercomSettings = {
       app_id: "v63lode2",
+      name: user?.firstname, // Full name
+      email: user?.email, // Email address
+      user_id: user?.email, // current_user_id
       custom_launcher_selector: "#my_custom_link",
     };
   }, []);
   useEffect(() => {
     window.setTimeout(() => {
-      if(document.getElementById("my_custom_link")){
+      if (document.getElementById("my_custom_link")) {
         document.getElementById("my_custom_link").click();
       }
-      console.log("clicked");
+      //console.log("clicked");
       window.setTimeout(() => {}, 2000);
     }, 5000);
     return () => {
       // Anything in here is fired on component unmount.
-      //console.log('onmount');
+      ////console.log('onmount');
       try {
-      var iframe = document.getElementsByClassName(
-        "intercom-launcher-frame"
-      )[0];
-      var elmnt =
-        iframe.contentWindow.document.getElementsByClassName(
-          "intercom-launcher"
+        var iframe = document.getElementsByClassName(
+          "intercom-launcher-frame"
         )[0];
-      elmnt.click();
-        }
-        catch(err){
-          console.log(err);
-        }
+        var elmnt =
+          iframe.contentWindow.document.getElementsByClassName(
+            "intercom-launcher"
+          )[0];
+        elmnt.click();
+      } catch (err) {
+        //console.log(err);
+      }
     };
   });
   if (!isLoggedIn()) {
     if (typeof window !== "undefined") {
       window.location.href = "/login";
-      toast.info('You need to login before contacting support',{
-        position:'bottom-center'
-      })
+      toast.info("You need to login before contacting support", {
+        position: "bottom-center",
+      });
     }
   }
   return (

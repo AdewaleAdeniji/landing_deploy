@@ -1,15 +1,19 @@
 import React from "react";
+import moment from "moment";
+import readingTime from "reading-time";
+import ReactHtmlParser from 'react-html-parser';
 
-export default function BlogDetails() {
+export default function BlogDetails({blog}) {
+  ////console.log(blog);
   return (
     <div className="blog-details">
-      <div className="catergory">Finance</div>
-      <div className="blog-title">How to build credit score in the US</div>
+      <div className="category">{blog?.tags?blog.tags[0].name:''}</div>
+      <div className="blog-title">{blog?.title}</div>
       <div className="blog-meta">
         <ul>
-          <li>By Feranmi Adeniji</li>
-          <li>May 20, 2021</li>
-          <li>20 minutes read</li>
+          <li>By {blog?.authors&&blog?.authors[0].name}</li>
+          <li>{moment(blog?.published_at).format("MMM, Do, Y")}</li>
+          <li>{readingTime(blog?.html).text}</li>
         </ul>
       </div>
       <div className="footer-item">
@@ -55,22 +59,12 @@ export default function BlogDetails() {
         </ul>
       </div>
       <div className="blog-image">
-        <img src="/images/blog.svg" alt="Featured blog" />
+      <img src={blog?.feature_image||`/images/logo.svg`} alt="Featured blog" />
       </div>
       <div className="blog-content">
-        n 1999, the first Web Content Accessibility Guidelines were released to
-        the public. They ushered in an era of making the web accessible for
-        people with disabilities. While accessibility is a key component of
-        inclusive design, it’s only one part of the pictu re. Inclusive design
-        goes a step further to create a positive user experience for all people
-        on the web. <br/><br/>
-        
-        In this article, we’ll explore 6 ways you can start
-        designing more inclusive digital products that take into account the
-        full spectrum of human diversity. “To effectively design for modern,
-        multicultural audiences, we have to be willing to challenge our usual
-        ways of gathering inspiration & conceptualizing our projects.” — Senongo
-        Apkem, Author of Cross-Cultural Design What is inclusive design?
+        {
+          ReactHtmlParser(blog?.html)
+        }
       </div>
     </div>
   );

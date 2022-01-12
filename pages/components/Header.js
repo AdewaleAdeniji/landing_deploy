@@ -22,9 +22,6 @@ const HeaderNavBar = (props) => {
   const [mobilemenu, setMobile] = useState(false);
   const loggedin = isLoggedIn();
 
-
-
-  
   const toggleMenu = (e) => {
     setMobile(!mobilemenu);
   };
@@ -33,11 +30,11 @@ const HeaderNavBar = (props) => {
       toggleMenu();
     }
   };
-  var user = {}
-  if(loggedin){
-    if (typeof window !== 'undefined') {
-          user = getUser();
-          console.log(user);
+  var user = {};
+  if (loggedin) {
+    if (typeof window !== "undefined") {
+      user = getUser();
+      //console.log(user);
     }
   }
   return (
@@ -59,7 +56,7 @@ const HeaderNavBar = (props) => {
               rel="noopener noreferrer"
             >
               Get Moneymie for Business &nbsp;&nbsp;
-              <i className="fa fa-angle-right"></i>{" "}
+              <i className="fa fa-angle-right"></i>
             </a>
             <Link href="/support">Seek Advice </Link>
 
@@ -76,30 +73,33 @@ const HeaderNavBar = (props) => {
                 </Link>
               </>
             )}
-            {loggedin&&(
-              <div className='dn'>
-              <Menu className="dn">
-                <MenuButton
-                  className="rounded profile-img"
-                  rightIcon={<ChevronDownIcon />}
-                >
-                {/* <i className="fa fa-angle-down"></i> */}
-                  {user.firstname[0]+user.lastname[0]}
-                </MenuButton>
-                <MenuList>
-                  <MenuItem onClick={()=>history.push('/profile')}>Profile</MenuItem>
-                  <MenuItem onClick={()=>history.push('/logout')}>Logout</MenuItem>
-                </MenuList>
-              </Menu>
+            {loggedin && (
+              <div className="dn">
+                <Menu className="dn">
+                  <MenuButton
+                    className="rounded profile-img"
+                    rightIcon={<ChevronDownIcon />}
+                  >
+                    {/* <i className="fa fa-angle-down"></i> */}
+                    {user.firstname[0] + user.lastname[0]}
+                  </MenuButton>
+                  <MenuList>
+                    <MenuItem onClick={() => history.push("/profile")}>
+                      Profile
+                    </MenuItem>
+                    <MenuItem onClick={() => history.push("/logout")}>
+                      Logout
+                    </MenuItem>
+                  </MenuList>
+                </Menu>
               </div>
             )}
-            
           </div>
         </div>
         <div className="nav navbar mobilenav">
           <Link href="/" passHref>
             <img
-              src="images/logo.svg"
+              src="https://tech-244-new-design.d3std8zbt7sjj7.amplifyapp.com/static/media/moneymie-logo.e19bcead.png"
               className="navlogo"
               alt="Moneymie Logo"
             />
@@ -117,27 +117,22 @@ const HeaderNavBar = (props) => {
       >
         <div className="navcontents">
           <header>
-            <img src="images/logo.svg" alt="Moneymie Logo" />
+            <img
+              src="https://tech-244-new-design.d3std8zbt7sjj7.amplifyapp.com/static/media/moneymie-logo.e19bcead.png"
+              alt="Moneymie Logo"
+            />
             <i className="fa fa-times" onClick={toggleMenu.bind(this)}></i>
           </header>
           <ul>
             <li>
-              <a
-                href="https://medium.com/moneymie"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="/blogs" passHref>
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="https://medium.com/moneymie"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link href="/support" passHref>
                 Seek Advice
-              </a>
+              </Link>
             </li>
             <li>
               <a

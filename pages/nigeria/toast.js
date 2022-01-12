@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 const ShowToast = (props) => {
-    // console.log(props);
+    // //console.log(props);
     // const [showToast,setToastShow] = useState(false);
     // if(showToast!=props.show){
     //     setToastShow(props.show);
