@@ -16,8 +16,11 @@ type Post = {
   excerpt: string;
   published_at: string;
   blogdetail: object;
-  tags: object;
+  tags:Tag[]
 };
+type Tag = {
+	name: string;
+ }
 
 async function getPosts() {
   // curl ""
@@ -43,16 +46,16 @@ const Home: React.FC<{ posts: Post[] }> = (props) => {
   const { posts } = props;
   const dataStuff = posts;
 const grouped = Object.create(null); 
- dataStuff.forEach(function (a) {
+ dataStuff.forEach(function (a: Post) {
    
    if(a.tags.length!==0){
      grouped[a.tags[0].name] = grouped[a.tags[0].name] || [];
      grouped[a.tags[0].name].push(a);
    }
-    else {
-     grouped['Uncategorized'] = grouped[a.tags] || [];
-     grouped['Uncategorized'].push(a)
-    }
+    // else {
+    //  grouped['Uncategorized'] = grouped[a.tags] || [];
+    //  grouped['Uncategorized'].push(a)
+    // }
   });
 
   const otherposts = Object.entries(grouped);
