@@ -16,6 +16,7 @@ type Post = {
   excerpt: string;
   published_at: string;
   blogdetail: object;
+  tags: object;
 };
 
 async function getPosts() {
@@ -40,19 +41,7 @@ export const getStaticProps = async ({ params }) => {
 
 const Home: React.FC<{ posts: Post[] }> = (props) => {
   const { posts } = props;
-  ////console.log(posts.length);
-  ////console.log(posts[0]);
-  //const blogfeatured = posts[0];
-  //posts.shift();
   const dataStuff = posts;
-//   var dataStuff = [
-//     { Name: "Apple", Tag: "Fruit", Price: "2,5", yr: [{ name: "fred" }] },
-//     { Name: "Bike", Tag: "Sport", Price: "150", yr: [{ name: "fred" }] },
-//     { Name: "Kiwi", Tag: "Fruit", Price: "1,5", yr: [{ name: "fred" }] },
-//     { Name: "Knife", Tag: "Kitchen", Price: "8", yr: [{ name: "frede" }] },
-//     { Name: "Fork", Tag: "Kitchen", Price: "7", yr: [{ name: "fred" }] },
-//   ];
-//console.log(dataStuff);
 const grouped = Object.create(null); 
  dataStuff.forEach(function (a) {
    
