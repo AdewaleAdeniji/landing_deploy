@@ -70,14 +70,14 @@ async function getPost(tagname) {
   }
 }
 
-// export const getStaticPaths = () => {
-//   // paths -> slugs which are allowed
-//   // fallback ->
-//   return {
-//     paths: [],
-//     fallback: true,
-//   };
-// };
+export const getStaticPaths = () => {
+  // paths -> slugs which are allowed
+  // fallback ->
+  return {
+    paths: [],
+    fallback: 'blocking',
+  };
+};
 export default function Post(props) {
   const router = useRouter();
   const {post, category} = props;
