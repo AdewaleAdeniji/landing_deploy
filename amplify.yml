@@ -6,9 +6,9 @@ frontend:
         - yarn install
     build:
       commands:
-        - yarn run export
+        - yarn run build
   artifacts:
-    baseDirectory: out
+    baseDirectory: .next
     files:
       - '**/*'
   cache:
