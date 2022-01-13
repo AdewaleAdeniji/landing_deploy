@@ -75,7 +75,7 @@ export const getStaticPaths = () => {
   // fallback ->
   return {
     paths: [],
-    fallback: false,
+    fallback: true,
   };
 };
 export default function Post(props) {
